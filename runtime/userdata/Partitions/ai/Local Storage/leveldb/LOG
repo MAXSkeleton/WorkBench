@@ -1,3 +1,3 @@
-2026/11/07-23:49:18.831 dba0 Reusing MANIFEST E:\Work\workbench\runtime\userdata\Partitions\ai\Local Storage\leveldb/MANIFEST-000001
-2026/11/07-23:49:18.833 dba0 Recovering log #3
-2026/11/07-23:49:18.835 dba0 Reusing old log E:\Work\workbench\runtime\userdata\Partitions\ai\Local Storage\leveldb/000003.log 
+2026/11/08-20:36:05.019 11cc Reusing MANIFEST E:\Work\workbench\runtime\userdata\Partitions\ai\Local Storage\leveldb/MANIFEST-000001
+2026/11/08-20:36:05.020 11cc Recovering log #4
+2026/11/08-20:36:05.021 11cc Reusing old log E:\Work\workbench\runtime\userdata\Partitions\ai\Local Storage\leveldb/000004.log 

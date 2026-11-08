@@ -1,0 +1,17 @@
+﻿const http=require('node:http')
+const WS=require('E:/Work/workbench/vendor/cs/code-server-4.145.2-windows-amd64/lib/vscode/node_modules/ws')
+const needle=process.argv[2]||''
+const expr=process.argv[3]||'document.title'
+function list(){return new Promise((res,rej)=>{const r=http.get({host:'127.0.0.1',port:9333,path:'/json/list'},x=>{let b='';x.on('data',c=>b+=c);x.on('end',()=>res(JSON.parse(b)))});r.on('error',rej);r.setTimeout(6000,()=>{r.destroy();rej(new Error('timeout'))})})}
+;(async()=>{
+  const l=await list()
+  const t=l.find(x=>needle&&x.url.includes(needle))
+  if(!t){console.log('no target');return}
+  const ws=new WS(t.webSocketDebuggerUrl,{perMessageDeflate:false})
+  await new Promise(r=>ws.on('open',r))
+  let id=0
+  const call=(m,p,to=8000)=>new Promise(res=>{const i=++id;const tm=setTimeout(()=>{ws.off('message',on);res({__t:1})},to);const on=raw=>{const x=JSON.parse(raw);if(x.id===i){clearTimeout(tm);ws.off('message',on);res(x.result||x.error)}};ws.on('message',on);ws.send(JSON.stringify({id:i,method:m,params:p}))})
+  const r=await call('Runtime.evaluate',{expression:expr,returnByValue:true,awaitPromise:true})
+  console.log(JSON.stringify(r&&r.result?r.result.value:r).slice(0,1200))
+  ws.close()
+})().catch(e=>console.log('ERR',e.message))

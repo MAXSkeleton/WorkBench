@@ -1,161 +1,1432 @@
-[2026-11-07T15:20:24.635Z] spawn D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
-[2026-11-07T15:20:25.634Z] [2026-11-07T15:20:25.631Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
-[2026-11-07T15:20:25.636Z] [2026-11-07T15:20:25.634Z] error parent:36920 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
-[2026-11-07T15:20:25.637Z] [2026-11-07T15:20:25.636Z] error parent:36920 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
-    at async open (node:internal/fs/promises:1345:25)
-    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
-    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
-[2026-11-07T15:20:25.637Z] [2026-11-07T15:20:25.634Z] info  Using user-data-dir D:\deepseek\电脑\workbench\runtime\code-server-data
-[2026-11-07T15:20:25.659Z] [2026-11-07T15:20:25.659Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
-[2026-11-07T15:20:25.659Z] info  HTTP server listening on http://127.0.0.1:9123/
-[2026-11-07T15:20:25.659Z] info    - Authentication is disabled
-[2026-11-07T15:20:25.659Z] info    - Not serving HTTPS
-[2026-11-07T15:20:25.659Z] info  Session server listening on \\.\pipe\code-server-ipc-847e9dcf1560a4ba
-[2026-11-07T15:20:25.951Z] [2026-11-07T15:20:25.951Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:20:25.952Z] [2026-11-07T15:20:25.951Z] error parent:36920 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
-[2026-11-07T15:20:25.951Z] error parent:36920 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
-    at async open (node:internal/fs/promises:1345:25)
-    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
-    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
-[2026-11-07T15:20:26.015Z] [23:20:26]
-[2026-11-07T15:20:26.136Z] [23:20:26] StorageMainService: creating application shared storage
-[2026-11-07T15:20:26.138Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
-[2026-11-07T15:20:26.140Z] [23:20:26] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-d0800d2a-03c7-4338-a711-9d223100d525-sock)
-[2026-11-07T15:20:26.145Z] [23:20:26] Extension host agent started.
-[2026-11-07T15:20:26.156Z] [23:20:26] [storage main] initialize(): Unable to init storage due to Error: EPERM: operation not permitted, mkdir 'c:\Users\aa\.vscode-oss-shared'
-[2026-11-07T15:20:27.067Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
-[2026-11-07T15:20:27.069Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
-[2026-11-07T15:20:27.090Z] [23:20:27] [127.0.0.1][0f88c84a][ManagementConnection] New connection established.
-[2026-11-07T15:20:27.622Z] [23:20:27] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
-[2026-11-07T15:20:27.781Z] [23:20:27] [127.0.0.1][623b606b][ExtensionHostConnection] New connection established.
-[2026-11-07T15:20:27.782Z] [23:20:27] [127.0.0.1][623b606b][ExtensionHostConnection] Starting extension host process...
-[2026-11-07T15:20:27.829Z] [23:20:27] [127.0.0.1][623b606b][ExtensionHostConnection] <6756> Launched Extension Host Process.
-[2026-11-07T15:20:28.310Z] [23:20:28] [127.0.0.1][623b606b][ExtensionHostConnection] <6756> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
-[2026-11-07T15:20:28.750Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-d0800d2a-03c7-4338-a711-9d223100d525-sock
-[2026-11-07T15:20:28.755Z] [23:20:28] ServerAgentHostManager: agent host started
-[2026-11-07T15:20:28.757Z] [23:20:28] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-d0800d2a-03c7-4338-a711-9d223100d525-sock
-[2026-11-07T15:20:28.899Z] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
-[2026-11-07T15:20:28.900Z] [IPC Library: Agent Host] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
-[2026-11-07T15:21:25.895Z] [2026-11-07T15:21:25.890Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:22:25.903Z] [2026-11-07T15:22:25.902Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:23:25.908Z] [2026-11-07T15:23:25.906Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:24:25.914Z] [2026-11-07T15:24:25.912Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:25:25.920Z] [2026-11-07T15:25:25.918Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:26:32.495Z] spawn D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
-[2026-11-07T15:26:33.515Z] [2026-11-07T15:26:33.512Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
-[2026-11-07T15:26:33.518Z] [2026-11-07T15:26:33.516Z] error parent:303640 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
-[2026-11-07T15:26:33.520Z] [2026-11-07T15:26:33.519Z] error parent:303640 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
-    at async open (node:internal/fs/promises:1345:25)
-    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
-    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
-[2026-11-07T15:26:33.521Z] [2026-11-07T15:26:33.514Z] info  Using user-data-dir D:\deepseek\电脑\workbench\runtime\code-server-data
-[2026-11-07T15:26:33.538Z] [2026-11-07T15:26:33.538Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
-[2026-11-07T15:26:33.538Z] info  HTTP server listening on http://127.0.0.1:9123/
-[2026-11-07T15:26:33.538Z] info    - Authentication is disabled
-[2026-11-07T15:26:33.538Z] info    - Not serving HTTPS
-[2026-11-07T15:26:33.538Z] info  Session server listening on \\.\pipe\code-server-ipc-847e9dcf1560a4ba
-[2026-11-07T15:26:33.801Z] [2026-11-07T15:26:33.801Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:26:33.802Z] [2026-11-07T15:26:33.802Z] error parent:303640 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
-[2026-11-07T15:26:33.802Z] error parent:303640 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
-    at async open (node:internal/fs/promises:1345:25)
-    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
-    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
-[2026-11-07T15:26:33.871Z] [23:26:33]
-[2026-11-07T15:26:33.989Z] [23:26:33] StorageMainService: creating application shared storage
-[2026-11-07T15:26:33.991Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
-[2026-11-07T15:26:33.994Z] [23:26:33] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-3def411c-f467-40ce-ab05-22a7801b134b-sock)
-[2026-11-07T15:26:34.000Z] [23:26:33] Extension host agent started.
-[2026-11-07T15:26:34.010Z] [23:26:34] [storage main] initialize(): Unable to init storage due to Error: EPERM: operation not permitted, mkdir 'c:\Users\aa\.vscode-oss-shared'
-[2026-11-07T15:26:34.959Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
-[2026-11-07T15:26:34.960Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
-[2026-11-07T15:26:34.984Z] [23:26:34] [127.0.0.1][ba8ccdf5][ManagementConnection] New connection established.
-[2026-11-07T15:26:35.318Z] [23:26:35] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
-[2026-11-07T15:26:35.457Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] New connection established.
-[2026-11-07T15:26:35.458Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] Starting extension host process...
-[2026-11-07T15:26:35.483Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] <314664> Launched Extension Host Process.
-[2026-11-07T15:26:35.981Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] <314664> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
-[2026-11-07T15:26:36.431Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-3def411c-f467-40ce-ab05-22a7801b134b-sock
-[2026-11-07T15:26:36.434Z] [23:26:36] ServerAgentHostManager: agent host started
-[2026-11-07T15:26:36.435Z] [23:26:36] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-3def411c-f467-40ce-ab05-22a7801b134b-sock
-[2026-11-07T15:26:36.546Z] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
-[2026-11-07T15:26:36.552Z] [IPC Library: Agent Host] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
-[2026-11-07T15:27:33.744Z] [2026-11-07T15:27:33.743Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:28:33.745Z] [2026-11-07T15:28:33.745Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:29:22.442Z] [23:29:22] Error: read ECONNRESET
+[2026-11-08T05:43:11.803Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T05:43:13.035Z] [2026-11-08T05:43:13.031Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T05:43:13.036Z] [2026-11-08T05:43:13.033Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T05:43:13.057Z] [2026-11-08T05:43:13.055Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T05:50:34.088Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T05:50:35.124Z] [2026-11-08T05:50:35.122Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T05:50:35.125Z] [2026-11-08T05:50:35.123Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T05:50:35.144Z] [2026-11-08T05:50:35.143Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T05:50:35.144Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T05:50:35.144Z] info    - Authentication is disabled
+[2026-11-08T05:50:35.144Z] info    - Not serving HTTPS
+[2026-11-08T05:50:35.144Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T05:50:35.471Z] [13:50:35]
+[2026-11-08T05:50:35.597Z] [13:50:35] StorageMainService: creating application shared storage
+[2026-11-08T05:50:35.599Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T05:50:35.600Z] [13:50:35] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-d957f7c2-566f-477b-8d10-3bb0b439eda2-sock)
+[2026-11-08T05:50:35.606Z] [13:50:35] Extension host agent started.
+[2026-11-08T05:50:35.614Z] [13:50:35] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[13:50:35] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T05:50:35.624Z] [13:50:35] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T05:50:36.606Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T05:50:36.608Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T05:50:36.622Z] [13:50:36] [127.0.0.1][f8d73818][ManagementConnection] New connection established.
+[2026-11-08T05:50:37.027Z] [13:50:37] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T05:50:37.249Z] [13:50:37] [127.0.0.1][be4486ba][ExtensionHostConnection] New connection established.
+[2026-11-08T05:50:37.250Z] [13:50:37] [127.0.0.1][be4486ba][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T05:50:37.265Z] [13:50:37] [127.0.0.1][be4486ba][ExtensionHostConnection] <9244> Launched Extension Host Process.
+[2026-11-08T05:50:37.801Z] [13:50:37] [127.0.0.1][be4486ba][ExtensionHostConnection] <9244> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T05:50:38.203Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-d957f7c2-566f-477b-8d10-3bb0b439eda2-sock
+[2026-11-08T05:50:38.207Z] [13:50:38] ServerAgentHostManager: agent host started
+[2026-11-08T05:50:38.209Z] [13:50:38] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-d957f7c2-566f-477b-8d10-3bb0b439eda2-sock
+[2026-11-08T05:57:36.206Z] [13:57:36] Error: read ECONNRESET
     at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
   errno: -4077,
   code: 'ECONNRESET',
   syscall: 'read'
 }
-[2026-11-07T15:29:22.443Z] [23:29:22] [127.0.0.1][ba8ccdf5][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
-[2026-11-07T15:29:22.554Z] [23:29:22] [127.0.0.1][ba8ccdf5][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
-[2026-11-07T15:29:22.555Z] [23:29:22] [127.0.0.1][ba8ccdf5][ManagementConnection] The client has reconnected.
-[2026-11-07T15:29:22.569Z] [23:29:22] [127.0.0.1][86811278][ExtensionHostConnection] The client has reconnected.
-[2026-11-07T15:29:33.751Z] [2026-11-07T15:29:33.750Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:30:33.760Z] [2026-11-07T15:30:33.759Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:31:33.772Z] [2026-11-07T15:31:33.771Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:32:33.783Z] [2026-11-07T15:32:33.783Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
-[2026-11-07T15:38:09.830Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
-[2026-11-07T15:38:14.372Z] [2026-11-07T15:38:14.369Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
-[2026-11-07T15:38:14.374Z] [2026-11-07T15:38:14.371Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
-[2026-11-07T15:38:14.393Z] [2026-11-07T15:38:14.393Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
-[2026-11-07T15:38:14.393Z] info  HTTP server listening on http://127.0.0.1:9123/
-[2026-11-07T15:38:14.393Z] info    - Authentication is disabled
-[2026-11-07T15:38:14.393Z] info    - Not serving HTTPS
-[2026-11-07T15:38:14.393Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
-[2026-11-07T15:38:15.843Z] [23:38:15]
-[2026-11-07T15:38:16.652Z] [23:38:16] StorageMainService: creating application shared storage
-[2026-11-07T15:38:16.654Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
-[2026-11-07T15:38:16.656Z] [23:38:16] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-75268fe8-0650-4f0b-8fba-e41ed67dee8d-sock)
-[2026-11-07T15:38:16.672Z] [23:38:16] Extension host agent started.
-[2026-11-07T15:38:16.734Z] [23:38:16] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: true)
-[2026-11-07T15:38:16.735Z] [23:38:16] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
-[2026-11-07T15:38:16.737Z] [23:38:16] [shared storage] Fallback application storage initialized with 4 items
-[2026-11-07T15:38:17.945Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
-[2026-11-07T15:38:17.946Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
-[2026-11-07T15:38:17.966Z] [23:38:17] [127.0.0.1][f4140a97][ManagementConnection] New connection established.
-[2026-11-07T15:38:18.349Z] [23:38:18] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
-[2026-11-07T15:38:18.453Z] [23:38:18] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] New connection established.
-[2026-11-07T15:38:18.453Z] [23:38:18] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] Starting extension host process...
-[2026-11-07T15:38:18.467Z] [23:38:18] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] <1256> Launched Extension Host Process.
-[2026-11-07T15:38:20.853Z] [23:38:20] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] <1256> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
-[2026-11-07T15:38:21.183Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-75268fe8-0650-4f0b-8fba-e41ed67dee8d-sock
-[2026-11-07T15:38:21.184Z] [23:38:21] ServerAgentHostManager: agent host started
-[2026-11-07T15:38:21.185Z] [23:38:21] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-75268fe8-0650-4f0b-8fba-e41ed67dee8d-sock
-[2026-11-07T15:40:43.540Z] [23:40:43] Error: read ECONNRESET
+[2026-11-08T05:57:36.208Z] [13:57:36] [127.0.0.1][f8d73818][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T05:57:47.538Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T05:57:48.835Z] [2026-11-08T05:57:48.833Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T05:57:48.836Z] [2026-11-08T05:57:48.835Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T05:57:48.855Z] [2026-11-08T05:57:48.854Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T06:03:34.552Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T06:03:35.627Z] [2026-11-08T06:03:35.624Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T06:03:35.626Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T06:03:35.647Z] [2026-11-08T06:03:35.647Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T06:03:35.647Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T06:03:35.647Z] info    - Authentication is disabled
+[2026-11-08T06:03:35.647Z] info    - Not serving HTTPS
+[2026-11-08T06:03:35.647Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T06:03:35.920Z] [14:03:35]
+[2026-11-08T06:03:36.047Z] [14:03:36] StorageMainService: creating application shared storage
+[2026-11-08T06:03:36.049Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T06:03:36.050Z] [14:03:36] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-4b7558f8-49c4-4e76-bcaf-4bac551f565b-sock)
+[2026-11-08T06:03:36.056Z] [14:03:36] Extension host agent started.
+[2026-11-08T06:03:36.062Z] [14:03:36] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[14:03:36] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T06:03:36.074Z] [14:03:36] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T06:03:37.068Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T06:03:37.069Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T06:03:37.089Z] [14:03:37] [127.0.0.1][e9c96a10][ManagementConnection] New connection established.
+[2026-11-08T06:03:37.491Z] [14:03:37] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T06:03:37.722Z] [14:03:37] [127.0.0.1][1b211eba][ExtensionHostConnection] New connection established.
+[2026-11-08T06:03:37.723Z] [14:03:37] [127.0.0.1][1b211eba][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T06:03:37.737Z] [14:03:37] [127.0.0.1][1b211eba][ExtensionHostConnection] <329944> Launched Extension Host Process.
+[2026-11-08T06:03:38.303Z] [14:03:38] [127.0.0.1][1b211eba][ExtensionHostConnection] <329944> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T06:03:38.759Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-4b7558f8-49c4-4e76-bcaf-4bac551f565b-sock
+[2026-11-08T06:03:38.763Z] [14:03:38] ServerAgentHostManager: agent host started
+[2026-11-08T06:03:38.764Z] [14:03:38] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-4b7558f8-49c4-4e76-bcaf-4bac551f565b-sock
+[2026-11-08T06:06:01.333Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T06:06:02.540Z] [2026-11-08T06:06:02.537Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T06:06:02.540Z] [2026-11-08T06:06:02.539Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T06:06:02.561Z] [2026-11-08T06:06:02.561Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T06:38:35.232Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T06:38:36.144Z] [2026-11-08T06:38:36.141Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T06:38:36.143Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T06:38:36.162Z] [2026-11-08T06:38:36.162Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T06:38:36.164Z] [2026-11-08T06:38:36.162Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T06:38:36.162Z] info    - Authentication is disabled
+[2026-11-08T06:38:36.162Z] info    - Not serving HTTPS
+[2026-11-08T06:38:36.162Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T06:38:36.613Z] [14:38:36]
+[2026-11-08T06:38:36.780Z] [14:38:36] StorageMainService: creating application shared storage
+[2026-11-08T06:38:36.784Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T06:38:36.787Z] [14:38:36] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-f1880493-9d9c-4eec-b814-9aff39e2515e-sock)
+[2026-11-08T06:38:36.797Z] [14:38:36] Extension host agent started.
+[2026-11-08T06:38:36.810Z] [14:38:36] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T06:38:36.811Z] [14:38:36] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T06:38:36.825Z] [14:38:36] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T06:38:37.966Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T06:38:37.967Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T06:38:37.988Z] [14:38:37] [127.0.0.1][6a482cf9][ManagementConnection] New connection established.
+[2026-11-08T06:38:38.478Z] [14:38:38] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T06:38:38.630Z] [14:38:38] [127.0.0.1][d04378f3][ExtensionHostConnection] New connection established.
+[2026-11-08T06:38:38.632Z] [14:38:38] [127.0.0.1][d04378f3][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T06:38:38.657Z] [14:38:38] [127.0.0.1][d04378f3][ExtensionHostConnection] <331940> Launched Extension Host Process.
+[2026-11-08T06:38:39.257Z] [14:38:39] [127.0.0.1][d04378f3][ExtensionHostConnection] <331940> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T06:38:39.773Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-f1880493-9d9c-4eec-b814-9aff39e2515e-sock
+[2026-11-08T06:38:39.775Z] [14:38:39] ServerAgentHostManager: agent host started
+[2026-11-08T06:38:39.776Z] [14:38:39] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-f1880493-9d9c-4eec-b814-9aff39e2515e-sock
+[2026-11-08T06:44:56.358Z] [14:44:56] Error: read ECONNRESET
     at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
   errno: -4077,
   code: 'ECONNRESET',
   syscall: 'read'
 }
-[2026-11-07T15:40:43.541Z] [23:40:43] [127.0.0.1][f4140a97][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
-[2026-11-07T15:40:43.827Z] [23:40:43] [127.0.0.1][f4140a97][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
-[2026-11-07T15:40:43.828Z] [23:40:43] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] The client has reconnected.
-[2026-11-07T15:40:43.844Z] [23:40:43] [127.0.0.1][f4140a97][ManagementConnection] The client has reconnected.
-[2026-11-07T15:49:16.485Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
-[2026-11-07T15:49:18.062Z] [2026-11-07T15:49:18.059Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
-[2026-11-07T15:49:18.064Z] [2026-11-07T15:49:18.062Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
-[2026-11-07T15:49:18.092Z] [2026-11-07T15:49:18.092Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
-[2026-11-07T15:49:18.092Z] info  HTTP server listening on http://127.0.0.1:9123/
-[2026-11-07T15:49:18.092Z] info    - Authentication is disabled
-[2026-11-07T15:49:18.092Z] info    - Not serving HTTPS
-[2026-11-07T15:49:18.092Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
-[2026-11-07T15:49:18.555Z] [23:49:18]
-[2026-11-07T15:49:18.762Z] [23:49:18] StorageMainService: creating application shared storage
-[2026-11-07T15:49:18.765Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
-[2026-11-07T15:49:18.767Z] [23:49:18] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-efa64074-8852-4594-8272-93d9fb5a89c0-sock)
-[2026-11-07T15:49:18.776Z] [23:49:18] Extension host agent started.
-[2026-11-07T15:49:18.784Z] [23:49:18] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
-[2026-11-07T15:49:18.785Z] [23:49:18] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
-[2026-11-07T15:49:18.801Z] [23:49:18] [shared storage] Fallback application storage initialized with 4 items
-[2026-11-07T15:49:20.123Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
-[2026-11-07T15:49:20.125Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
-[2026-11-07T15:49:20.144Z] [23:49:20] [127.0.0.1][694d1007][ManagementConnection] New connection established.
-[2026-11-07T15:49:20.650Z] [23:49:20] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
-[2026-11-07T15:49:20.858Z] [23:49:20] [127.0.0.1][740233c3][ExtensionHostConnection] New connection established.
-[2026-11-07T15:49:20.860Z] [23:49:20] [127.0.0.1][740233c3][ExtensionHostConnection] Starting extension host process...
-[2026-11-07T15:49:20.896Z] [23:49:20] [127.0.0.1][740233c3][ExtensionHostConnection] <37380> Launched Extension Host Process.
-[2026-11-07T15:49:21.701Z] [23:49:21] [127.0.0.1][740233c3][ExtensionHostConnection] <37380> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
-[2026-11-07T15:49:22.311Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-efa64074-8852-4594-8272-93d9fb5a89c0-sock
-[2026-11-07T15:49:22.314Z] [23:49:22] ServerAgentHostManager: agent host started
-[2026-11-07T15:49:22.315Z] [23:49:22] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-efa64074-8852-4594-8272-93d9fb5a89c0-sock
+[2026-11-08T06:44:56.360Z] [14:44:56] [127.0.0.1][6a482cf9][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T06:45:32.760Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T06:45:33.808Z] [2026-11-08T06:45:33.806Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T06:45:33.809Z] [2026-11-08T06:45:33.807Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T06:45:33.830Z] [2026-11-08T06:45:33.830Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T06:45:33.830Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T06:45:33.830Z] info    - Authentication is disabled
+[2026-11-08T06:45:33.830Z] info    - Not serving HTTPS
+[2026-11-08T06:45:33.830Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T06:45:34.149Z] [14:45:34]
+[2026-11-08T06:45:34.284Z] [14:45:34] StorageMainService: creating application shared storage
+[2026-11-08T06:45:34.286Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T06:45:34.288Z] [14:45:34] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-84bc5173-bf27-47f9-861a-91e0328e8f75-sock)
+[2026-11-08T06:45:34.295Z] [14:45:34] Extension host agent started.
+[2026-11-08T06:45:34.304Z] [14:45:34] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[14:45:34] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T06:45:34.317Z] [14:45:34] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T06:45:35.325Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T06:45:35.327Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T06:45:35.342Z] [14:45:35] [127.0.0.1][a7818ef4][ManagementConnection] New connection established.
+[2026-11-08T06:45:35.772Z] [14:45:35] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T06:45:36.005Z] [14:45:36] [127.0.0.1][6f793857][ExtensionHostConnection] New connection established.
+[2026-11-08T06:45:36.007Z] [14:45:36] [127.0.0.1][6f793857][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T06:45:36.023Z] [14:45:36] [127.0.0.1][6f793857][ExtensionHostConnection] <303548> Launched Extension Host Process.
+[2026-11-08T06:45:36.547Z] [14:45:36] [127.0.0.1][6f793857][ExtensionHostConnection] <303548> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T06:45:36.984Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-84bc5173-bf27-47f9-861a-91e0328e8f75-sock
+[2026-11-08T06:45:36.989Z] [14:45:36] ServerAgentHostManager: agent host started
+[2026-11-08T06:45:36.990Z] [14:45:36] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-84bc5173-bf27-47f9-861a-91e0328e8f75-sock
+[2026-11-08T06:50:42.428Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T06:50:43.475Z] [2026-11-08T06:50:43.473Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T06:50:43.476Z] [2026-11-08T06:50:43.475Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T06:50:43.498Z] [2026-11-08T06:50:43.497Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T06:50:43.498Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T06:50:43.498Z] info    - Authentication is disabled
+[2026-11-08T06:50:43.498Z] info    - Not serving HTTPS
+[2026-11-08T06:50:43.498Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T06:50:43.799Z] [14:50:43]
+[2026-11-08T06:50:43.931Z] [14:50:43] StorageMainService: creating application shared storage
+[2026-11-08T06:50:43.933Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T06:50:43.935Z] [14:50:43] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-b99ab449-c8db-45d2-9dce-1d6205c4a6c3-sock)
+[2026-11-08T06:50:43.941Z] [14:50:43] Extension host agent started.
+[2026-11-08T06:50:43.946Z] [14:50:43] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[14:50:43] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T06:50:43.957Z] [14:50:43] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T06:50:44.913Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T06:50:44.915Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T06:50:44.923Z] [14:50:44] [127.0.0.1][3bfe6840][ManagementConnection] New connection established.
+[2026-11-08T06:50:45.329Z] [14:50:45] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T06:50:45.483Z] [14:50:45] [127.0.0.1][f5033647][ExtensionHostConnection] New connection established.
+[2026-11-08T06:50:45.484Z] [14:50:45] [127.0.0.1][f5033647][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T06:50:45.507Z] [14:50:45] [127.0.0.1][f5033647][ExtensionHostConnection] <235860> Launched Extension Host Process.
+[2026-11-08T06:50:46.044Z] [14:50:46] [127.0.0.1][f5033647][ExtensionHostConnection] <235860> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T06:50:46.574Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-b99ab449-c8db-45d2-9dce-1d6205c4a6c3-sock
+[2026-11-08T06:50:46.577Z] [14:50:46] ServerAgentHostManager: agent host started
+[2026-11-08T06:50:46.579Z] [14:50:46] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-b99ab449-c8db-45d2-9dce-1d6205c4a6c3-sock
+[2026-11-08T07:24:05.994Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T07:24:06.957Z] [2026-11-08T07:24:06.956Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T07:24:06.958Z] [2026-11-08T07:24:06.957Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T07:24:06.980Z] [2026-11-08T07:24:06.980Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T07:24:06.980Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T07:24:06.980Z] info    - Authentication is disabled
+[2026-11-08T07:24:06.980Z] info    - Not serving HTTPS
+[2026-11-08T07:24:06.980Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T07:24:07.367Z] [15:24:07]
+[2026-11-08T07:24:07.506Z] [15:24:07] StorageMainService: creating application shared storage
+[2026-11-08T07:24:07.508Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T07:24:07.510Z] [15:24:07] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-ed896e91-e91b-4b75-ae28-6c0f0f04642f-sock)
+[2026-11-08T07:24:07.516Z] [15:24:07] Extension host agent started.
+[2026-11-08T07:24:07.523Z] [15:24:07] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[15:24:07] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T07:24:07.553Z] [15:24:07] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T07:24:08.573Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T07:24:08.575Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T07:24:08.589Z] [15:24:08] [127.0.0.1][9066a5bf][ManagementConnection] New connection established.
+[2026-11-08T07:24:09.002Z] [15:24:09] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T07:24:09.151Z] [15:24:09] [127.0.0.1][a7a7caa6][ExtensionHostConnection] New connection established.
+[2026-11-08T07:24:09.153Z] [15:24:09] [127.0.0.1][a7a7caa6][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T07:24:09.180Z] [15:24:09] [127.0.0.1][a7a7caa6][ExtensionHostConnection] <33944> Launched Extension Host Process.
+[2026-11-08T07:24:09.733Z] [15:24:09] [127.0.0.1][a7a7caa6][ExtensionHostConnection] <33944> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T07:24:10.271Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-ed896e91-e91b-4b75-ae28-6c0f0f04642f-sock
+[2026-11-08T07:24:10.274Z] [15:24:10] ServerAgentHostManager: agent host started
+[2026-11-08T07:24:10.275Z] [15:24:10] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-ed896e91-e91b-4b75-ae28-6c0f0f04642f-sock
+[2026-11-08T07:43:39.848Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T07:43:40.928Z] [2026-11-08T07:43:40.926Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T07:43:40.929Z] [2026-11-08T07:43:40.928Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T07:43:40.949Z] [2026-11-08T07:43:40.950Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T07:43:40.950Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T07:43:40.950Z] info    - Authentication is disabled
+[2026-11-08T07:43:40.950Z] info    - Not serving HTTPS
+[2026-11-08T07:43:40.950Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T07:43:41.223Z] [15:43:41]
+[2026-11-08T07:43:41.324Z] [15:43:41] StorageMainService: creating application shared storage
+[2026-11-08T07:43:41.326Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T07:43:41.327Z] [15:43:41] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-553ae138-e30d-4b42-8339-c45dd32d1b73-sock)
+[2026-11-08T07:43:41.332Z] [15:43:41] Extension host agent started.
+[2026-11-08T07:43:41.338Z] [15:43:41] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[15:43:41] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T07:43:41.369Z] [15:43:41] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T07:43:42.345Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T07:43:42.365Z] [15:43:42] [127.0.0.1][c32e4d44][ManagementConnection] New connection established.
+[2026-11-08T07:43:42.756Z] [15:43:42] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T07:43:42.925Z] [15:43:42] [127.0.0.1][4a61d9a4][ExtensionHostConnection] New connection established.
+[2026-11-08T07:43:42.926Z] [15:43:42] [127.0.0.1][4a61d9a4][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T07:43:42.955Z] [15:43:42] [127.0.0.1][4a61d9a4][ExtensionHostConnection] <44552> Launched Extension Host Process.
+[2026-11-08T07:43:43.519Z] [15:43:43] [127.0.0.1][4a61d9a4][ExtensionHostConnection] <44552> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T07:43:43.999Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-553ae138-e30d-4b42-8339-c45dd32d1b73-sock
+[2026-11-08T07:43:44.001Z] [15:43:44] ServerAgentHostManager: agent host started
+[2026-11-08T07:43:44.003Z] [15:43:44] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-553ae138-e30d-4b42-8339-c45dd32d1b73-sock
+[2026-11-08T07:49:40.030Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T07:49:41.142Z] [2026-11-08T07:49:41.139Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T07:49:41.143Z] [2026-11-08T07:49:41.141Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T07:49:41.163Z] [2026-11-08T07:49:41.163Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T07:49:41.163Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T07:49:41.163Z] info    - Authentication is disabled
+[2026-11-08T07:49:41.163Z] info    - Not serving HTTPS
+[2026-11-08T07:49:41.163Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T07:49:41.409Z] [15:49:41]
+[2026-11-08T07:49:41.543Z] [15:49:41] StorageMainService: creating application shared storage
+[2026-11-08T07:49:41.545Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T07:49:41.547Z] [15:49:41] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-f4bd4345-31be-49dd-8290-8e30a202a714-sock)
+[2026-11-08T07:49:41.554Z] [15:49:41] Extension host agent started.
+[2026-11-08T07:49:41.565Z] [15:49:41] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[15:49:41] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T07:49:41.599Z] [15:49:41] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T07:49:42.604Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T07:49:42.605Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T07:49:42.617Z] [15:49:42] [127.0.0.1][8c3f43cd][ManagementConnection] New connection established.
+[2026-11-08T07:49:43.056Z] [15:49:43] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T07:49:43.226Z] [15:49:43] [127.0.0.1][e088ba3e][ExtensionHostConnection] New connection established.
+[2026-11-08T07:49:43.227Z] [15:49:43] [127.0.0.1][e088ba3e][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T07:49:43.251Z] [15:49:43] [127.0.0.1][e088ba3e][ExtensionHostConnection] <63660> Launched Extension Host Process.
+[2026-11-08T07:49:43.855Z] [15:49:43] [127.0.0.1][e088ba3e][ExtensionHostConnection] <63660> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T07:49:44.369Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-f4bd4345-31be-49dd-8290-8e30a202a714-sock
+[2026-11-08T07:49:44.373Z] [15:49:44] ServerAgentHostManager: agent host started
+[2026-11-08T07:49:44.374Z] [15:49:44] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-f4bd4345-31be-49dd-8290-8e30a202a714-sock
+[2026-11-08T07:55:58.953Z] [15:55:58] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2026-11-08T07:55:58.955Z] [15:55:58] [127.0.0.1][8c3f43cd][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T07:56:42.654Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T07:56:43.900Z] [2026-11-08T07:56:43.897Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T07:56:43.901Z] [2026-11-08T07:56:43.899Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T07:56:43.922Z] [2026-11-08T07:56:43.922Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T08:01:49.412Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T08:01:50.954Z] [2026-11-08T08:01:50.951Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T08:01:50.955Z] [2026-11-08T08:01:50.953Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T08:01:50.988Z] [2026-11-08T08:01:50.988Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T08:01:50.989Z] [2026-11-08T08:01:50.988Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T08:01:50.988Z] info    - Authentication is disabled
+[2026-11-08T08:01:50.988Z] info    - Not serving HTTPS
+[2026-11-08T08:01:50.988Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T08:01:51.450Z] [16:01:51]
+[2026-11-08T08:01:51.651Z] [16:01:51] StorageMainService: creating application shared storage
+[2026-11-08T08:01:51.654Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T08:01:51.655Z] [16:01:51] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-1f73b0c0-049e-4808-81e0-3185b31452a7-sock)
+[2026-11-08T08:01:51.663Z] [16:01:51] Extension host agent started.
+[2026-11-08T08:01:51.674Z] [16:01:51] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T08:01:51.676Z] [16:01:51] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T08:01:51.692Z] [16:01:51] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T08:01:53.002Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T08:01:53.003Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T08:01:53.021Z] [16:01:53] [127.0.0.1][bfdf1a22][ManagementConnection] New connection established.
+[2026-11-08T08:01:53.535Z] [16:01:53] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T08:01:53.719Z] [16:01:53] [127.0.0.1][a7ab4e54][ExtensionHostConnection] New connection established.
+[2026-11-08T08:01:53.720Z] [16:01:53] [127.0.0.1][a7ab4e54][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T08:01:53.739Z] [16:01:53] [127.0.0.1][a7ab4e54][ExtensionHostConnection] <338588> Launched Extension Host Process.
+[2026-11-08T08:01:54.513Z] [16:01:54] [127.0.0.1][a7ab4e54][ExtensionHostConnection] <338588> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T08:01:55.213Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-1f73b0c0-049e-4808-81e0-3185b31452a7-sock
+[2026-11-08T08:01:55.216Z] [16:01:55] ServerAgentHostManager: agent host started
+[2026-11-08T08:01:55.217Z] [16:01:55] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-1f73b0c0-049e-4808-81e0-3185b31452a7-sock
+[2026-11-08T08:08:27.760Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T08:08:28.814Z] [2026-11-08T08:08:28.811Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T08:08:28.815Z] [2026-11-08T08:08:28.813Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T08:08:28.835Z] [2026-11-08T08:08:28.834Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T08:08:28.835Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T08:08:28.835Z] info    - Authentication is disabled
+[2026-11-08T08:08:28.835Z] info    - Not serving HTTPS
+[2026-11-08T08:08:28.835Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T08:08:29.137Z] [16:08:29]
+[2026-11-08T08:08:29.271Z] [16:08:29] StorageMainService: creating application shared storage
+[2026-11-08T08:08:29.273Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T08:08:29.275Z] [16:08:29] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-cad0752d-5335-40e1-aa72-91389e28ffa4-sock)
+[2026-11-08T08:08:29.281Z] [16:08:29] Extension host agent started.
+[2026-11-08T08:08:29.288Z] [16:08:29] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[16:08:29] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T08:08:29.316Z] [16:08:29] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T08:08:30.253Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T08:08:30.254Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T08:08:30.277Z] [16:08:30] [127.0.0.1][78007061][ManagementConnection] New connection established.
+[2026-11-08T08:08:30.677Z] [16:08:30] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T08:08:30.845Z] [16:08:30] [127.0.0.1][7c81e7fc][ExtensionHostConnection] New connection established.
+[2026-11-08T08:08:30.847Z] [16:08:30] [127.0.0.1][7c81e7fc][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T08:08:30.891Z] [16:08:30] [127.0.0.1][7c81e7fc][ExtensionHostConnection] <30604> Launched Extension Host Process.
+[2026-11-08T08:08:31.403Z] [16:08:31] [127.0.0.1][7c81e7fc][ExtensionHostConnection] <30604> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T08:08:31.830Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-cad0752d-5335-40e1-aa72-91389e28ffa4-sock
+[2026-11-08T08:08:31.833Z] [16:08:31] ServerAgentHostManager: agent host started
+[2026-11-08T08:08:31.834Z] [16:08:31] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-cad0752d-5335-40e1-aa72-91389e28ffa4-sock
+[2026-11-08T08:13:00.923Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T08:13:02.059Z] [2026-11-08T08:13:02.056Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T08:13:02.060Z] [2026-11-08T08:13:02.058Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T08:13:02.080Z] [2026-11-08T08:13:02.079Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T08:13:02.080Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T08:13:02.080Z] info    - Authentication is disabled
+[2026-11-08T08:13:02.080Z] info    - Not serving HTTPS
+[2026-11-08T08:13:02.080Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T08:13:02.307Z] [16:13:02]
+[2026-11-08T08:13:02.455Z] [16:13:02] StorageMainService: creating application shared storage
+[2026-11-08T08:13:02.457Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T08:13:02.459Z] [16:13:02] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-a7d8eb27-8845-4873-b5ef-c98e7a8b4979-sock)
+[2026-11-08T08:13:02.466Z] [16:13:02] Extension host agent started.
+[2026-11-08T08:13:02.473Z] [16:13:02] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[16:13:02] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T08:13:02.487Z] [16:13:02] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T08:13:03.546Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T08:13:03.548Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T08:13:03.570Z] [16:13:03] [127.0.0.1][5d3f2037][ManagementConnection] New connection established.
+[2026-11-08T08:13:03.972Z] [16:13:03] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T08:13:04.145Z] [16:13:04] [127.0.0.1][45c2e268][ExtensionHostConnection] New connection established.
+[2026-11-08T08:13:04.146Z] [16:13:04] [127.0.0.1][45c2e268][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T08:13:04.161Z] [16:13:04] [127.0.0.1][45c2e268][ExtensionHostConnection] <337112> Launched Extension Host Process.
+[2026-11-08T08:13:04.804Z] [16:13:04] [127.0.0.1][45c2e268][ExtensionHostConnection] <337112> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T08:13:05.318Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-a7d8eb27-8845-4873-b5ef-c98e7a8b4979-sock
+[2026-11-08T08:13:05.322Z] [16:13:05] ServerAgentHostManager: agent host started
+[16:13:05] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-a7d8eb27-8845-4873-b5ef-c98e7a8b4979-sock
+[2026-11-08T08:13:23.635Z] (node:330296) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-11-08T08:13:23.639Z] [16:13:23] #1: https://open-vsx.org/vscode/gallery/extensionquery - error POST getaddrinfo ENOTFOUND open-vsx.org
+[2026-11-08T08:17:34.336Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T08:17:35.699Z] [2026-11-08T08:17:35.695Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T08:17:35.700Z] [2026-11-08T08:17:35.698Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T08:17:35.721Z] [2026-11-08T08:17:35.720Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T08:33:56.785Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T08:33:58.548Z] [2026-11-08T08:33:58.545Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T08:33:58.550Z] [2026-11-08T08:33:58.547Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T08:33:58.574Z] [2026-11-08T08:33:58.573Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T08:33:58.574Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T08:33:58.574Z] info    - Authentication is disabled
+[2026-11-08T08:33:58.574Z] info    - Not serving HTTPS
+[2026-11-08T08:33:58.574Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T08:33:58.778Z] [16:33:58]
+[2026-11-08T08:33:59.057Z] [16:33:59] StorageMainService: creating application shared storage
+[2026-11-08T08:33:59.060Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T08:33:59.063Z] [16:33:59] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-fc68e897-2f47-485d-8fdc-1cb38dc1d55c-sock)
+[2026-11-08T08:33:59.074Z] [16:33:59] Extension host agent started.
+[2026-11-08T08:33:59.084Z] [16:33:59] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T08:33:59.085Z] [16:33:59] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T08:33:59.102Z] [16:33:59] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T08:34:00.429Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T08:34:00.430Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T08:34:00.461Z] [16:34:00] [127.0.0.1][84569ad3][ManagementConnection] New connection established.
+[2026-11-08T08:34:01.069Z] [16:34:01] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T08:34:01.255Z] [16:34:01] [127.0.0.1][ee37c2bf][ExtensionHostConnection] New connection established.
+[2026-11-08T08:34:01.256Z] [16:34:01] [127.0.0.1][ee37c2bf][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T08:34:01.288Z] [16:34:01] [127.0.0.1][ee37c2bf][ExtensionHostConnection] <330872> Launched Extension Host Process.
+[2026-11-08T08:34:02.122Z] [16:34:02] [127.0.0.1][ee37c2bf][ExtensionHostConnection] <330872> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T08:34:02.820Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-fc68e897-2f47-485d-8fdc-1cb38dc1d55c-sock
+[2026-11-08T08:34:02.824Z] [16:34:02] ServerAgentHostManager: agent host started
+[2026-11-08T08:34:02.825Z] [16:34:02] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-fc68e897-2f47-485d-8fdc-1cb38dc1d55c-sock
+[2026-11-08T08:39:01.502Z] [16:39:01] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2026-11-08T08:39:01.504Z] [16:39:01] [127.0.0.1][84569ad3][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T09:23:03.446Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T09:23:05.243Z] [2026-11-08T09:23:05.238Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T09:23:05.244Z] [2026-11-08T09:23:05.243Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T09:23:05.266Z] [2026-11-08T09:23:05.266Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T09:23:05.268Z] [2026-11-08T09:23:05.266Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T09:23:05.266Z] info    - Authentication is disabled
+[2026-11-08T09:23:05.266Z] info    - Not serving HTTPS
+[2026-11-08T09:23:05.266Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T09:23:05.423Z] [17:23:05]
+[2026-11-08T09:23:05.528Z] [17:23:05] StorageMainService: creating application shared storage
+[2026-11-08T09:23:05.530Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T09:23:05.532Z] [17:23:05] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-80802ed8-e14f-4aa3-a274-c0a8dc2fd8d5-sock)
+[2026-11-08T09:23:05.539Z] [17:23:05] Extension host agent started.
+[2026-11-08T09:23:05.552Z] [17:23:05] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[17:23:05] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T09:23:05.571Z] [17:23:05] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T09:23:06.854Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T09:23:06.856Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T09:23:06.875Z] [17:23:06] [127.0.0.1][bd585d46][ManagementConnection] New connection established.
+[2026-11-08T09:23:07.243Z] [17:23:07] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T09:23:07.348Z] [17:23:07] [127.0.0.1][de2068ca][ExtensionHostConnection] New connection established.
+[2026-11-08T09:23:07.349Z] [17:23:07] [127.0.0.1][de2068ca][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T09:23:07.356Z] [17:23:07] [127.0.0.1][de2068ca][ExtensionHostConnection] <33496> Launched Extension Host Process.
+[2026-11-08T09:23:07.778Z] [17:23:07] [127.0.0.1][de2068ca][ExtensionHostConnection] <33496> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T09:23:08.108Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-80802ed8-e14f-4aa3-a274-c0a8dc2fd8d5-sock
+[2026-11-08T09:23:08.111Z] [17:23:08] ServerAgentHostManager: agent host started
+[2026-11-08T09:23:08.112Z] [17:23:08] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-80802ed8-e14f-4aa3-a274-c0a8dc2fd8d5-sock
+[2026-11-08T09:25:29.572Z] [17:25:29] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2026-11-08T09:25:29.574Z] [17:25:29] [127.0.0.1][bd585d46][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T09:25:56.909Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T09:25:57.664Z] [2026-11-08T09:25:57.662Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T09:25:57.665Z] [2026-11-08T09:25:57.663Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T09:25:57.680Z] [2026-11-08T09:25:57.680Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T09:54:04.263Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T09:54:05.099Z] [2026-11-08T09:54:05.097Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T09:54:05.100Z] [2026-11-08T09:54:05.098Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T09:54:05.115Z] [2026-11-08T09:54:05.115Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T09:57:17.873Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T09:57:18.513Z] [2026-11-08T09:57:18.511Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T09:57:18.515Z] [2026-11-08T09:57:18.513Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T09:57:18.530Z] [2026-11-08T09:57:18.530Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T09:57:18.530Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T09:57:18.530Z] info    - Authentication is disabled
+[2026-11-08T09:57:18.530Z] info    - Not serving HTTPS
+[2026-11-08T09:57:18.530Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T09:57:19.215Z] [17:57:19]
+[2026-11-08T09:57:19.298Z] [17:57:19] StorageMainService: creating application shared storage
+[2026-11-08T09:57:19.299Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T09:57:19.300Z] [17:57:19] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-e7c697d9-c98d-4fc5-b48b-388e6d255c88-sock)
+[2026-11-08T09:57:19.305Z] [17:57:19] Extension host agent started.
+[2026-11-08T09:57:19.309Z] [17:57:19] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T09:57:19.310Z] [17:57:19] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T09:57:19.333Z] [17:57:19] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T09:57:20.062Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T09:57:20.063Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T09:57:20.075Z] [17:57:20] [127.0.0.1][7808bf87][ManagementConnection] New connection established.
+[2026-11-08T09:57:20.380Z] [17:57:20] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T09:57:20.479Z] [17:57:20] [127.0.0.1][9f13d0f1][ExtensionHostConnection] New connection established.
+[2026-11-08T09:57:20.479Z] [17:57:20] [127.0.0.1][9f13d0f1][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T09:57:20.491Z] [17:57:20] [127.0.0.1][9f13d0f1][ExtensionHostConnection] <9764> Launched Extension Host Process.
+[2026-11-08T09:57:20.822Z] [17:57:20] [127.0.0.1][9f13d0f1][ExtensionHostConnection] <9764> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T09:57:21.068Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-e7c697d9-c98d-4fc5-b48b-388e6d255c88-sock
+[2026-11-08T09:57:21.069Z] [17:57:21] ServerAgentHostManager: agent host started
+[2026-11-08T09:57:21.070Z] [17:57:21] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-e7c697d9-c98d-4fc5-b48b-388e6d255c88-sock
+[2026-11-08T10:00:42.634Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:00:43.331Z] [2026-11-08T10:00:43.328Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:00:43.330Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:00:43.347Z] [2026-11-08T10:00:43.346Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T10:07:38.694Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:07:39.418Z] [2026-11-08T10:07:39.417Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:07:39.418Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:07:39.435Z] [2026-11-08T10:07:39.435Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:07:39.435Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:07:39.435Z] info    - Authentication is disabled
+[2026-11-08T10:07:39.435Z] info    - Not serving HTTPS
+[2026-11-08T10:07:39.435Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:07:40.078Z] [18:07:40]
+[2026-11-08T10:07:40.167Z] [18:07:40] StorageMainService: creating application shared storage
+[2026-11-08T10:07:40.169Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:07:40.170Z] [18:07:40] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-cc6134d9-1f5d-4e44-90e3-dce9c0439117-sock)
+[2026-11-08T10:07:40.175Z] [18:07:40] Extension host agent started.
+[2026-11-08T10:07:40.182Z] [18:07:40] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[18:07:40] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:07:40.207Z] [18:07:40] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:07:40.965Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:07:40.966Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:07:40.974Z] [18:07:40] [127.0.0.1][75928e8e][ManagementConnection] New connection established.
+[2026-11-08T10:07:41.292Z] [18:07:41] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:07:41.392Z] [18:07:41] [127.0.0.1][15fb49b5][ExtensionHostConnection] New connection established.
+[2026-11-08T10:07:41.393Z] [18:07:41] [127.0.0.1][15fb49b5][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:07:41.408Z] [18:07:41] [127.0.0.1][15fb49b5][ExtensionHostConnection] <81320> Launched Extension Host Process.
+[2026-11-08T10:07:41.758Z] [18:07:41] [127.0.0.1][15fb49b5][ExtensionHostConnection] <81320> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:07:42.040Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-cc6134d9-1f5d-4e44-90e3-dce9c0439117-sock
+[2026-11-08T10:07:42.048Z] [18:07:42] ServerAgentHostManager: agent host started
+[2026-11-08T10:07:42.048Z] [18:07:42] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-cc6134d9-1f5d-4e44-90e3-dce9c0439117-sock
+[2026-11-08T10:10:47.628Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:10:48.581Z] [2026-11-08T10:10:48.578Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:10:48.582Z] [2026-11-08T10:10:48.580Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:10:48.603Z] [2026-11-08T10:10:48.602Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T10:15:03.718Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:15:04.366Z] [2026-11-08T10:15:04.364Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:15:04.366Z] [2026-11-08T10:15:04.366Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:15:04.383Z] [2026-11-08T10:15:04.383Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:15:04.383Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:15:04.383Z] info    - Authentication is disabled
+[2026-11-08T10:15:04.383Z] info    - Not serving HTTPS
+[2026-11-08T10:15:04.383Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:15:05.082Z] [18:15:05]
+[2026-11-08T10:15:05.168Z] [18:15:05] StorageMainService: creating application shared storage
+[2026-11-08T10:15:05.170Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:15:05.171Z] [18:15:05] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-06d9717f-7df9-4b61-aecd-692adc93639f-sock)
+[2026-11-08T10:15:05.176Z] [18:15:05] Extension host agent started.
+[2026-11-08T10:15:05.180Z] [18:15:05] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[18:15:05] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:15:05.205Z] [18:15:05] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:15:05.942Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:15:05.943Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:15:05.960Z] [18:15:05] [127.0.0.1][3557a6bc][ManagementConnection] New connection established.
+[2026-11-08T10:15:06.261Z] [18:15:06] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:15:06.357Z] [18:15:06] [127.0.0.1][12c17b60][ExtensionHostConnection] New connection established.
+[2026-11-08T10:15:06.357Z] [18:15:06] [127.0.0.1][12c17b60][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:15:06.372Z] [18:15:06] [127.0.0.1][12c17b60][ExtensionHostConnection] <332172> Launched Extension Host Process.
+[2026-11-08T10:15:06.697Z] [18:15:06] [127.0.0.1][12c17b60][ExtensionHostConnection] <332172> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:15:06.937Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-06d9717f-7df9-4b61-aecd-692adc93639f-sock
+[2026-11-08T10:15:06.939Z] [18:15:06] ServerAgentHostManager: agent host started
+[2026-11-08T10:15:06.939Z] [18:15:06] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-06d9717f-7df9-4b61-aecd-692adc93639f-sock
+[2026-11-08T10:19:02.889Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:19:03.777Z] [2026-11-08T10:19:03.775Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:19:03.777Z] [2026-11-08T10:19:03.777Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:19:03.798Z] [2026-11-08T10:19:03.798Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T10:22:00.535Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:22:01.185Z] [2026-11-08T10:22:01.183Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:22:01.185Z] [2026-11-08T10:22:01.184Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:22:01.202Z] [2026-11-08T10:22:01.201Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:22:01.202Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:22:01.202Z] info    - Authentication is disabled
+[2026-11-08T10:22:01.202Z] info    - Not serving HTTPS
+[2026-11-08T10:22:01.202Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:22:01.886Z] [18:22:01]
+[2026-11-08T10:22:01.970Z] [18:22:01] StorageMainService: creating application shared storage
+[2026-11-08T10:22:01.973Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:22:01.973Z] [18:22:01] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-c8315520-e29b-4e7c-b484-528081b36ac2-sock)
+[2026-11-08T10:22:01.978Z] [18:22:01] Extension host agent started.
+[2026-11-08T10:22:01.982Z] [18:22:01] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[18:22:01] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:22:02.005Z] [18:22:02] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:22:02.741Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:22:02.741Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:22:02.763Z] [18:22:02] [127.0.0.1][bbbc43ee][ManagementConnection] New connection established.
+[2026-11-08T10:22:03.089Z] [18:22:03] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:22:03.191Z] [18:22:03] [127.0.0.1][9f5d3221][ExtensionHostConnection] New connection established.
+[2026-11-08T10:22:03.192Z] [18:22:03] [127.0.0.1][9f5d3221][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:22:03.207Z] [18:22:03] [127.0.0.1][9f5d3221][ExtensionHostConnection] <333292> Launched Extension Host Process.
+[2026-11-08T10:22:03.542Z] [18:22:03] [127.0.0.1][9f5d3221][ExtensionHostConnection] <333292> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:22:03.829Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-c8315520-e29b-4e7c-b484-528081b36ac2-sock
+[18:22:03] ServerAgentHostManager: agent host started
+[2026-11-08T10:22:03.829Z] [18:22:03] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-c8315520-e29b-4e7c-b484-528081b36ac2-sock
+[2026-11-08T10:26:53.261Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:26:53.981Z] [2026-11-08T10:26:53.979Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:26:53.981Z] [2026-11-08T10:26:53.980Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:26:53.999Z] [2026-11-08T10:26:53.998Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:26:53.998Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:26:53.998Z] info    - Authentication is disabled
+[2026-11-08T10:26:53.998Z] info    - Not serving HTTPS
+[2026-11-08T10:26:53.999Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:26:54.613Z] [18:26:54]
+[2026-11-08T10:26:54.704Z] [18:26:54] StorageMainService: creating application shared storage
+[2026-11-08T10:26:54.707Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:26:54.708Z] [18:26:54] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-f1706b21-a43d-4c11-8ee1-2f8d593d528e-sock)
+[2026-11-08T10:26:54.713Z] [18:26:54] Extension host agent started.
+[2026-11-08T10:26:54.717Z] [18:26:54] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T10:26:54.717Z] [18:26:54] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:26:54.741Z] [18:26:54] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:26:55.493Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:26:55.494Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:26:55.504Z] [18:26:55] [127.0.0.1][fd8e7b80][ManagementConnection] New connection established.
+[2026-11-08T10:26:55.838Z] [18:26:55] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:26:55.985Z] [18:26:55] [127.0.0.1][3fad1a4d][ExtensionHostConnection] New connection established.
+[2026-11-08T10:26:55.986Z] [18:26:55] [127.0.0.1][3fad1a4d][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:26:55.996Z] [18:26:55] [127.0.0.1][3fad1a4d][ExtensionHostConnection] <305860> Launched Extension Host Process.
+[2026-11-08T10:26:56.319Z] [18:26:56] [127.0.0.1][3fad1a4d][ExtensionHostConnection] <305860> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:26:56.564Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-f1706b21-a43d-4c11-8ee1-2f8d593d528e-sock
+[2026-11-08T10:26:56.575Z] [18:26:56] ServerAgentHostManager: agent host started
+[2026-11-08T10:26:56.575Z] [18:26:56] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-f1706b21-a43d-4c11-8ee1-2f8d593d528e-sock
+[2026-11-08T10:29:09.963Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:29:10.848Z] [2026-11-08T10:29:10.846Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:29:10.850Z] [2026-11-08T10:29:10.847Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:29:10.868Z] [2026-11-08T10:29:10.868Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T10:33:44.617Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:33:45.324Z] [2026-11-08T10:33:45.322Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:33:45.324Z] [2026-11-08T10:33:45.323Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:33:45.343Z] [2026-11-08T10:33:45.342Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:33:45.343Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:33:45.343Z] info    - Authentication is disabled
+[2026-11-08T10:33:45.343Z] info    - Not serving HTTPS
+[2026-11-08T10:33:45.343Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:33:45.993Z] [18:33:45]
+[2026-11-08T10:33:46.075Z] [18:33:46] StorageMainService: creating application shared storage
+[2026-11-08T10:33:46.077Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:33:46.079Z] [18:33:46] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-d032eecf-cde9-4cfb-ab19-27e1a1a863e8-sock)
+[2026-11-08T10:33:46.084Z] [18:33:46] Extension host agent started.
+[2026-11-08T10:33:46.091Z] [18:33:46] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[18:33:46] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:33:46.115Z] [18:33:46] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:33:46.875Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:33:46.875Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:33:46.888Z] [18:33:46] [127.0.0.1][c441d314][ManagementConnection] New connection established.
+[2026-11-08T10:33:47.213Z] [18:33:47] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:33:47.311Z] [18:33:47] [127.0.0.1][d8eda377][ExtensionHostConnection] New connection established.
+[2026-11-08T10:33:47.313Z] [18:33:47] [127.0.0.1][d8eda377][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:33:47.321Z] [18:33:47] [127.0.0.1][d8eda377][ExtensionHostConnection] <3328> Launched Extension Host Process.
+[2026-11-08T10:33:47.662Z] [18:33:47] [127.0.0.1][d8eda377][ExtensionHostConnection] <3328> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:33:47.938Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-d032eecf-cde9-4cfb-ab19-27e1a1a863e8-sock
+[2026-11-08T10:33:47.940Z] [18:33:47] ServerAgentHostManager: agent host started
+[2026-11-08T10:33:47.941Z] [18:33:47] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-d032eecf-cde9-4cfb-ab19-27e1a1a863e8-sock
+[2026-11-08T10:37:23.493Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:37:24.269Z] [2026-11-08T10:37:24.266Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:37:24.267Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:37:24.285Z] [2026-11-08T10:37:24.284Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T10:44:44.737Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:44:45.493Z] [2026-11-08T10:44:45.491Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:44:45.494Z] [2026-11-08T10:44:45.492Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:44:45.511Z] [2026-11-08T10:44:45.509Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:44:45.509Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:44:45.509Z] info    - Authentication is disabled
+[2026-11-08T10:44:45.509Z] info    - Not serving HTTPS
+[2026-11-08T10:44:45.509Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:44:46.100Z] [18:44:46]
+[2026-11-08T10:44:46.185Z] [18:44:46] StorageMainService: creating application shared storage
+[2026-11-08T10:44:46.187Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:44:46.188Z] [18:44:46] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-a6787ab9-8263-45c6-87af-5071f3bbc0da-sock)
+[2026-11-08T10:44:46.193Z] [18:44:46] Extension host agent started.
+[2026-11-08T10:44:46.201Z] [18:44:46] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[18:44:46] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:44:46.228Z] [18:44:46] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:44:47.154Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:44:47.155Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:44:47.168Z] [18:44:47] [127.0.0.1][ecdbe736][ManagementConnection] New connection established.
+[2026-11-08T10:44:47.689Z] [18:44:47] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:44:47.873Z] [18:44:47] [127.0.0.1][afec11b7][ExtensionHostConnection] New connection established.
+[2026-11-08T10:44:47.874Z] [18:44:47] [127.0.0.1][afec11b7][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:44:47.887Z] [18:44:47] [127.0.0.1][afec11b7][ExtensionHostConnection] <113420> Launched Extension Host Process.
+[2026-11-08T10:44:48.491Z] [18:44:48] [127.0.0.1][afec11b7][ExtensionHostConnection] <113420> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:44:48.978Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-a6787ab9-8263-45c6-87af-5071f3bbc0da-sock
+[2026-11-08T10:44:48.982Z] [18:44:48] ServerAgentHostManager: agent host started
+[2026-11-08T10:44:48.984Z] [18:44:48] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-a6787ab9-8263-45c6-87af-5071f3bbc0da-sock
+[2026-11-08T10:49:26.433Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:49:27.139Z] [2026-11-08T10:49:27.136Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:49:27.141Z] [2026-11-08T10:49:27.138Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:49:27.156Z] [2026-11-08T10:49:27.154Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T10:52:32.481Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:52:33.124Z] [2026-11-08T10:52:33.122Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:52:33.125Z] [2026-11-08T10:52:33.123Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:52:33.142Z] [2026-11-08T10:52:33.141Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T10:52:33.141Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T10:52:33.141Z] info    - Authentication is disabled
+[2026-11-08T10:52:33.141Z] info    - Not serving HTTPS
+[2026-11-08T10:52:33.141Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T10:52:33.836Z] [18:52:33]
+[2026-11-08T10:52:33.916Z] [18:52:33] StorageMainService: creating application shared storage
+[2026-11-08T10:52:33.918Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T10:52:33.919Z] [18:52:33] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-02f9cfe7-71a0-4eb4-b69b-3cc191d92fa2-sock)
+[2026-11-08T10:52:33.924Z] [18:52:33] Extension host agent started.
+[2026-11-08T10:52:33.931Z] [18:52:33] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[18:52:33] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T10:52:33.955Z] [18:52:33] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T10:52:34.671Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T10:52:34.671Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T10:52:34.689Z] [18:52:34] [127.0.0.1][41eb9c45][ManagementConnection] New connection established.
+[2026-11-08T10:52:35.005Z] [18:52:35] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T10:52:35.110Z] [18:52:35] [127.0.0.1][8a2b1751][ExtensionHostConnection] New connection established.
+[2026-11-08T10:52:35.111Z] [18:52:35] [127.0.0.1][8a2b1751][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T10:52:35.120Z] [18:52:35] [127.0.0.1][8a2b1751][ExtensionHostConnection] <336800> Launched Extension Host Process.
+[2026-11-08T10:52:35.459Z] [18:52:35] [127.0.0.1][8a2b1751][ExtensionHostConnection] <336800> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T10:52:35.730Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-02f9cfe7-71a0-4eb4-b69b-3cc191d92fa2-sock
+[2026-11-08T10:52:35.732Z] [18:52:35] ServerAgentHostManager: agent host started
+[2026-11-08T10:52:35.733Z] [18:52:35] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-02f9cfe7-71a0-4eb4-b69b-3cc191d92fa2-sock
+[2026-11-08T10:58:38.777Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T10:58:39.443Z] [2026-11-08T10:58:39.440Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T10:58:39.444Z] [2026-11-08T10:58:39.443Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T10:58:39.464Z] [2026-11-08T10:58:39.464Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T11:02:37.096Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:02:37.742Z] [2026-11-08T11:02:37.740Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:02:37.743Z] [2026-11-08T11:02:37.741Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:02:37.759Z] [2026-11-08T11:02:37.758Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:02:37.758Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:02:37.758Z] info    - Authentication is disabled
+[2026-11-08T11:02:37.758Z] info    - Not serving HTTPS
+[2026-11-08T11:02:37.758Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:02:38.452Z] [19:02:38]
+[2026-11-08T11:02:38.535Z] [19:02:38] StorageMainService: creating application shared storage
+[2026-11-08T11:02:38.537Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:02:38.538Z] [19:02:38] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-bebb01b1-9f74-48e7-a6e6-0829f633201d-sock)
+[2026-11-08T11:02:38.543Z] [19:02:38] Extension host agent started.
+[2026-11-08T11:02:38.550Z] [19:02:38] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:02:38] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:02:38.575Z] [19:02:38] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:02:39.292Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:02:39.293Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:02:39.315Z] [19:02:39] [127.0.0.1][36b57c90][ManagementConnection] New connection established.
+[2026-11-08T11:02:39.630Z] [19:02:39] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:02:39.749Z] [19:02:39] [127.0.0.1][dff2b616][ExtensionHostConnection] New connection established.
+[2026-11-08T11:02:39.749Z] [19:02:39] [127.0.0.1][dff2b616][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:02:39.771Z] [19:02:39] [127.0.0.1][dff2b616][ExtensionHostConnection] <35092> Launched Extension Host Process.
+[2026-11-08T11:02:40.112Z] [19:02:40] [127.0.0.1][dff2b616][ExtensionHostConnection] <35092> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:02:40.336Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-bebb01b1-9f74-48e7-a6e6-0829f633201d-sock
+[2026-11-08T11:02:40.338Z] [19:02:40] ServerAgentHostManager: agent host started
+[2026-11-08T11:02:40.339Z] [19:02:40] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-bebb01b1-9f74-48e7-a6e6-0829f633201d-sock
+[2026-11-08T11:14:53.372Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:14:54.043Z] [2026-11-08T11:14:54.041Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:14:54.044Z] [2026-11-08T11:14:54.043Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:14:54.061Z] [2026-11-08T11:14:54.060Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:14:54.060Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:14:54.060Z] info    - Authentication is disabled
+[2026-11-08T11:14:54.060Z] info    - Not serving HTTPS
+[2026-11-08T11:14:54.061Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:14:54.730Z] [19:14:54]
+[2026-11-08T11:14:54.817Z] [19:14:54] StorageMainService: creating application shared storage
+[2026-11-08T11:14:54.819Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:14:54.820Z] [19:14:54] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-109220a1-29da-4635-b838-8aba7b470128-sock)
+[2026-11-08T11:14:54.824Z] [19:14:54] Extension host agent started.
+[2026-11-08T11:14:54.829Z] [19:14:54] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:14:54] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:14:54.839Z] [19:14:54] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:14:55.601Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:14:55.602Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:14:55.608Z] [19:14:55] [127.0.0.1][143a8356][ManagementConnection] New connection established.
+[2026-11-08T11:14:55.937Z] [19:14:55] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:14:56.097Z] [19:14:56] [127.0.0.1][ca07e108][ExtensionHostConnection] New connection established.
+[2026-11-08T11:14:56.098Z] [19:14:56] [127.0.0.1][ca07e108][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:14:56.109Z] [19:14:56] [127.0.0.1][ca07e108][ExtensionHostConnection] <338800> Launched Extension Host Process.
+[2026-11-08T11:14:56.437Z] [19:14:56] [127.0.0.1][ca07e108][ExtensionHostConnection] <338800> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:14:56.661Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-109220a1-29da-4635-b838-8aba7b470128-sock
+[2026-11-08T11:14:56.662Z] [19:14:56] ServerAgentHostManager: agent host started
+[2026-11-08T11:14:56.663Z] [19:14:56] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-109220a1-29da-4635-b838-8aba7b470128-sock
+[2026-11-08T11:18:49.125Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:18:49.768Z] [2026-11-08T11:18:49.767Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:18:49.769Z] [2026-11-08T11:18:49.768Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:18:49.784Z] [2026-11-08T11:18:49.784Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:18:49.784Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:18:49.784Z] info    - Authentication is disabled
+[2026-11-08T11:18:49.784Z] info    - Not serving HTTPS
+[2026-11-08T11:18:49.784Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:18:50.486Z] [19:18:50]
+[2026-11-08T11:18:50.570Z] [19:18:50] StorageMainService: creating application shared storage
+[2026-11-08T11:18:50.572Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:18:50.573Z] [19:18:50] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-aa04c8a1-34eb-4b53-a45c-f613007656b1-sock)
+[2026-11-08T11:18:50.579Z] [19:18:50] Extension host agent started.
+[2026-11-08T11:18:50.582Z] [19:18:50] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:18:50] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:18:50.592Z] [19:18:50] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:18:51.327Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:18:51.327Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:18:51.346Z] [19:18:51] [127.0.0.1][93426e79][ManagementConnection] New connection established.
+[2026-11-08T11:18:51.677Z] [19:18:51] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:18:51.783Z] [19:18:51] [127.0.0.1][bb42ca0f][ExtensionHostConnection] New connection established.
+[2026-11-08T11:18:51.784Z] [19:18:51] [127.0.0.1][bb42ca0f][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:18:51.795Z] [19:18:51] [127.0.0.1][bb42ca0f][ExtensionHostConnection] <337516> Launched Extension Host Process.
+[2026-11-08T11:18:52.143Z] [19:18:52] [127.0.0.1][bb42ca0f][ExtensionHostConnection] <337516> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:18:52.392Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-aa04c8a1-34eb-4b53-a45c-f613007656b1-sock
+[2026-11-08T11:18:52.393Z] [19:18:52] ServerAgentHostManager: agent host started
+[19:18:52] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-aa04c8a1-34eb-4b53-a45c-f613007656b1-sock
+[2026-11-08T11:21:21.151Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:21:21.796Z] [2026-11-08T11:21:21.794Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:21:21.796Z] [2026-11-08T11:21:21.796Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:21:21.814Z] [2026-11-08T11:21:21.814Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:21:21.814Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:21:21.814Z] info    - Authentication is disabled
+[2026-11-08T11:21:21.814Z] info    - Not serving HTTPS
+[2026-11-08T11:21:21.814Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:21:22.507Z] [19:21:22]
+[2026-11-08T11:21:22.588Z] [19:21:22] StorageMainService: creating application shared storage
+[2026-11-08T11:21:22.592Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[19:21:22] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-3e8ed781-35c5-40ee-b370-9ac2d77e0930-sock)
+[2026-11-08T11:21:22.597Z] [19:21:22] Extension host agent started.
+[2026-11-08T11:21:22.603Z] [19:21:22] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:21:22] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:21:22.613Z] [19:21:22] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:21:23.358Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:21:23.358Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:21:23.377Z] [19:21:23] [127.0.0.1][275ab040][ManagementConnection] New connection established.
+[2026-11-08T11:21:23.721Z] [19:21:23] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:21:23.882Z] [19:21:23] [127.0.0.1][aaddf7f7][ExtensionHostConnection] New connection established.
+[2026-11-08T11:21:23.883Z] [19:21:23] [127.0.0.1][aaddf7f7][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:21:23.895Z] [19:21:23] [127.0.0.1][aaddf7f7][ExtensionHostConnection] <332196> Launched Extension Host Process.
+[2026-11-08T11:21:24.228Z] [19:21:24] [127.0.0.1][aaddf7f7][ExtensionHostConnection] <332196> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:21:24.432Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-3e8ed781-35c5-40ee-b370-9ac2d77e0930-sock
+[2026-11-08T11:21:24.434Z] [19:21:24] ServerAgentHostManager: agent host started
+[2026-11-08T11:21:24.435Z] [19:21:24] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-3e8ed781-35c5-40ee-b370-9ac2d77e0930-sock
+[2026-11-08T11:22:37.966Z] 端口 9123 已有实例，直接复用
+[2026-11-08T11:23:42.487Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:23:43.189Z] [2026-11-08T11:23:43.186Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:23:43.189Z] [2026-11-08T11:23:43.188Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:23:43.208Z] [2026-11-08T11:23:43.207Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:23:43.207Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:23:43.207Z] info    - Authentication is disabled
+[2026-11-08T11:23:43.207Z] info    - Not serving HTTPS
+[2026-11-08T11:23:43.207Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:23:43.845Z] [19:23:43]
+[2026-11-08T11:23:43.937Z] [19:23:43] StorageMainService: creating application shared storage
+[2026-11-08T11:23:43.939Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:23:43.940Z] [19:23:43] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-7d8cd400-380f-4ab3-b8e1-0711238361f0-sock)
+[2026-11-08T11:23:43.946Z] [19:23:43] Extension host agent started.
+[2026-11-08T11:23:43.954Z] [19:23:43] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T11:23:43.955Z] [19:23:43] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:23:43.963Z] [19:23:43] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:23:44.781Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:23:44.782Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:23:44.799Z] [19:23:44] [127.0.0.1][d2ebfc94][ManagementConnection] New connection established.
+[2026-11-08T11:23:45.107Z] [19:23:45] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:23:45.256Z] [19:23:45] [127.0.0.1][0a3f25dc][ExtensionHostConnection] New connection established.
+[2026-11-08T11:23:45.257Z] [19:23:45] [127.0.0.1][0a3f25dc][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:23:45.280Z] [19:23:45] [127.0.0.1][0a3f25dc][ExtensionHostConnection] <42680> Launched Extension Host Process.
+[2026-11-08T11:23:45.659Z] [19:23:45] [127.0.0.1][0a3f25dc][ExtensionHostConnection] <42680> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:23:45.895Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-7d8cd400-380f-4ab3-b8e1-0711238361f0-sock
+[2026-11-08T11:23:45.897Z] [19:23:45] ServerAgentHostManager: agent host started
+[2026-11-08T11:23:45.898Z] [19:23:45] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-7d8cd400-380f-4ab3-b8e1-0711238361f0-sock
+[2026-11-08T11:25:50.023Z] 端口 9123 已有实例，直接复用
+[2026-11-08T11:27:01.007Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:27:01.687Z] [2026-11-08T11:27:01.685Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:27:01.687Z] [2026-11-08T11:27:01.686Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:27:01.704Z] [2026-11-08T11:27:01.703Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:27:01.703Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:27:01.703Z] info    - Authentication is disabled
+[2026-11-08T11:27:01.703Z] info    - Not serving HTTPS
+[2026-11-08T11:27:01.703Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:27:02.361Z] [19:27:02]
+[2026-11-08T11:27:02.447Z] [19:27:02] StorageMainService: creating application shared storage
+[2026-11-08T11:27:02.449Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:27:02.450Z] [19:27:02] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-bb9d0a87-93fa-4a41-8d04-1d29bb8331b5-sock)
+[2026-11-08T11:27:02.455Z] [19:27:02] Extension host agent started.
+[2026-11-08T11:27:02.462Z] [19:27:02] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:27:02] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:27:02.472Z] [19:27:02] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:27:03.222Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:27:03.223Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:27:03.246Z] [19:27:03] [127.0.0.1][acb39e4e][ManagementConnection] New connection established.
+[2026-11-08T11:27:03.574Z] [19:27:03] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:27:03.690Z] [19:27:03] [127.0.0.1][58eb6393][ExtensionHostConnection] New connection established.
+[2026-11-08T11:27:03.691Z] [19:27:03] [127.0.0.1][58eb6393][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:27:03.710Z] [19:27:03] [127.0.0.1][58eb6393][ExtensionHostConnection] <303928> Launched Extension Host Process.
+[2026-11-08T11:27:04.057Z] [19:27:04] [127.0.0.1][58eb6393][ExtensionHostConnection] <303928> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:27:04.322Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-bb9d0a87-93fa-4a41-8d04-1d29bb8331b5-sock
+[2026-11-08T11:27:04.333Z] [19:27:04] ServerAgentHostManager: agent host started
+[2026-11-08T11:27:04.334Z] [19:27:04] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-bb9d0a87-93fa-4a41-8d04-1d29bb8331b5-sock
+[2026-11-08T11:34:47.229Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:34:48.030Z] [2026-11-08T11:34:48.028Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:34:48.031Z] [2026-11-08T11:34:48.030Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:34:48.055Z] [2026-11-08T11:34:48.055Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T11:39:29.199Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:39:29.908Z] [2026-11-08T11:39:29.904Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:39:29.909Z] [2026-11-08T11:39:29.906Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:39:29.926Z] [2026-11-08T11:39:29.924Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:39:29.924Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:39:29.925Z] info    - Authentication is disabled
+[2026-11-08T11:39:29.925Z] info    - Not serving HTTPS
+[2026-11-08T11:39:29.925Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:39:30.557Z] [19:39:30]
+[2026-11-08T11:39:30.645Z] [19:39:30] StorageMainService: creating application shared storage
+[2026-11-08T11:39:30.647Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:39:30.648Z] [19:39:30] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-80fe194f-14fa-40e3-bc1c-b527b29b77c9-sock)
+[2026-11-08T11:39:30.655Z] [19:39:30] Extension host agent started.
+[2026-11-08T11:39:30.661Z] [19:39:30] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:39:30] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:39:30.681Z] [19:39:30] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:39:31.585Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:39:31.585Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:39:31.606Z] [19:39:31] [127.0.0.1][fc5ef891][ManagementConnection] New connection established.
+[2026-11-08T11:39:31.984Z] [19:39:31] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:39:32.118Z] [19:39:32] [127.0.0.1][9cdd3676][ExtensionHostConnection] New connection established.
+[2026-11-08T11:39:32.119Z] [19:39:32] [127.0.0.1][9cdd3676][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:39:32.131Z] [19:39:32] [127.0.0.1][9cdd3676][ExtensionHostConnection] <337516> Launched Extension Host Process.
+[2026-11-08T11:39:32.537Z] [19:39:32] [127.0.0.1][9cdd3676][ExtensionHostConnection] <337516> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:39:32.827Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-80fe194f-14fa-40e3-bc1c-b527b29b77c9-sock
+[2026-11-08T11:39:32.829Z] [19:39:32] ServerAgentHostManager: agent host started
+[2026-11-08T11:39:32.830Z] [19:39:32] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-80fe194f-14fa-40e3-bc1c-b527b29b77c9-sock
+[2026-11-08T11:41:23.855Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:41:24.578Z] [2026-11-08T11:41:24.575Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:41:24.579Z] [2026-11-08T11:41:24.577Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:41:24.596Z] [2026-11-08T11:41:24.595Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T11:43:38.549Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:43:39.245Z] [2026-11-08T11:43:39.242Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:43:39.245Z] [2026-11-08T11:43:39.244Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:43:39.262Z] [2026-11-08T11:43:39.261Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:43:39.261Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:43:39.261Z] info    - Authentication is disabled
+[2026-11-08T11:43:39.261Z] info    - Not serving HTTPS
+[2026-11-08T11:43:39.261Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:43:39.919Z] [19:43:39]
+[2026-11-08T11:43:40.005Z] [19:43:40] StorageMainService: creating application shared storage
+[2026-11-08T11:43:40.007Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:43:40.009Z] [19:43:40] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-c35b2257-6c8f-4322-bca8-f368ef5605ef-sock)
+[2026-11-08T11:43:40.013Z] [19:43:40] Extension host agent started.
+[2026-11-08T11:43:40.018Z] [19:43:40] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:43:40] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:43:40.043Z] [19:43:40] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:43:40.804Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:43:40.804Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:43:40.813Z] [19:43:40] [127.0.0.1][3e1fa5f4][ManagementConnection] New connection established.
+[2026-11-08T11:43:41.181Z] [19:43:41] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:43:41.299Z] [19:43:41] [127.0.0.1][da2006e0][ExtensionHostConnection] New connection established.
+[2026-11-08T11:43:41.299Z] [19:43:41] [127.0.0.1][da2006e0][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:43:41.308Z] [19:43:41] [127.0.0.1][da2006e0][ExtensionHostConnection] <337916> Launched Extension Host Process.
+[2026-11-08T11:43:41.669Z] [19:43:41] [127.0.0.1][da2006e0][ExtensionHostConnection] <337916> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:43:41.960Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-c35b2257-6c8f-4322-bca8-f368ef5605ef-sock
+[2026-11-08T11:43:41.962Z] [19:43:41] ServerAgentHostManager: agent host started
+[19:43:41] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-c35b2257-6c8f-4322-bca8-f368ef5605ef-sock
+[2026-11-08T11:45:59.600Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:46:00.356Z] [2026-11-08T11:46:00.352Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:46:00.357Z] [2026-11-08T11:46:00.354Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:46:00.377Z] [2026-11-08T11:46:00.376Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T11:49:28.121Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:49:28.795Z] [2026-11-08T11:49:28.794Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:49:28.796Z] [2026-11-08T11:49:28.795Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:49:28.812Z] [2026-11-08T11:49:28.812Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:49:28.812Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:49:28.812Z] info    - Authentication is disabled
+[2026-11-08T11:49:28.812Z] info    - Not serving HTTPS
+[2026-11-08T11:49:28.812Z] [2026-11-08T11:49:28.812Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:49:29.481Z] [19:49:29]
+[2026-11-08T11:49:29.567Z] [19:49:29] StorageMainService: creating application shared storage
+[2026-11-08T11:49:29.569Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:49:29.570Z] [19:49:29] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-c732a9a0-231a-4602-9b09-9874fcf8f45f-sock)
+[2026-11-08T11:49:29.575Z] [19:49:29] Extension host agent started.
+[2026-11-08T11:49:29.583Z] [19:49:29] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:49:29] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:49:29.611Z] [19:49:29] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:49:30.382Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:49:30.382Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:49:30.396Z] [19:49:30] [127.0.0.1][dc282c42][ManagementConnection] New connection established.
+[2026-11-08T11:49:30.715Z] [19:49:30] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:49:30.844Z] [19:49:30] [127.0.0.1][09e165e0][ExtensionHostConnection] New connection established.
+[2026-11-08T11:49:30.845Z] [19:49:30] [127.0.0.1][09e165e0][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:49:30.854Z] [19:49:30] [127.0.0.1][09e165e0][ExtensionHostConnection] <339936> Launched Extension Host Process.
+[2026-11-08T11:49:31.251Z] [19:49:31] [127.0.0.1][09e165e0][ExtensionHostConnection] <339936> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:49:31.513Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-c732a9a0-231a-4602-9b09-9874fcf8f45f-sock
+[2026-11-08T11:49:31.515Z] [19:49:31] ServerAgentHostManager: agent host started
+[2026-11-08T11:49:31.516Z] [19:49:31] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-c732a9a0-231a-4602-9b09-9874fcf8f45f-sock
+[2026-11-08T11:50:55.422Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:50:56.166Z] [2026-11-08T11:50:56.163Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:50:56.167Z] [2026-11-08T11:50:56.165Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:50:56.187Z] [2026-11-08T11:50:56.186Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T11:52:37.941Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:52:38.667Z] [2026-11-08T11:52:38.665Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:52:38.668Z] [2026-11-08T11:52:38.666Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:52:38.688Z] [2026-11-08T11:52:38.687Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:52:38.687Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:52:38.687Z] info    - Authentication is disabled
+[2026-11-08T11:52:38.687Z] info    - Not serving HTTPS
+[2026-11-08T11:52:38.687Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:52:39.311Z] [19:52:39]
+[2026-11-08T11:52:39.394Z] [19:52:39] StorageMainService: creating application shared storage
+[2026-11-08T11:52:39.396Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:52:39.398Z] [19:52:39] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-6363f3f2-0053-4844-b878-11e38ed0c440-sock)
+[2026-11-08T11:52:39.402Z] [19:52:39] Extension host agent started.
+[2026-11-08T11:52:39.410Z] [19:52:39] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:52:39] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:52:39.435Z] [19:52:39] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:52:40.231Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:52:40.244Z] [19:52:40] [127.0.0.1][c936928b][ManagementConnection] New connection established.
+[2026-11-08T11:52:40.575Z] [19:52:40] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:52:40.694Z] [19:52:40] [127.0.0.1][9a89665d][ExtensionHostConnection] New connection established.
+[2026-11-08T11:52:40.695Z] [19:52:40] [127.0.0.1][9a89665d][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:52:40.704Z] [19:52:40] [127.0.0.1][9a89665d][ExtensionHostConnection] <335192> Launched Extension Host Process.
+[2026-11-08T11:52:41.136Z] [19:52:41] [127.0.0.1][9a89665d][ExtensionHostConnection] <335192> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:52:41.491Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-6363f3f2-0053-4844-b878-11e38ed0c440-sock
+[19:52:41] ServerAgentHostManager: agent host started
+[2026-11-08T11:52:41.492Z] [19:52:41] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-6363f3f2-0053-4844-b878-11e38ed0c440-sock
+[2026-11-08T11:54:13.728Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:54:14.566Z] [2026-11-08T11:54:14.564Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:54:14.568Z] [2026-11-08T11:54:14.566Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:54:14.590Z] [2026-11-08T11:54:14.589Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:54:14.590Z] [2026-11-08T11:54:14.589Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:54:14.589Z] info    - Authentication is disabled
+[2026-11-08T11:54:14.589Z] info    - Not serving HTTPS
+[2026-11-08T11:54:14.589Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:54:14.814Z] [19:54:14]
+[2026-11-08T11:54:14.929Z] [19:54:14] StorageMainService: creating application shared storage
+[2026-11-08T11:54:14.932Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:54:14.934Z] [19:54:14] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-7b0463c9-dc15-4a90-9e94-1b29ca22bdb4-sock)
+[2026-11-08T11:54:14.941Z] [19:54:14] Extension host agent started.
+[2026-11-08T11:54:14.950Z] [19:54:14] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T11:54:14.951Z] [19:54:14] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:54:14.978Z] [19:54:14] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:54:15.709Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:54:15.709Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:54:15.721Z] [19:54:15] [127.0.0.1][85bcbbe7][ManagementConnection] New connection established.
+[2026-11-08T11:54:16.060Z] [19:54:16] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:54:16.172Z] [19:54:16] [127.0.0.1][19aa67e0][ExtensionHostConnection] New connection established.
+[2026-11-08T11:54:16.173Z] [19:54:16] [127.0.0.1][19aa67e0][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:54:16.181Z] [19:54:16] [127.0.0.1][19aa67e0][ExtensionHostConnection] <339012> Launched Extension Host Process.
+[2026-11-08T11:54:16.548Z] [19:54:16] [127.0.0.1][19aa67e0][ExtensionHostConnection] <339012> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:54:16.815Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-7b0463c9-dc15-4a90-9e94-1b29ca22bdb4-sock
+[2026-11-08T11:54:16.817Z] [19:54:16] ServerAgentHostManager: agent host started
+[2026-11-08T11:54:16.818Z] [19:54:16] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-7b0463c9-dc15-4a90-9e94-1b29ca22bdb4-sock
+[2026-11-08T11:57:12.992Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:57:13.730Z] [2026-11-08T11:57:13.727Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:57:13.730Z] [2026-11-08T11:57:13.728Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:57:13.749Z] [2026-11-08T11:57:13.748Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T11:59:28.355Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T11:59:29.047Z] [2026-11-08T11:59:29.044Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T11:59:29.048Z] [2026-11-08T11:59:29.046Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T11:59:29.064Z] [2026-11-08T11:59:29.063Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T11:59:29.063Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T11:59:29.063Z] info    - Authentication is disabled
+[2026-11-08T11:59:29.063Z] info    - Not serving HTTPS
+[2026-11-08T11:59:29.063Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T11:59:29.706Z] [19:59:29]
+[2026-11-08T11:59:29.793Z] [19:59:29] StorageMainService: creating application shared storage
+[2026-11-08T11:59:29.795Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T11:59:29.796Z] [19:59:29] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-842b66eb-20d4-40ef-a5cc-8a7cddee7012-sock)
+[2026-11-08T11:59:29.801Z] [19:59:29] Extension host agent started.
+[2026-11-08T11:59:29.807Z] [19:59:29] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[19:59:29] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T11:59:29.831Z] [19:59:29] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T11:59:30.607Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T11:59:30.608Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T11:59:30.618Z] [19:59:30] [127.0.0.1][9b5893f0][ManagementConnection] New connection established.
+[2026-11-08T11:59:30.932Z] [19:59:30] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T11:59:31.073Z] [19:59:31] [127.0.0.1][24725d9b][ExtensionHostConnection] New connection established.
+[2026-11-08T11:59:31.074Z] [19:59:31] [127.0.0.1][24725d9b][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T11:59:31.103Z] [19:59:31] [127.0.0.1][24725d9b][ExtensionHostConnection] <303300> Launched Extension Host Process.
+[2026-11-08T11:59:31.509Z] [19:59:31] [127.0.0.1][24725d9b][ExtensionHostConnection] <303300> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T11:59:31.827Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-842b66eb-20d4-40ef-a5cc-8a7cddee7012-sock
+[2026-11-08T11:59:31.830Z] [19:59:31] ServerAgentHostManager: agent host started
+[2026-11-08T11:59:31.831Z] [19:59:31] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-842b66eb-20d4-40ef-a5cc-8a7cddee7012-sock
+[2026-11-08T12:00:56.643Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:00:57.342Z] [2026-11-08T12:00:57.340Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:00:57.343Z] [2026-11-08T12:00:57.342Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:00:57.360Z] [2026-11-08T12:00:57.360Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:00:57.361Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:00:57.361Z] info    - Authentication is disabled
+[2026-11-08T12:00:57.361Z] info    - Not serving HTTPS
+[2026-11-08T12:00:57.361Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:00:58.008Z] [20:00:58]
+[2026-11-08T12:00:58.102Z] [20:00:58] StorageMainService: creating application shared storage
+[2026-11-08T12:00:58.105Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:00:58.106Z] [20:00:58] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-30bc2437-4dec-41f2-a2c8-8c4927f7a6db-sock)
+[2026-11-08T12:00:58.111Z] [20:00:58] Extension host agent started.
+[2026-11-08T12:00:58.116Z] [20:00:58] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[20:00:58] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:00:58.143Z] [20:00:58] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:00:58.910Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:00:58.911Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:00:58.923Z] [20:00:58] [127.0.0.1][a8feee96][ManagementConnection] New connection established.
+[2026-11-08T12:00:59.299Z] [20:00:59] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:00:59.455Z] [20:00:59] [127.0.0.1][0f77eb69][ExtensionHostConnection] New connection established.
+[2026-11-08T12:00:59.456Z] [20:00:59] [127.0.0.1][0f77eb69][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:00:59.467Z] [20:00:59] [127.0.0.1][0f77eb69][ExtensionHostConnection] <332792> Launched Extension Host Process.
+[2026-11-08T12:00:59.851Z] [20:00:59] [127.0.0.1][0f77eb69][ExtensionHostConnection] <332792> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:01:00.165Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-30bc2437-4dec-41f2-a2c8-8c4927f7a6db-sock
+[2026-11-08T12:01:00.166Z] [20:01:00] ServerAgentHostManager: agent host started
+[20:01:00] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-30bc2437-4dec-41f2-a2c8-8c4927f7a6db-sock
+[2026-11-08T12:02:13.635Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:02:14.348Z] [2026-11-08T12:02:14.345Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:02:14.347Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:02:14.369Z] [2026-11-08T12:02:14.369Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T12:03:43.391Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:03:44.076Z] [2026-11-08T12:03:44.073Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:03:44.075Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:03:44.092Z] [2026-11-08T12:03:44.091Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:03:44.091Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:03:44.091Z] info    - Authentication is disabled
+[2026-11-08T12:03:44.091Z] info    - Not serving HTTPS
+[2026-11-08T12:03:44.091Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:03:44.746Z] [20:03:44]
+[2026-11-08T12:03:44.831Z] [20:03:44] StorageMainService: creating application shared storage
+[2026-11-08T12:03:44.832Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:03:44.834Z] [20:03:44] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-b111306f-133b-41e6-96ae-f9b0ac330fbe-sock)
+[2026-11-08T12:03:44.839Z] [20:03:44] Extension host agent started.
+[2026-11-08T12:03:44.843Z] [20:03:44] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[20:03:44] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:03:44.869Z] [20:03:44] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:03:45.673Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:03:45.675Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:03:45.697Z] [20:03:45] [127.0.0.1][407a736b][ManagementConnection] New connection established.
+[2026-11-08T12:03:46.022Z] [20:03:46] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:03:46.175Z] [20:03:46] [127.0.0.1][a944e4e6][ExtensionHostConnection] New connection established.
+[2026-11-08T12:03:46.176Z] [20:03:46] [127.0.0.1][a944e4e6][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:03:46.187Z] [20:03:46] [127.0.0.1][a944e4e6][ExtensionHostConnection] <87524> Launched Extension Host Process.
+[2026-11-08T12:03:46.556Z] [20:03:46] [127.0.0.1][a944e4e6][ExtensionHostConnection] <87524> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:03:46.842Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-b111306f-133b-41e6-96ae-f9b0ac330fbe-sock
+[2026-11-08T12:03:46.844Z] [20:03:46] ServerAgentHostManager: agent host started
+[2026-11-08T12:03:46.845Z] [20:03:46] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-b111306f-133b-41e6-96ae-f9b0ac330fbe-sock
+[2026-11-08T12:05:05.399Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:05:06.152Z] [2026-11-08T12:05:06.150Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:05:06.153Z] [2026-11-08T12:05:06.151Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:05:06.169Z] [2026-11-08T12:05:06.169Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T12:22:23.411Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:22:24.198Z] [2026-11-08T12:22:24.196Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:22:24.199Z] [2026-11-08T12:22:24.197Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:22:24.213Z] [2026-11-08T12:22:24.213Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T12:23:50.411Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:23:51.129Z] [2026-11-08T12:23:51.127Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:23:51.130Z] [2026-11-08T12:23:51.128Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:23:51.149Z] [2026-11-08T12:23:51.148Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:23:51.148Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:23:51.148Z] info    - Authentication is disabled
+[2026-11-08T12:23:51.148Z] info    - Not serving HTTPS
+[2026-11-08T12:23:51.148Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:23:51.765Z] [20:23:51]
+[2026-11-08T12:23:51.873Z] [20:23:51] StorageMainService: creating application shared storage
+[2026-11-08T12:23:51.875Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:23:51.876Z] [20:23:51] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-5b8707d1-2156-4ba2-b034-2f904d447ce3-sock)
+[2026-11-08T12:23:51.881Z] [20:23:51] Extension host agent started.
+[2026-11-08T12:23:51.886Z] [20:23:51] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T12:23:51.888Z] [20:23:51] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:23:51.916Z] [20:23:51] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:23:52.651Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:23:52.652Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:23:52.662Z] [20:23:52] [127.0.0.1][036d90e2][ManagementConnection] New connection established.
+[2026-11-08T12:23:52.986Z] [20:23:52] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:23:53.087Z] [20:23:53] [127.0.0.1][4d4dded0][ExtensionHostConnection] New connection established.
+[2026-11-08T12:23:53.089Z] [20:23:53] [127.0.0.1][4d4dded0][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:23:53.099Z] [20:23:53] [127.0.0.1][4d4dded0][ExtensionHostConnection] <335120> Launched Extension Host Process.
+[2026-11-08T12:23:53.454Z] [20:23:53] [127.0.0.1][4d4dded0][ExtensionHostConnection] <335120> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:23:53.769Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-5b8707d1-2156-4ba2-b034-2f904d447ce3-sock
+[2026-11-08T12:23:53.770Z] [20:23:53] ServerAgentHostManager: agent host started
+[20:23:53] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-5b8707d1-2156-4ba2-b034-2f904d447ce3-sock
+[2026-11-08T12:25:12.450Z] [20:25:12] [127.0.0.1][036d90e2][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T12:26:14.306Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:26:15.059Z] [2026-11-08T12:26:15.057Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:26:15.060Z] [2026-11-08T12:26:15.058Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:26:15.076Z] [2026-11-08T12:26:15.075Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T12:28:25.932Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:28:26.627Z] [2026-11-08T12:28:26.625Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:28:26.628Z] [2026-11-08T12:28:26.627Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:28:26.644Z] [2026-11-08T12:28:26.644Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:28:26.644Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:28:26.644Z] info    - Authentication is disabled
+[2026-11-08T12:28:26.644Z] info    - Not serving HTTPS
+[2026-11-08T12:28:26.644Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:28:27.298Z] [20:28:27]
+[2026-11-08T12:28:27.378Z] [20:28:27] StorageMainService: creating application shared storage
+[2026-11-08T12:28:27.380Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:28:27.382Z] [20:28:27] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-126b9b0d-1aa6-40be-936e-b0758c3819e8-sock)
+[2026-11-08T12:28:27.387Z] [20:28:27] Extension host agent started.
+[2026-11-08T12:28:27.394Z] [20:28:27] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[20:28:27] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:28:27.420Z] [20:28:27] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:28:28.147Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:28:28.148Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:28:28.169Z] [20:28:28] [127.0.0.1][4c883d13][ManagementConnection] New connection established.
+[2026-11-08T12:28:28.503Z] [20:28:28] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:28:28.603Z] [20:28:28] [127.0.0.1][9e769fba][ExtensionHostConnection] New connection established.
+[2026-11-08T12:28:28.604Z] [20:28:28] [127.0.0.1][9e769fba][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:28:28.613Z] [20:28:28] [127.0.0.1][9e769fba][ExtensionHostConnection] <22152> Launched Extension Host Process.
+[2026-11-08T12:28:28.953Z] [20:28:28] [127.0.0.1][9e769fba][ExtensionHostConnection] <22152> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:28:29.213Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-126b9b0d-1aa6-40be-936e-b0758c3819e8-sock
+[2026-11-08T12:28:29.215Z] [20:28:29] ServerAgentHostManager: agent host started
+[2026-11-08T12:28:29.216Z] [20:28:29] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-126b9b0d-1aa6-40be-936e-b0758c3819e8-sock
+[2026-11-08T12:29:13.570Z] [20:29:13] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2026-11-08T12:29:13.570Z] [20:29:13] [127.0.0.1][4c883d13][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T12:29:13.672Z] [20:29:13] [127.0.0.1][4c883d13][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2026-11-08T12:29:13.673Z] [20:29:13] [127.0.0.1][4c883d13][ManagementConnection] The client has reconnected.
+[2026-11-08T12:29:13.677Z] [20:29:13] [127.0.0.1][9e769fba][ExtensionHostConnection] The client has reconnected.
+[2026-11-08T12:29:29.238Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:29:29.980Z] [2026-11-08T12:29:29.978Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:29:29.982Z] [2026-11-08T12:29:29.979Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:29:29.995Z] [2026-11-08T12:29:29.995Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T12:31:51.446Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:31:52.150Z] [2026-11-08T12:31:52.148Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:31:52.151Z] [2026-11-08T12:31:52.149Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:31:52.168Z] [2026-11-08T12:31:52.167Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:31:52.167Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:31:52.167Z] info    - Authentication is disabled
+[2026-11-08T12:31:52.167Z] info    - Not serving HTTPS
+[2026-11-08T12:31:52.167Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:31:52.807Z] [20:31:52]
+[2026-11-08T12:31:52.893Z] [20:31:52] StorageMainService: creating application shared storage
+[2026-11-08T12:31:52.895Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:31:52.896Z] [20:31:52] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-15e1f77f-0dce-4036-b56e-f6f9146b1ccd-sock)
+[2026-11-08T12:31:52.902Z] [20:31:52] Extension host agent started.
+[2026-11-08T12:31:52.909Z] [20:31:52] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T12:31:52.910Z] [20:31:52] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:31:52.923Z] [20:31:52] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:31:53.649Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:31:53.649Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:31:53.658Z] [20:31:53] [127.0.0.1][5d81478a][ManagementConnection] New connection established.
+[2026-11-08T12:31:53.966Z] [20:31:53] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:31:54.098Z] [20:31:54] [127.0.0.1][499c77e1][ExtensionHostConnection] New connection established.
+[2026-11-08T12:31:54.099Z] [20:31:54] [127.0.0.1][499c77e1][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:31:54.127Z] [20:31:54] [127.0.0.1][499c77e1][ExtensionHostConnection] <335492> Launched Extension Host Process.
+[2026-11-08T12:31:54.467Z] [20:31:54] [127.0.0.1][499c77e1][ExtensionHostConnection] <335492> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:31:54.729Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-15e1f77f-0dce-4036-b56e-f6f9146b1ccd-sock
+[2026-11-08T12:31:54.732Z] [20:31:54] ServerAgentHostManager: agent host started
+[2026-11-08T12:31:54.733Z] [20:31:54] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-15e1f77f-0dce-4036-b56e-f6f9146b1ccd-sock
+[2026-11-08T12:33:04.689Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:33:05.453Z] [2026-11-08T12:33:05.450Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:33:05.454Z] [2026-11-08T12:33:05.452Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:33:05.470Z] [2026-11-08T12:33:05.469Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:33:05.469Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:33:05.469Z] info    - Authentication is disabled
+[2026-11-08T12:33:05.469Z] info    - Not serving HTTPS
+[2026-11-08T12:33:05.469Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:33:06.041Z] [20:33:06]
+[2026-11-08T12:33:06.128Z] [20:33:06] StorageMainService: creating application shared storage
+[2026-11-08T12:33:06.130Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:33:06.131Z] [20:33:06] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-f99b3590-7aab-48cc-98c9-af75735b6c25-sock)
+[2026-11-08T12:33:06.136Z] [20:33:06] Extension host agent started.
+[2026-11-08T12:33:06.143Z] [20:33:06] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[20:33:06] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:33:06.171Z] [20:33:06] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:33:06.885Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:33:06.886Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:33:06.899Z] [20:33:06] [127.0.0.1][f18155e5][ManagementConnection] New connection established.
+[2026-11-08T12:33:07.225Z] [20:33:07] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:33:07.333Z] [20:33:07] [127.0.0.1][9e7fe239][ExtensionHostConnection] New connection established.
+[2026-11-08T12:33:07.334Z] [20:33:07] [127.0.0.1][9e7fe239][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:33:07.343Z] [20:33:07] [127.0.0.1][9e7fe239][ExtensionHostConnection] <341540> Launched Extension Host Process.
+[2026-11-08T12:33:07.707Z] [20:33:07] [127.0.0.1][9e7fe239][ExtensionHostConnection] <341540> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:33:07.978Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-f99b3590-7aab-48cc-98c9-af75735b6c25-sock
+[2026-11-08T12:33:07.981Z] [20:33:07] ServerAgentHostManager: agent host started
+[2026-11-08T12:33:07.982Z] [20:33:07] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-f99b3590-7aab-48cc-98c9-af75735b6c25-sock
+[2026-11-08T12:36:03.532Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:36:04.245Z] [2026-11-08T12:36:04.242Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:36:04.244Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:36:04.264Z] [2026-11-08T12:36:04.263Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:36:04.263Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:36:04.263Z] info    - Authentication is disabled
+[2026-11-08T12:36:04.263Z] info    - Not serving HTTPS
+[2026-11-08T12:36:04.264Z] [2026-11-08T12:36:04.263Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:36:04.885Z] [20:36:04]
+[2026-11-08T12:36:04.976Z] [20:36:04] StorageMainService: creating application shared storage
+[2026-11-08T12:36:04.978Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:36:04.980Z] [20:36:04] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-9614fc81-7b8d-46a2-a5c9-3eabb0724953-sock)
+[2026-11-08T12:36:04.985Z] [20:36:04] Extension host agent started.
+[2026-11-08T12:36:04.990Z] [20:36:04] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[20:36:04] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:36:05.019Z] [20:36:05] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:36:05.757Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T12:36:05.758Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T12:36:05.781Z] [20:36:05] [127.0.0.1][774abf1a][ManagementConnection] New connection established.
+[2026-11-08T12:36:06.085Z] [20:36:06] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T12:36:06.246Z] [20:36:06] [127.0.0.1][6a362c4c][ExtensionHostConnection] New connection established.
+[2026-11-08T12:36:06.247Z] [20:36:06] [127.0.0.1][6a362c4c][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T12:36:06.258Z] [20:36:06] [127.0.0.1][6a362c4c][ExtensionHostConnection] <21180> Launched Extension Host Process.
+[2026-11-08T12:36:06.616Z] [20:36:06] [127.0.0.1][6a362c4c][ExtensionHostConnection] <21180> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T12:36:06.847Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-9614fc81-7b8d-46a2-a5c9-3eabb0724953-sock
+[2026-11-08T12:36:06.849Z] [20:36:06] ServerAgentHostManager: agent host started
+[2026-11-08T12:36:06.850Z] [20:36:06] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-9614fc81-7b8d-46a2-a5c9-3eabb0724953-sock
+[2026-11-08T12:56:49.684Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:56:50.418Z] [2026-11-08T12:56:50.416Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:56:50.419Z] [2026-11-08T12:56:50.418Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:56:50.435Z] [2026-11-08T12:56:50.435Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T12:56:50.435Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T12:56:50.435Z] info    - Authentication is disabled
+[2026-11-08T12:56:50.436Z] info    - Not serving HTTPS
+[2026-11-08T12:56:50.436Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T12:56:51.033Z] [20:56:51]
+[2026-11-08T12:56:51.123Z] [20:56:51] StorageMainService: creating application shared storage
+[2026-11-08T12:56:51.125Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T12:56:51.126Z] [20:56:51] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-d6a387fb-d928-4510-bb35-dd7b430febd1-sock)
+[2026-11-08T12:56:51.133Z] [20:56:51] Extension host agent started.
+[2026-11-08T12:56:51.141Z] [20:56:51] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[20:56:51] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T12:56:51.152Z] [20:56:51] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T12:58:38.043Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T12:58:38.868Z] [2026-11-08T12:58:38.866Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T12:58:38.868Z] [2026-11-08T12:58:38.867Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T12:58:38.886Z] [2026-11-08T12:58:38.886Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:01:51.274Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:01:52.129Z] [2026-11-08T13:01:52.126Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:01:52.129Z] [2026-11-08T13:01:52.127Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:01:52.147Z] [2026-11-08T13:01:52.146Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:04:03.433Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:04:04.186Z] [2026-11-08T13:04:04.184Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:04:04.187Z] [2026-11-08T13:04:04.185Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:04:04.204Z] [2026-11-08T13:04:04.204Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:09:14.977Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:09:15.781Z] [2026-11-08T13:09:15.778Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:09:15.782Z] [2026-11-08T13:09:15.780Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:09:15.797Z] [2026-11-08T13:09:15.796Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:30:29.970Z] 端口 9123 已有实例，直接复用
+[2026-11-08T13:32:28.300Z] 端口 9123 已有实例，直接复用
+[2026-11-08T13:34:14.681Z] 端口 9123 已有实例，直接复用
+[2026-11-08T13:36:21.403Z] 端口 9123 已有实例，直接复用
+[2026-11-08T13:38:25.009Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:38:25.739Z] [2026-11-08T13:38:25.735Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:38:25.740Z] [2026-11-08T13:38:25.737Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:38:25.764Z] [2026-11-08T13:38:25.762Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T13:38:25.765Z] [2026-11-08T13:38:25.762Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T13:38:25.762Z] info    - Authentication is disabled
+[2026-11-08T13:38:25.762Z] info    - Not serving HTTPS
+[2026-11-08T13:38:25.762Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T13:38:26.387Z] [21:38:26]
+[2026-11-08T13:38:26.471Z] [21:38:26] StorageMainService: creating application shared storage
+[2026-11-08T13:38:26.475Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T13:38:26.477Z] [21:38:26] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-45cdd266-9bca-400a-9cd2-d173af7fcc71-sock)
+[2026-11-08T13:38:26.484Z] [21:38:26] Extension host agent started.
+[2026-11-08T13:38:26.492Z] [21:38:26] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[21:38:26] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T13:38:26.503Z] [21:38:26] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T13:43:14.344Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:43:15.093Z] [2026-11-08T13:43:15.090Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:43:15.094Z] [2026-11-08T13:43:15.092Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:43:15.110Z] [2026-11-08T13:43:15.110Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:46:02.817Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:46:03.551Z] [2026-11-08T13:46:03.549Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:46:03.552Z] [2026-11-08T13:46:03.550Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:46:03.567Z] [2026-11-08T13:46:03.566Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:47:50.528Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T13:47:51.344Z] [2026-11-08T13:47:51.342Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T13:47:51.346Z] [2026-11-08T13:47:51.343Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T13:47:51.367Z] [2026-11-08T13:47:51.366Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T13:58:19.202Z] 端口 9123 已有实例，直接复用
+[2026-11-08T14:13:34.085Z] 端口 9123 已有实例，直接复用
+[2026-11-08T14:15:39.453Z] 端口 9123 已有实例，直接复用
+[2026-11-08T14:17:41.260Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:17:45.430Z] [2026-11-08T14:17:45.426Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:17:45.431Z] [2026-11-08T14:17:45.431Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:17:45.450Z] [2026-11-08T14:17:45.451Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T14:17:45.451Z] [2026-11-08T14:17:45.451Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T14:17:45.451Z] info    - Authentication is disabled
+[2026-11-08T14:17:45.451Z] info    - Not serving HTTPS
+[2026-11-08T14:17:45.451Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T14:17:46.626Z] [22:17:46]
+[2026-11-08T14:17:47.311Z] [22:17:47] StorageMainService: creating application shared storage
+[2026-11-08T14:17:47.313Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T14:17:47.316Z] [22:17:47] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-8cd0555a-8737-43e9-9dff-cd60e30c8f6c-sock)
+[2026-11-08T14:17:47.336Z] [22:17:47] Extension host agent started.
+[2026-11-08T14:17:47.393Z] [22:17:47] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[22:17:47] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T14:17:47.408Z] [22:17:47] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T14:18:01.604Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T14:18:01.606Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T14:18:01.627Z] [22:18:01] [127.0.0.1][85a44a97][ManagementConnection] New connection established.
+[2026-11-08T14:18:02.006Z] [22:18:02] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T14:18:02.183Z] [22:18:02] [127.0.0.1][92ea0c11][ExtensionHostConnection] New connection established.
+[2026-11-08T14:18:02.184Z] [22:18:02] [127.0.0.1][92ea0c11][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T14:18:02.205Z] [22:18:02] [127.0.0.1][92ea0c11][ExtensionHostConnection] <6916> Launched Extension Host Process.
+[2026-11-08T14:18:05.303Z] [22:18:05] [127.0.0.1][92ea0c11][ExtensionHostConnection] <6916> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T14:18:05.664Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-8cd0555a-8737-43e9-9dff-cd60e30c8f6c-sock
+[22:18:05] ServerAgentHostManager: agent host started
+[22:18:05] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-8cd0555a-8737-43e9-9dff-cd60e30c8f6c-sock
+[2026-11-08T14:19:05.703Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:19:06.461Z] [2026-11-08T14:19:06.459Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:19:06.462Z] [2026-11-08T14:19:06.461Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:19:06.480Z] [2026-11-08T14:19:06.480Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T14:19:06.480Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T14:19:06.480Z] info    - Authentication is disabled
+[2026-11-08T14:19:06.480Z] info    - Not serving HTTPS
+[2026-11-08T14:19:06.480Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T14:19:07.109Z] [22:19:07]
+[2026-11-08T14:19:07.154Z] [22:19:07] StorageMainService: creating application shared storage
+[2026-11-08T14:19:07.156Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T14:19:07.158Z] [22:19:07] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-e98a26c3-513f-414e-9b08-69db679a4ca4-sock)
+[2026-11-08T14:19:07.162Z] [22:19:07] Extension host agent started.
+[2026-11-08T14:19:07.167Z] [22:19:07] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[22:19:07] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T14:19:07.177Z] [22:19:07] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T14:33:49.206Z] 端口 9123 已有实例，直接复用
+[2026-11-08T14:35:03.640Z] 端口 9123 已有实例，直接复用
+[2026-11-08T14:35:32.719Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:35:33.481Z] [2026-11-08T14:35:33.479Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:35:33.482Z] [2026-11-08T14:35:33.481Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:35:33.498Z] [2026-11-08T14:35:33.498Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T14:35:33.498Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T14:35:33.498Z] info    - Authentication is disabled
+[2026-11-08T14:35:33.498Z] info    - Not serving HTTPS
+[2026-11-08T14:35:33.498Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T14:35:34.070Z] [22:35:34]
+[2026-11-08T14:35:34.182Z] [22:35:34] StorageMainService: creating application shared storage
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[22:35:34] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock)
+[22:35:34] Extension host agent started.
+[2026-11-08T14:35:34.259Z] [22:35:34] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[22:35:34] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[22:35:34] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T14:35:35.169Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T14:35:35.171Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T14:35:35.189Z] [22:35:35] [127.0.0.1][cee60f1e][ManagementConnection] New connection established.
+[2026-11-08T14:35:35.511Z] [22:35:35] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T14:35:35.728Z] [22:35:35] [127.0.0.1][fc5e77d2][ExtensionHostConnection] New connection established.
+[2026-11-08T14:35:35.729Z] [22:35:35] [127.0.0.1][fc5e77d2][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T14:35:35.741Z] [22:35:35] [127.0.0.1][fc5e77d2][ExtensionHostConnection] <342392> Launched Extension Host Process.
+[2026-11-08T14:35:36.287Z] [22:35:36] [127.0.0.1][fc5e77d2][ExtensionHostConnection] <342392> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T14:35:36.519Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock
+[2026-11-08T14:35:36.522Z] [22:35:36] ServerAgentHostManager: agent host started
+[2026-11-08T14:35:36.523Z] [22:35:36] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock
+[2026-11-08T14:36:13.383Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-08T14:36:13.384Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-08T14:36:13.399Z] [22:36:13] [127.0.0.1][abb19fd0][ManagementConnection] New connection established.
+[2026-11-08T14:36:13.986Z] [22:36:13] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-08T14:36:13.991Z] [22:36:13] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock
+[2026-11-08T14:36:14.151Z] [22:36:14] [127.0.0.1][abbfdec6][ExtensionHostConnection] New connection established.
+[22:36:14] [127.0.0.1][abbfdec6][ExtensionHostConnection] Starting extension host process...
+[2026-11-08T14:36:14.160Z] [22:36:14] [127.0.0.1][abbfdec6][ExtensionHostConnection] <25832> Launched Extension Host Process.
+[2026-11-08T14:36:14.493Z] [22:36:14] [127.0.0.1][abbfdec6][ExtensionHostConnection] <25832> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-08T14:36:20.872Z] [22:36:20] [127.0.0.1][cee60f1e][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-08T14:37:09.495Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:37:10.265Z] [2026-11-08T14:37:10.263Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:37:10.266Z] [2026-11-08T14:37:10.264Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:37:10.286Z] [2026-11-08T14:37:10.286Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123
+[2026-11-08T14:38:21.989Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:38:22.716Z] [2026-11-08T14:38:22.714Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:38:22.716Z] [2026-11-08T14:38:22.716Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:38:22.797Z] [2026-11-08T14:38:22.735Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T14:38:22.735Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T14:38:22.735Z] info    - Authentication is disabled
+[2026-11-08T14:38:22.735Z] info    - Not serving HTTPS
+[2026-11-08T14:38:22.735Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T14:38:23.413Z] [22:38:23]
+[2026-11-08T14:38:23.487Z] [22:38:23] StorageMainService: creating application shared storage
+[reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[22:38:23] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-4ea31ca9-3dc1-469e-a6be-2e0f302d8314-sock)
+[22:38:23] Extension host agent started.
+[22:38:23] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[22:38:23] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[22:38:23] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T14:40:47.995Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:40:48.739Z] [2026-11-08T14:40:48.737Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:40:48.740Z] [2026-11-08T14:40:48.739Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:40:48.758Z] [2026-11-08T14:40:48.757Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T14:40:48.757Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T14:40:48.758Z] info    - Authentication is disabled
+[2026-11-08T14:40:48.758Z] info    - Not serving HTTPS
+[2026-11-08T14:40:48.758Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T14:40:49.426Z] [22:40:49]
+[2026-11-08T14:40:49.451Z] [22:40:49] StorageMainService: creating application shared storage
+[2026-11-08T14:40:49.453Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T14:40:49.455Z] [22:40:49] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-c7507c6e-96e4-44b9-8d8f-5ac4d8d1c809-sock)
+[2026-11-08T14:40:49.460Z] [22:40:49] Extension host agent started.
+[2026-11-08T14:40:49.468Z] [22:40:49] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-08T14:40:49.469Z] [22:40:49] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T14:40:49.481Z] [22:40:49] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T14:44:47.429Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:44:48.194Z] [2026-11-08T14:44:48.192Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:44:48.193Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:44:48.218Z] [2026-11-08T14:44:48.218Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-08T14:44:48.218Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-08T14:44:48.218Z] info    - Authentication is disabled
+[2026-11-08T14:44:48.218Z] info    - Not serving HTTPS
+[2026-11-08T14:44:48.218Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-08T14:44:48.827Z] [22:44:48]
+[2026-11-08T14:44:48.910Z] [22:44:48] StorageMainService: creating application shared storage
+[2026-11-08T14:44:48.912Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-08T14:44:48.913Z] [22:44:48] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-fa129227-7cfb-4443-b8d3-58f8a4f0ff6c-sock)
+[2026-11-08T14:44:48.919Z] [22:44:48] Extension host agent started.
+[2026-11-08T14:44:48.923Z] [22:44:48] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[22:44:48] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-08T14:44:48.934Z] [22:44:48] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-08T14:50:00.044Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-08T14:50:00.866Z] [2026-11-08T14:50:00.864Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-08T14:50:00.867Z] [2026-11-08T14:50:00.866Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-08T14:50:00.883Z] [2026-11-08T14:50:00.883Z] error listen EADDRINUSE: address already in use 127.0.0.1:9123

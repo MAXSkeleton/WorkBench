@@ -1,32 +1,470 @@
-[2026-11-07T15:20:22.168Z] 清掉上一轮残留 pid=61680
-[2026-11-07T15:20:24.203Z] dsh: warning: 1 entry did not activate
-spill-local (@deepseek-ai/dsh-spill-local): Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
-    at mkdtempSync (node:fs:3134:18)
-    at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
-    at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
-    at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
-    at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
-    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
-    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include
-[2026-11-07T15:20:24.377Z] dsh web: http://127.0.0.1:51952/?token=RYFS3ChhjKagesr1aWUbKI8vfDbxVa88GPuFvleNio0
-[2026-11-07T15:20:24.634Z] ready http://127.0.0.1:51952?token=RYFS3ChhjKagesr1aWUbKI8vfDbxVa88GPuFvleNio0
-[2026-11-07T15:26:30.042Z] 清掉上一轮残留 pid=333180
-[2026-11-07T15:26:32.145Z] dsh: warning: 1 entry did not activate
-spill-local (@deepseek-ai/dsh-spill-local): Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
-    at mkdtempSync (node:fs:3134:18)
-    at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
-    at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
-    at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
-    at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
-    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
-    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include
-[2026-11-07T15:26:32.331Z] dsh web: http://127.0.0.1:51647/?token=e5svD9oJUFFgGYXe5o0xKO-ICtuuFXbr7vbM7khuUBQ
-[2026-11-07T15:26:32.494Z] ready http://127.0.0.1:51647?token=e5svD9oJUFFgGYXe5o0xKO-ICtuuFXbr7vbM7khuUBQ
-[2026-11-07T15:32:39.359Z] exit 1
-[2026-11-07T15:38:07.388Z] 清掉上一轮残留 pid=111184
-[2026-11-07T15:38:09.479Z] dsh web: http://127.0.0.1:62109/?token=R7CwpSItYyMy8Vu96Du9FmInZ0Gd1uVYT-2u3AnSa6c
-[2026-11-07T15:38:09.829Z] ready http://127.0.0.1:62109?token=R7CwpSItYyMy8Vu96Du9FmInZ0Gd1uVYT-2u3AnSa6c
-[2026-11-07T15:49:12.646Z] 清掉上一轮残留 pid=30472
-[2026-11-07T15:49:16.057Z] dsh web: http://127.0.0.1:60741/?token=NFijI06vx6NWtQA0oallTh-GUg6XGGjVDorZz8cM8kY
-[2026-11-07T15:49:16.484Z] ready http://127.0.0.1:60741?token=NFijI06vx6NWtQA0oallTh-GUg6XGGjVDorZz8cM8kY
-[2026-11-07T15:52:12.530Z] exit 1
+[2026-11-08T05:43:08.537Z] 清掉上一轮残留 pid=7112
+[2026-11-08T05:43:08.539Z] cwd = D:\deepseek\电脑
+[2026-11-08T05:43:11.427Z] dsh web: http://127.0.0.1:65365/?token=TfUjdS7ekIYLwHcUlnxWSQpSK_pC1yYbrUBkqmkDF5I
+[2026-11-08T05:43:11.802Z] ready http://127.0.0.1:65365?token=TfUjdS7ekIYLwHcUlnxWSQpSK_pC1yYbrUBkqmkDF5I
+[2026-11-08T05:43:13.363Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T05:50:30.846Z] 清掉上一轮残留 pid=335360
+[2026-11-08T05:50:30.848Z] cwd = D:\deepseek\电脑
+[2026-11-08T05:50:33.689Z] dsh web: http://127.0.0.1:63998/?token=-RXextQT91MFngXcdNy85UY-ECTL4Lo306n_QabocoQ
+[2026-11-08T05:50:34.086Z] ready http://127.0.0.1:63998?token=-RXextQT91MFngXcdNy85UY-ECTL4Lo306n_QabocoQ
+[2026-11-08T05:50:36.572Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T05:57:44.151Z] 清掉上一轮残留 pid=336308
+[2026-11-08T05:57:44.153Z] cwd = D:\deepseek\电脑
+[2026-11-08T05:57:47.225Z] dsh web: http://127.0.0.1:64618/?token=6KVkGoFVWpVIazRsZG0OK6TYrnR8XyKI_A6-VJS4H2Y
+[2026-11-08T05:57:47.537Z] ready http://127.0.0.1:64618?token=6KVkGoFVWpVIazRsZG0OK6TYrnR8XyKI_A6-VJS4H2Y
+[2026-11-08T05:57:49.100Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T06:03:31.284Z] 清掉上一轮残留 pid=36140
+[2026-11-08T06:03:31.286Z] cwd = D:\deepseek\电脑
+[2026-11-08T06:03:34.179Z] dsh web: http://127.0.0.1:58744/?token=6QgVgtVlksNPIRPVCvSw99Rm5VSWsAiV4ZjLL5QxTYI
+[2026-11-08T06:03:34.551Z] ready http://127.0.0.1:58744?token=6QgVgtVlksNPIRPVCvSw99Rm5VSWsAiV4ZjLL5QxTYI
+[2026-11-08T06:03:36.953Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T06:05:57.993Z] 清掉上一轮残留 pid=37200
+[2026-11-08T06:05:57.995Z] cwd = D:\deepseek\电脑
+[2026-11-08T06:06:00.986Z] dsh web: http://127.0.0.1:59682/?token=96koeZH6W03voIJ8SQfFzo9dXGapAWMk_D4FMu_2n_M
+[2026-11-08T06:06:01.332Z] ready http://127.0.0.1:59682?token=96koeZH6W03voIJ8SQfFzo9dXGapAWMk_D4FMu_2n_M
+[2026-11-08T06:06:02.869Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T06:38:32.692Z] 清掉上一轮残留 pid=332584
+[2026-11-08T06:38:32.693Z] cwd = D:\deepseek\电脑
+[2026-11-08T06:38:34.949Z] dsh web: http://127.0.0.1:49573/?token=tllG-T_AqZ2Gs-oFsGVGylGM6dhh5b3hkeI0dVjFUDI
+[2026-11-08T06:38:35.231Z] ready http://127.0.0.1:49573?token=tllG-T_AqZ2Gs-oFsGVGylGM6dhh5b3hkeI0dVjFUDI
+[2026-11-08T06:38:38.016Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T06:45:30.224Z] 清掉上一轮残留 pid=330260
+[2026-11-08T06:45:30.225Z] cwd = D:\deepseek\电脑
+[2026-11-08T06:45:32.482Z] dsh web: http://127.0.0.1:62735/?token=DK6UDG4QwJkFQgzlXFOuXbySnUq-O1Lpsf4rUz7VIwU
+[2026-11-08T06:45:32.759Z] ready http://127.0.0.1:62735?token=DK6UDG4QwJkFQgzlXFOuXbySnUq-O1Lpsf4rUz7VIwU
+[2026-11-08T06:45:35.218Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T06:50:39.903Z] 清掉上一轮残留 pid=331624
+[2026-11-08T06:50:39.905Z] cwd = D:\deepseek\电脑
+[2026-11-08T06:50:42.151Z] dsh web: http://127.0.0.1:59128/?token=34ip9vCrqy9rX-PjcZi1eaI5mQzT_ST5uL-PFw-k7Yo
+[2026-11-08T06:50:42.427Z] ready http://127.0.0.1:59128?token=34ip9vCrqy9rX-PjcZi1eaI5mQzT_ST5uL-PFw-k7Yo
+[2026-11-08T06:50:44.931Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T07:24:03.419Z] 清掉上一轮残留 pid=331476
+[2026-11-08T07:24:03.420Z] cwd = D:\deepseek\电脑
+[2026-11-08T07:24:05.715Z] dsh web: http://127.0.0.1:60069/?token=u2pIKJm-Tcaq-jDH3L6gnFjCDRxDqKMRv2vq602m_4s
+[2026-11-08T07:24:05.993Z] ready http://127.0.0.1:60069?token=u2pIKJm-Tcaq-jDH3L6gnFjCDRxDqKMRv2vq602m_4s
+[2026-11-08T07:24:08.427Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T07:43:37.314Z] 清掉上一轮残留 pid=336448
+[2026-11-08T07:43:37.315Z] cwd = D:\deepseek\电脑
+[2026-11-08T07:43:39.571Z] dsh web: http://127.0.0.1:55169/?token=pAUVUvsmk7mAJnmsmTs7ntyI8UR8phzliPGIONMpB0A
+[2026-11-08T07:43:39.847Z] ready http://127.0.0.1:55169?token=pAUVUvsmk7mAJnmsmTs7ntyI8UR8phzliPGIONMpB0A
+[2026-11-08T07:43:42.247Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T07:49:37.156Z] 清掉上一轮残留 pid=28300
+[2026-11-08T07:49:37.157Z] cwd = D:\deepseek\电脑
+[2026-11-08T07:49:39.753Z] dsh web: http://127.0.0.1:60940/?token=lob6ofGBCIfC2wlyi0QW9yi2RXT61_yN42_JMiVS7Ic
+[2026-11-08T07:49:40.029Z] ready http://127.0.0.1:60940?token=lob6ofGBCIfC2wlyi0QW9yi2RXT61_yN42_JMiVS7Ic
+[2026-11-08T07:49:42.612Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T07:56:39.960Z] 清掉上一轮残留 pid=260228
+[2026-11-08T07:56:39.962Z] cwd = D:\deepseek\电脑
+[2026-11-08T07:56:42.379Z] dsh web: http://127.0.0.1:64922/?token=ulanq35ilhnXAwZ4uAnfh4OTLPxuJ50on6JzE9MXk8M
+[2026-11-08T07:56:42.653Z] ready http://127.0.0.1:64922?token=ulanq35ilhnXAwZ4uAnfh4OTLPxuJ50on6JzE9MXk8M
+[2026-11-08T07:56:44.266Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T08:01:45.599Z] 清掉上一轮残留 pid=338468
+[2026-11-08T08:01:45.601Z] cwd = D:\deepseek\电脑
+[2026-11-08T08:01:49.017Z] dsh web: http://127.0.0.1:50123/?token=NlpVCLp9tkwn7O8iKFnzHX5Gr0j-g_rz2emKC7IeYnY
+[2026-11-08T08:01:49.410Z] ready http://127.0.0.1:50123?token=NlpVCLp9tkwn7O8iKFnzHX5Gr0j-g_rz2emKC7IeYnY
+[2026-11-08T08:01:52.786Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T08:08:24.890Z] 清掉上一轮残留 pid=303056
+[2026-11-08T08:08:24.891Z] cwd = D:\deepseek\电脑
+[2026-11-08T08:08:27.487Z] dsh web: http://127.0.0.1:53384/?token=YGd8HArW3CAeEc57PHK7yEZa7b5FpNj3fbOf5hy8iu8
+[2026-11-08T08:08:27.759Z] ready http://127.0.0.1:53384?token=YGd8HArW3CAeEc57PHK7yEZa7b5FpNj3fbOf5hy8iu8
+[2026-11-08T08:08:30.207Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T08:12:57.884Z] 清掉上一轮残留 pid=316072
+[2026-11-08T08:12:57.885Z] cwd = D:\deepseek\电脑
+[2026-11-08T08:13:00.624Z] dsh web: http://127.0.0.1:59028/?token=GH7TeFtXDrU9WF5a6_seLKC9sngOWPmrSpyh6T1TWRo
+[2026-11-08T08:13:00.922Z] ready http://127.0.0.1:59028?token=GH7TeFtXDrU9WF5a6_seLKC9sngOWPmrSpyh6T1TWRo
+[2026-11-08T08:13:08.315Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models failed (LlmError: DeepSeek model listing request to https://api.deepseek.com/models timed out after 5000 ms); using the bundled catalog
+[2026-11-08T08:13:13.969Z] [deepseek-account] request failed {
+  path: '/auth-api/v0/users/current',
+  errorCode: 'no-response',
+  aborted: false
+}
+[2026-11-08T08:13:13.971Z] [deepseek-account] request failed {
+  path: '/auth-api/v0/users/current',
+  errorCode: 'no-response',
+  aborted: false
+}
+[2026-11-08T08:13:14.978Z] [deepseek-account] request failed {
+  path: '/api/v0/users/get_user_summary',
+  errorCode: 'no-response',
+  aborted: false
+}
+[2026-11-08T08:17:31.060Z] 清掉上一轮残留 pid=30784
+[2026-11-08T08:17:31.061Z] cwd = D:\deepseek\电脑
+[2026-11-08T08:17:33.927Z] dsh web: http://127.0.0.1:49872/?token=KtrHlt8BD5liFu99WBw_RcAJfI3yKaZTF2UQd7VcVq8
+[2026-11-08T08:17:34.335Z] ready http://127.0.0.1:49872?token=KtrHlt8BD5liFu99WBw_RcAJfI3yKaZTF2UQd7VcVq8
+[2026-11-08T08:17:36.011Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T08:33:52.732Z] 清掉上一轮残留 pid=305116
+[2026-11-08T08:33:52.733Z] cwd = D:\deepseek\电脑
+[2026-11-08T08:33:56.377Z] dsh web: http://127.0.0.1:61595/?token=zi70gE57gP9vitqtJ2v2tAyOwtRn9_q7dJdcOLSBR58
+[2026-11-08T08:33:56.784Z] ready http://127.0.0.1:61595?token=zi70gE57gP9vitqtJ2v2tAyOwtRn9_q7dJdcOLSBR58
+[2026-11-08T08:34:00.207Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T09:23:00.479Z] 清掉上一轮残留 pid=335772
+[2026-11-08T09:23:00.482Z] cwd = D:\deepseek\电脑
+[2026-11-08T09:23:03.176Z] dsh web: http://127.0.0.1:52557/?token=f3u0GVHLU-Wwp9WZS6oyGB4IX9jq1cQrOmoHf4oM62U
+[2026-11-08T09:23:03.445Z] ready http://127.0.0.1:52557?token=f3u0GVHLU-Wwp9WZS6oyGB4IX9jq1cQrOmoHf4oM62U
+[2026-11-08T09:23:06.910Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T09:25:54.767Z] 清掉上一轮残留 pid=175872
+[2026-11-08T09:25:54.768Z] cwd = D:\deepseek\电脑
+[2026-11-08T09:25:56.705Z] dsh web: http://127.0.0.1:61768/?token=dPujdqmssNdLVuSOgV6D25D1_7DPxee1oh3H4hPLH7M
+[2026-11-08T09:25:56.908Z] ready http://127.0.0.1:61768?token=dPujdqmssNdLVuSOgV6D25D1_7DPxee1oh3H4hPLH7M
+[2026-11-08T09:25:58.351Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T09:54:02.089Z] 清掉上一轮残留 pid=42564
+[2026-11-08T09:54:02.090Z] cwd = D:\deepseek\电脑
+[2026-11-08T09:54:04.051Z] dsh web: http://127.0.0.1:53452/?token=5Ms7iFBnpa0WNZb38bU8Ls9V560tSSivmleJTVxHnq8
+[2026-11-08T09:54:04.262Z] ready http://127.0.0.1:53452?token=5Ms7iFBnpa0WNZb38bU8Ls9V560tSSivmleJTVxHnq8
+[2026-11-08T09:54:05.736Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T09:57:15.682Z] 清掉上一轮残留 pid=20964
+[2026-11-08T09:57:15.683Z] cwd = D:\deepseek\电脑
+[2026-11-08T09:57:17.660Z] dsh web: http://127.0.0.1:50782/?token=Iv9flI4vZnR0kTzKpw4p4-V_zy_5dpfUgl0DlUX1GvA
+[2026-11-08T09:57:17.872Z] ready http://127.0.0.1:50782?token=Iv9flI4vZnR0kTzKpw4p4-V_zy_5dpfUgl0DlUX1GvA
+[2026-11-08T09:57:20.108Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:00:40.563Z] 清掉上一轮残留 pid=35292
+[2026-11-08T10:00:40.564Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:00:42.354Z] dsh web: http://127.0.0.1:59133/?token=cfCap1gqSbCLicGj537KzeUEgWL-KUh6335PoRRKuZ8
+[2026-11-08T10:00:42.633Z] ready http://127.0.0.1:59133?token=cfCap1gqSbCLicGj537KzeUEgWL-KUh6335PoRRKuZ8
+[2026-11-08T10:00:44.105Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:07:36.441Z] 清掉上一轮残留 pid=3420
+[2026-11-08T10:07:36.442Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:07:38.470Z] dsh web: http://127.0.0.1:55072/?token=X0OUbW5EXaFIYVsUVvYdNsFGXUXGx9HrPxuxkXTZnxQ
+[2026-11-08T10:07:38.694Z] ready http://127.0.0.1:55072?token=X0OUbW5EXaFIYVsUVvYdNsFGXUXGx9HrPxuxkXTZnxQ
+[2026-11-08T10:07:40.990Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:10:45.073Z] 清掉上一轮残留 pid=17344
+[2026-11-08T10:10:45.074Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:10:47.390Z] dsh web: http://127.0.0.1:50355/?token=Zh5lfaTs9rB-R9RZlMjI_bQufVWAWR4xdGpoLuUlOOA
+[2026-11-08T10:10:47.627Z] ready http://127.0.0.1:50355?token=Zh5lfaTs9rB-R9RZlMjI_bQufVWAWR4xdGpoLuUlOOA
+[2026-11-08T10:10:49.266Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:15:01.564Z] 清掉上一轮残留 pid=331028
+[2026-11-08T10:15:01.565Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:15:03.514Z] dsh web: http://127.0.0.1:57647/?token=GT_guYts0M3ZRDviui_3KaumKqExl2wHt0gMueKCFs8
+[2026-11-08T10:15:03.718Z] ready http://127.0.0.1:57647?token=GT_guYts0M3ZRDviui_3KaumKqExl2wHt0gMueKCFs8
+[2026-11-08T10:15:05.983Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:19:00.417Z] 清掉上一轮残留 pid=331308
+[2026-11-08T10:19:00.418Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:19:02.540Z] dsh web: http://127.0.0.1:61170/?token=9HiM3NQnn8rMCWy02eOaOEmfE9gdH0ihQjFJNQ6x3gw
+[2026-11-08T10:19:02.888Z] ready http://127.0.0.1:61170?token=9HiM3NQnn8rMCWy02eOaOEmfE9gdH0ihQjFJNQ6x3gw
+[2026-11-08T10:19:04.482Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:21:58.372Z] 清掉上一轮残留 pid=333524
+[2026-11-08T10:21:58.373Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:22:00.322Z] dsh web: http://127.0.0.1:56767/?token=qCeco21WUYMyj6quIeJqYV8f6y_aSl07xG7dUy1zK0I
+[2026-11-08T10:22:00.535Z] ready http://127.0.0.1:56767?token=qCeco21WUYMyj6quIeJqYV8f6y_aSl07xG7dUy1zK0I
+[2026-11-08T10:22:02.825Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:26:51.029Z] 清掉上一轮残留 pid=338912
+[2026-11-08T10:26:51.030Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:26:53.039Z] dsh web: http://127.0.0.1:53858/?token=BzcgNpGq8IZEzB3wbiDOoXRkYrBcwrga-zZKBX_u7xU
+[2026-11-08T10:26:53.261Z] ready http://127.0.0.1:53858?token=BzcgNpGq8IZEzB3wbiDOoXRkYrBcwrga-zZKBX_u7xU
+[2026-11-08T10:26:55.595Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:29:07.411Z] 清掉上一轮残留 pid=68072
+[2026-11-08T10:29:07.413Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:29:09.703Z] dsh web: http://127.0.0.1:65491/?token=uUw3Xtq7mdUoCDrD0pi87-3PuCBr7nGnpbViGlEQaJA
+[2026-11-08T10:29:09.962Z] ready http://127.0.0.1:65491?token=uUw3Xtq7mdUoCDrD0pi87-3PuCBr7nGnpbViGlEQaJA
+[2026-11-08T10:29:11.483Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:33:42.157Z] 清掉上一轮残留 pid=303588
+[2026-11-08T10:33:42.158Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:33:44.212Z] dsh web: http://127.0.0.1:59364/?token=UQk3iT9Ic1IhXxOeTSvp_iab3JPGfVakD0hqGPQJEPc
+[2026-11-08T10:33:44.616Z] ready http://127.0.0.1:59364?token=UQk3iT9Ic1IhXxOeTSvp_iab3JPGfVakD0hqGPQJEPc
+[2026-11-08T10:33:46.920Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:37:21.023Z] 清掉上一轮残留 pid=301792
+[2026-11-08T10:37:21.025Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:37:23.090Z] dsh web: http://127.0.0.1:63196/?token=XaEPBKxJLLBysb6MtwlurAkyDe3NR9A6H6EBWdlC8m8
+[2026-11-08T10:37:23.491Z] ready http://127.0.0.1:63196?token=XaEPBKxJLLBysb6MtwlurAkyDe3NR9A6H6EBWdlC8m8
+[2026-11-08T10:37:24.959Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:44:42.282Z] 清掉上一轮残留 pid=330908
+[2026-11-08T10:44:42.283Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:44:44.353Z] dsh web: http://127.0.0.1:54071/?token=wdQm9iswjZWOo38VJzwvV9XXJG6vLNnm-3TLg9QREgk
+[2026-11-08T10:44:44.736Z] ready http://127.0.0.1:54071?token=wdQm9iswjZWOo38VJzwvV9XXJG6vLNnm-3TLg9QREgk
+[2026-11-08T10:44:47.229Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:49:24.191Z] 清掉上一轮残留 pid=314808
+[2026-11-08T10:49:24.192Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:49:26.217Z] dsh web: http://127.0.0.1:50995/?token=gDFa4WnM5MoSuRyaau-YOpl4T6TDSU-EXH_xIfKzGC0
+[2026-11-08T10:49:26.433Z] ready http://127.0.0.1:50995?token=gDFa4WnM5MoSuRyaau-YOpl4T6TDSU-EXH_xIfKzGC0
+[2026-11-08T10:49:27.981Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:52:30.372Z] 清掉上一轮残留 pid=326864
+[2026-11-08T10:52:30.373Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:52:32.271Z] dsh web: http://127.0.0.1:57447/?token=OR7BAJBfOofp-ZhQwm-6Z5kvq6a3A9Hmu2mFA3GscLQ
+[2026-11-08T10:52:32.480Z] ready http://127.0.0.1:57447?token=OR7BAJBfOofp-ZhQwm-6Z5kvq6a3A9Hmu2mFA3GscLQ
+[2026-11-08T10:52:34.712Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T10:58:36.700Z] 清掉上一轮残留 pid=35312
+[2026-11-08T10:58:36.702Z] cwd = D:\deepseek\电脑
+[2026-11-08T10:58:38.569Z] dsh web: http://127.0.0.1:59443/?token=H1yKBFAa-HXdxkiFuzZ0YiC8H2Eytg6yi5Df9156wkE
+[2026-11-08T10:58:38.776Z] ready http://127.0.0.1:59443?token=H1yKBFAa-HXdxkiFuzZ0YiC8H2Eytg6yi5Df9156wkE
+[2026-11-08T10:58:40.186Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:02:34.974Z] 清掉上一轮残留 pid=333792
+[2026-11-08T11:02:34.975Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:02:36.887Z] dsh web: http://127.0.0.1:52942/?token=EaCSwkLwjReNH-Lh_zAyNFYWa3AqLp2vjTDFFLKj2BE
+[2026-11-08T11:02:37.094Z] ready http://127.0.0.1:52942?token=EaCSwkLwjReNH-Lh_zAyNFYWa3AqLp2vjTDFFLKj2BE
+[2026-11-08T11:02:39.381Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:14:51.265Z] 清掉上一轮残留 pid=4764
+[2026-11-08T11:14:51.266Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:14:53.161Z] dsh web: http://127.0.0.1:57395/?token=_B8pQGfrUmQZ5M4mEZOIPpRefQS_VDB0KIfIMFtVGCo
+[2026-11-08T11:14:53.370Z] ready http://127.0.0.1:57395?token=_B8pQGfrUmQZ5M4mEZOIPpRefQS_VDB0KIfIMFtVGCo
+[2026-11-08T11:14:55.671Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:18:47.010Z] 清掉上一轮残留 pid=332116
+[2026-11-08T11:18:47.011Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:18:48.918Z] dsh web: http://127.0.0.1:62489/?token=00thjGT7zObdlVn7ExcYMy3GGlwra2oL4XrdbiDGXQc
+[2026-11-08T11:18:49.123Z] ready http://127.0.0.1:62489?token=00thjGT7zObdlVn7ExcYMy3GGlwra2oL4XrdbiDGXQc
+[2026-11-08T11:18:51.458Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:21:19.057Z] 清掉上一轮残留 pid=335128
+[2026-11-08T11:21:19.058Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:21:20.932Z] dsh web: http://127.0.0.1:65246/?token=GaDE8m38yeVSQMklRm5pOzko51pYw4nLFLBfCe11gRM
+[2026-11-08T11:21:21.149Z] ready http://127.0.0.1:65246?token=GaDE8m38yeVSQMklRm5pOzko51pYw4nLFLBfCe11gRM
+[2026-11-08T11:21:23.443Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:22:35.481Z] 清掉上一轮残留 pid=235860
+[2026-11-08T11:22:35.484Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:22:37.616Z] dsh web: http://127.0.0.1:55282/?token=B7IAMflmcacJqEC4w9_TyEsDPlGauCmuTSMiJ4HXMlE
+[2026-11-08T11:22:37.960Z] ready http://127.0.0.1:55282?token=B7IAMflmcacJqEC4w9_TyEsDPlGauCmuTSMiJ4HXMlE
+[2026-11-08T11:22:38.890Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:23:40.221Z] 清掉上一轮残留 pid=314720
+[2026-11-08T11:23:40.223Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:23:42.259Z] dsh web: http://127.0.0.1:63796/?token=hd6u3tCy-ymlhMc864lming4eFlNR28mfM42-PU1UL0
+[2026-11-08T11:23:42.485Z] ready http://127.0.0.1:63796?token=hd6u3tCy-ymlhMc864lming4eFlNR28mfM42-PU1UL0
+[2026-11-08T11:23:45.046Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:25:47.884Z] 清掉上一轮残留 pid=40384
+[2026-11-08T11:25:47.886Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:25:49.806Z] dsh web: http://127.0.0.1:63218/?token=y9HVMt_wAe_K4yv9esaUe8fGzQkeIJZTz22kIW67G1E
+[2026-11-08T11:25:50.016Z] ready http://127.0.0.1:63218?token=y9HVMt_wAe_K4yv9esaUe8fGzQkeIJZTz22kIW67G1E
+[2026-11-08T11:25:50.812Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:26:58.862Z] 清掉上一轮残留 pid=2564
+[2026-11-08T11:26:58.863Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:27:00.793Z] dsh web: http://127.0.0.1:65138/?token=YPvN615nAVjUezpEpKnwCvF0ot7c46lmLFOox8HOrxc
+[2026-11-08T11:27:01.005Z] ready http://127.0.0.1:65138?token=YPvN615nAVjUezpEpKnwCvF0ot7c46lmLFOox8HOrxc
+[2026-11-08T11:27:03.303Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:34:44.769Z] 清掉上一轮残留 pid=304396
+[2026-11-08T11:34:44.770Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:34:46.918Z] dsh web: http://127.0.0.1:51038/?token=3PCy97-C_ki2F7T188m7UvV5NRns9ULoH7fSwL8l0vE
+[2026-11-08T11:34:47.223Z] ready http://127.0.0.1:51038?token=3PCy97-C_ki2F7T188m7UvV5NRns9ULoH7fSwL8l0vE
+[2026-11-08T11:34:48.754Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:39:26.741Z] 清掉上一轮残留 pid=338656
+[2026-11-08T11:39:26.742Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:39:28.879Z] dsh web: http://127.0.0.1:55252/?token=5jezJ7o7AvFXFie2ID57fBl62RhvH5jn61v9wI57Ke0
+[2026-11-08T11:39:29.197Z] ready http://127.0.0.1:55252?token=5jezJ7o7AvFXFie2ID57fBl62RhvH5jn61v9wI57Ke0
+[2026-11-08T11:39:31.578Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:41:21.391Z] 清掉上一轮残留 pid=312148
+[2026-11-08T11:41:21.392Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:41:23.516Z] dsh web: http://127.0.0.1:50653/?token=SYHiuLZ3Y-l2dObFT9q_ltadnp8-6QoGrrixcnmbpg4
+[2026-11-08T11:41:23.846Z] ready http://127.0.0.1:50653?token=SYHiuLZ3Y-l2dObFT9q_ltadnp8-6QoGrrixcnmbpg4
+[2026-11-08T11:41:25.304Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:43:36.075Z] 清掉上一轮残留 pid=332260
+[2026-11-08T11:43:36.076Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:43:38.119Z] dsh web: http://127.0.0.1:51648/?token=YmcJk9m5MT23xeFPeE2AEePCeUI82gflWZwup-WjYyE
+[2026-11-08T11:43:38.544Z] ready http://127.0.0.1:51648?token=YmcJk9m5MT23xeFPeE2AEePCeUI82gflWZwup-WjYyE
+[2026-11-08T11:43:40.817Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:45:57.338Z] 清掉上一轮残留 pid=13248
+[2026-11-08T11:45:57.339Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:45:59.376Z] dsh web: http://127.0.0.1:60385/?token=p1Sklf2Pgj5ZIl9CaJR2OlIjIYqStCk56s1VDuLuN90
+[2026-11-08T11:45:59.590Z] ready http://127.0.0.1:60385?token=p1Sklf2Pgj5ZIl9CaJR2OlIjIYqStCk56s1VDuLuN90
+[2026-11-08T11:46:01.143Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:49:25.661Z] 清掉上一轮残留 pid=312492
+[2026-11-08T11:49:25.662Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:49:27.734Z] dsh web: http://127.0.0.1:65442/?token=OF_gKDxk9V8ng_pngKPkPhswMusPtq5xI-C7uno_PVc
+[2026-11-08T11:49:28.119Z] ready http://127.0.0.1:65442?token=OF_gKDxk9V8ng_pngKPkPhswMusPtq5xI-C7uno_PVc
+[2026-11-08T11:49:30.709Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:50:52.942Z] 清掉上一轮残留 pid=34096
+[2026-11-08T11:50:52.943Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:50:55.030Z] dsh web: http://127.0.0.1:62930/?token=E66QSPK3gH0po0hvLrnzPzqdJFSDOy9tmF6yMp3YoeI
+[2026-11-08T11:50:55.407Z] ready http://127.0.0.1:62930?token=E66QSPK3gH0po0hvLrnzPzqdJFSDOy9tmF6yMp3YoeI
+[2026-11-08T11:50:57.289Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:52:35.490Z] 清掉上一轮残留 pid=34952
+[2026-11-08T11:52:35.492Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:52:37.688Z] dsh web: http://127.0.0.1:64317/?token=WOOrroUJAlaUkFj6xJuLmEIAzhbio45WzJtgeLY_ll0
+[2026-11-08T11:52:37.938Z] ready http://127.0.0.1:64317?token=WOOrroUJAlaUkFj6xJuLmEIAzhbio45WzJtgeLY_ll0
+[2026-11-08T11:52:40.998Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:54:11.273Z] 清掉上一轮残留 pid=336544
+[2026-11-08T11:54:11.274Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:54:13.396Z] dsh web: http://127.0.0.1:56226/?token=IIymXHa3BSFuyQRIq2Ho0c5u9UQF7gwBM5zClFUUn1E
+[2026-11-08T11:54:13.721Z] ready http://127.0.0.1:56226?token=IIymXHa3BSFuyQRIq2Ho0c5u9UQF7gwBM5zClFUUn1E
+[2026-11-08T11:54:15.332Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:57:10.513Z] 清掉上一轮残留 pid=22396
+[2026-11-08T11:57:10.514Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:57:12.639Z] dsh web: http://127.0.0.1:55216/?token=8uuJrfXRNr4yb50n1Dt1KKrvXUfGp2egmQdxxP1n0O4
+[2026-11-08T11:57:12.979Z] ready http://127.0.0.1:55216?token=8uuJrfXRNr4yb50n1Dt1KKrvXUfGp2egmQdxxP1n0O4
+[2026-11-08T11:57:14.837Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T11:59:25.892Z] 清掉上一轮残留 pid=33584
+[2026-11-08T11:59:25.894Z] cwd = D:\deepseek\电脑
+[2026-11-08T11:59:28.065Z] dsh web: http://127.0.0.1:54450/?token=Mln9YX-PVuqEaDiPTtFE222tvD-9CuAz4_2PTCFfxDk
+[2026-11-08T11:59:28.353Z] ready http://127.0.0.1:54450?token=Mln9YX-PVuqEaDiPTtFE222tvD-9CuAz4_2PTCFfxDk
+[2026-11-08T11:59:30.766Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:00:54.172Z] 清掉上一轮残留 pid=14596
+[2026-11-08T12:00:54.176Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:00:56.385Z] dsh web: http://127.0.0.1:49241/?token=mJLxBMEjHl4QW_QIg77bGrKPZhKMrhzdtKX7SO4SqBo
+[2026-11-08T12:00:56.634Z] ready http://127.0.0.1:49241?token=mJLxBMEjHl4QW_QIg77bGrKPZhKMrhzdtKX7SO4SqBo
+[2026-11-08T12:00:59.165Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:02:11.166Z] 清掉上一轮残留 pid=303752
+[2026-11-08T12:02:11.167Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:02:13.375Z] dsh web: http://127.0.0.1:64096/?token=7YPkuTNaAH4sbjO-5PVDEudARArvib-YwRj1ZyGwE9k
+[2026-11-08T12:02:13.624Z] ready http://127.0.0.1:64096?token=7YPkuTNaAH4sbjO-5PVDEudARArvib-YwRj1ZyGwE9k
+[2026-11-08T12:02:15.318Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:03:40.930Z] 清掉上一轮残留 pid=304996
+[2026-11-08T12:03:40.931Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:03:43.057Z] dsh web: http://127.0.0.1:54969/?token=1IyJ0EQlyY-IYZbvaJKn1ehzrJ43O_Vh1XTx4szgjew
+[2026-11-08T12:03:43.386Z] ready http://127.0.0.1:54969?token=1IyJ0EQlyY-IYZbvaJKn1ehzrJ43O_Vh1XTx4szgjew
+[2026-11-08T12:03:45.797Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:05:02.908Z] 清掉上一轮残留 pid=303144
+[2026-11-08T12:05:02.910Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:05:05.168Z] dsh web: http://127.0.0.1:55826/?token=j9O99Rn6mlRxXmKz0MtG3wDou5qDaX7ea73L_P1VnE8
+[2026-11-08T12:05:05.393Z] ready http://127.0.0.1:55826?token=j9O99Rn6mlRxXmKz0MtG3wDou5qDaX7ea73L_P1VnE8
+[2026-11-08T12:05:07.042Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:22:20.879Z] 清掉上一轮残留 pid=317548
+[2026-11-08T12:22:20.880Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:22:23.175Z] dsh web: http://127.0.0.1:60396/?token=pgFFTNhgL0BE-67pTcycvrP9s9xbpaFyhKrcOR4s_D8
+[2026-11-08T12:22:23.406Z] ready http://127.0.0.1:60396?token=pgFFTNhgL0BE-67pTcycvrP9s9xbpaFyhKrcOR4s_D8
+[2026-11-08T12:22:25.097Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:23:47.954Z] 清掉上一轮残留 pid=337664
+[2026-11-08T12:23:47.955Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:23:50.139Z] dsh web: http://127.0.0.1:62750/?token=fAVbxJogtAUf0s3bvld8Qg-uuXRz_Ify3HVU74AmOr0
+[2026-11-08T12:23:50.409Z] ready http://127.0.0.1:62750?token=fAVbxJogtAUf0s3bvld8Qg-uuXRz_Ify3HVU74AmOr0
+[2026-11-08T12:26:11.815Z] 清掉上一轮残留 pid=339628
+[2026-11-08T12:26:11.816Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:26:14.061Z] dsh web: http://127.0.0.1:56409/?token=so6mBH2XhTeRlM6LbGeP05w0GSYBQfcQcmRFrNIDhiM
+[2026-11-08T12:26:14.297Z] ready http://127.0.0.1:56409?token=so6mBH2XhTeRlM6LbGeP05w0GSYBQfcQcmRFrNIDhiM
+[2026-11-08T12:28:23.477Z] 清掉上一轮残留 pid=42012
+[2026-11-08T12:28:23.478Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:28:25.670Z] dsh web: http://127.0.0.1:49787/?token=oaTmfEuav8W7W-Z-XXGmWigoPe5Prt9Txv6vf3ociaI
+[2026-11-08T12:28:25.929Z] ready http://127.0.0.1:49787?token=oaTmfEuav8W7W-Z-XXGmWigoPe5Prt9Txv6vf3ociaI
+[2026-11-08T12:29:26.711Z] 清掉上一轮残留 pid=340356
+[2026-11-08T12:29:26.714Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:29:28.973Z] dsh web: http://127.0.0.1:60159/?token=5KEVTmS4DN351hd8FlRwpe6yVGvQUrXYQ5ODytWLxxE
+[2026-11-08T12:29:29.230Z] ready http://127.0.0.1:60159?token=5KEVTmS4DN351hd8FlRwpe6yVGvQUrXYQ5ODytWLxxE
+[2026-11-08T12:31:48.948Z] 清掉上一轮残留 pid=15620
+[2026-11-08T12:31:48.949Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:31:51.214Z] dsh web: http://127.0.0.1:58121/?token=Lx0W8IA1Xy927fTLHI2UhIo12qxjf_pdWE9DcfShcig
+[2026-11-08T12:31:51.443Z] ready http://127.0.0.1:58121?token=Lx0W8IA1Xy927fTLHI2UhIo12qxjf_pdWE9DcfShcig
+[2026-11-08T12:33:02.151Z] 清掉上一轮残留 pid=333900
+[2026-11-08T12:33:02.152Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:33:04.448Z] dsh web: http://127.0.0.1:52727/?token=ZUTxTr5id5EqBmSMvb_3ocTw0TaJYhaWB84DvdSgGS0
+[2026-11-08T12:33:04.682Z] ready http://127.0.0.1:52727?token=ZUTxTr5id5EqBmSMvb_3ocTw0TaJYhaWB84DvdSgGS0
+[2026-11-08T12:33:31.492Z] exit 1
+[2026-11-08T12:36:00.960Z] 清掉上一轮残留 pid=340468
+[2026-11-08T12:36:00.963Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:36:03.299Z] dsh web: http://127.0.0.1:57151/?token=VEChGbjjlvCRVpRIc2n0SEbMI-R3c-GBi55p30jsj9Q
+[2026-11-08T12:36:03.530Z] ready http://127.0.0.1:57151?token=VEChGbjjlvCRVpRIc2n0SEbMI-R3c-GBi55p30jsj9Q
+[2026-11-08T12:37:15.909Z] exit 1
+[2026-11-08T12:56:47.101Z] 清掉上一轮残留 pid=341456
+[2026-11-08T12:56:47.102Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:56:49.446Z] dsh web: http://127.0.0.1:50440/?token=8kwfHbVm8GA7ADAh7XcDSXekTHVrJXj-7qup0rXMsUg
+[2026-11-08T12:56:49.682Z] ready http://127.0.0.1:50440?token=8kwfHbVm8GA7ADAh7XcDSXekTHVrJXj-7qup0rXMsUg
+[2026-11-08T12:56:51.987Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T12:58:35.416Z] 清掉上一轮残留 pid=323416
+[2026-11-08T12:58:35.419Z] cwd = D:\deepseek\电脑
+[2026-11-08T12:58:37.800Z] dsh web: http://127.0.0.1:59421/?token=s4RF5w9SEqH2cdzSCtZtyxZmJfbFECdZ9DYi5QzQisE
+[2026-11-08T12:58:38.036Z] ready http://127.0.0.1:59421?token=s4RF5w9SEqH2cdzSCtZtyxZmJfbFECdZ9DYi5QzQisE
+[2026-11-08T12:58:39.549Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:01:48.643Z] 清掉上一轮残留 pid=337052
+[2026-11-08T13:01:48.644Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:01:51.024Z] dsh web: http://127.0.0.1:56922/?token=NwHF-NvgFafi9zuKiyvrx2wl4dK410qHSGOaRD7faKA
+[2026-11-08T13:01:51.267Z] ready http://127.0.0.1:56922?token=NwHF-NvgFafi9zuKiyvrx2wl4dK410qHSGOaRD7faKA
+[2026-11-08T13:01:52.728Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:04:00.852Z] 清掉上一轮残留 pid=229652
+[2026-11-08T13:04:00.854Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:04:03.192Z] dsh web: http://127.0.0.1:63132/?token=ZybwvuLc1JFf3cCtstXztitSpXth0MqR4gkGyv457r8
+[2026-11-08T13:04:03.426Z] ready http://127.0.0.1:63132?token=ZybwvuLc1JFf3cCtstXztitSpXth0MqR4gkGyv457r8
+[2026-11-08T13:04:04.924Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:09:12.462Z] 清掉上一轮残留 pid=341260
+[2026-11-08T13:09:12.463Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:09:14.734Z] dsh web: http://127.0.0.1:50943/?token=E19y4_TJuaVdDLgzhBA8ZzwfgX_DibEULLfrcMST03E
+[2026-11-08T13:09:14.970Z] ready http://127.0.0.1:50943?token=E19y4_TJuaVdDLgzhBA8ZzwfgX_DibEULLfrcMST03E
+[2026-11-08T13:09:19.002Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:30:27.316Z] 清掉上一轮残留 pid=335452
+[2026-11-08T13:30:27.318Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:30:29.775Z] dsh web: http://127.0.0.1:50598/?token=vpVzDZoT_kcIJlA1IqkBzIMmJ55n9Rj-PKrH6dJhyKo
+[2026-11-08T13:30:29.957Z] ready http://127.0.0.1:50598?token=vpVzDZoT_kcIJlA1IqkBzIMmJ55n9Rj-PKrH6dJhyKo
+[2026-11-08T13:30:30.794Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:32:25.677Z] 清掉上一轮残留 pid=110936
+[2026-11-08T13:32:25.680Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:32:28.053Z] dsh web: http://127.0.0.1:58945/?token=HbQnfXcQFRlQBz-dP6avF0oTLSn-mpOy3u5tw5zUOsA
+[2026-11-08T13:32:28.289Z] ready http://127.0.0.1:58945?token=HbQnfXcQFRlQBz-dP6avF0oTLSn-mpOy3u5tw5zUOsA
+[2026-11-08T13:32:29.192Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:34:12.038Z] 清掉上一轮残留 pid=32340
+[2026-11-08T13:34:12.040Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:34:14.428Z] dsh web: http://127.0.0.1:59456/?token=vc_SY6PkuVb1HRyZdsQiqUViXbrKsCUyrBO2yt7ohAM
+[2026-11-08T13:34:14.668Z] ready http://127.0.0.1:59456?token=vc_SY6PkuVb1HRyZdsQiqUViXbrKsCUyrBO2yt7ohAM
+[2026-11-08T13:34:15.776Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:36:18.555Z] 清掉上一轮残留 pid=32104
+[2026-11-08T13:36:18.562Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:36:21.149Z] dsh web: http://127.0.0.1:50388/?token=gh5S6mMswcCywqlW83_ZXQxkPjZn6TdG60ry95sevJw
+[2026-11-08T13:36:21.392Z] ready http://127.0.0.1:50388?token=gh5S6mMswcCywqlW83_ZXQxkPjZn6TdG60ry95sevJw
+[2026-11-08T13:36:22.493Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:38:22.146Z] 清掉上一轮残留 pid=341820
+[2026-11-08T13:38:22.148Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:38:24.606Z] dsh web: http://127.0.0.1:59981/?token=jM5QDYQ7mnily1j9sWj3sUq43EQP4diERDlV6w4ypkQ
+[2026-11-08T13:38:25.004Z] ready http://127.0.0.1:59981?token=jM5QDYQ7mnily1j9sWj3sUq43EQP4diERDlV6w4ypkQ
+[2026-11-08T13:38:27.383Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:43:11.697Z] 清掉上一轮残留 pid=334960
+[2026-11-08T13:43:11.698Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:43:14.111Z] dsh web: http://127.0.0.1:60703/?token=zYJJ9yxslxihLPz9ysaCiLMzaORifdkXKNK7ytyikzM
+[2026-11-08T13:43:14.336Z] ready http://127.0.0.1:60703?token=zYJJ9yxslxihLPz9ysaCiLMzaORifdkXKNK7ytyikzM
+[2026-11-08T13:43:16.098Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:46:00.235Z] 清掉上一轮残留 pid=17944
+[2026-11-08T13:46:00.236Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:46:02.575Z] dsh web: http://127.0.0.1:51183/?token=Xpxfp9lbsudW7F-aTxq78o-ZykWoHt_UU4ewzbMA4fw
+[2026-11-08T13:46:02.812Z] ready http://127.0.0.1:51183?token=Xpxfp9lbsudW7F-aTxq78o-ZykWoHt_UU4ewzbMA4fw
+[2026-11-08T13:46:04.401Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:47:47.670Z] 清掉上一轮残留 pid=320984
+[2026-11-08T13:47:47.672Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:47:50.141Z] dsh web: http://127.0.0.1:63158/?token=9Pd2O-I4EEdR5k4LlXY_L45vlgPxWtIBLum-0H61LAQ
+[2026-11-08T13:47:50.521Z] ready http://127.0.0.1:63158?token=9Pd2O-I4EEdR5k4LlXY_L45vlgPxWtIBLum-0H61LAQ
+[2026-11-08T13:47:52.457Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T13:58:15.070Z] 清掉上一轮残留 pid=146860
+[2026-11-08T13:58:15.071Z] cwd = D:\deepseek\电脑
+[2026-11-08T13:58:18.868Z] dsh web: http://127.0.0.1:55709/?token=O_Iuot20ATLOFWOVWd1vobdiZRx7zs4yoH3WVHHnYSw
+[2026-11-08T13:58:19.177Z] ready http://127.0.0.1:55709?token=O_Iuot20ATLOFWOVWd1vobdiZRx7zs4yoH3WVHHnYSw
+[2026-11-08T13:58:20.103Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:13:31.492Z] 清掉上一轮残留 pid=341980
+[2026-11-08T14:13:31.494Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:13:33.845Z] dsh web: http://127.0.0.1:57973/?token=Cq3I30doHRETTCZCOzscURSRxzt-Cni2SvUUq56C85M
+[2026-11-08T14:13:34.073Z] ready http://127.0.0.1:57973?token=Cq3I30doHRETTCZCOzscURSRxzt-Cni2SvUUq56C85M
+[2026-11-08T14:13:34.902Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:15:36.788Z] 清掉上一轮残留 pid=344280
+[2026-11-08T14:15:36.789Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:15:39.210Z] dsh web: http://127.0.0.1:54548/?token=1GJ0CMiZlLvqt1l52k-L7ClXtWG8bJ8tlTuDNc-aakk
+[2026-11-08T14:15:39.441Z] ready http://127.0.0.1:54548?token=1GJ0CMiZlLvqt1l52k-L7ClXtWG8bJ8tlTuDNc-aakk
+[2026-11-08T14:15:40.339Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:17:38.380Z] 清掉上一轮残留 pid=345060
+[2026-11-08T14:17:38.381Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:17:40.871Z] dsh web: http://127.0.0.1:50969/?token=hk19yRpKEa022OSCpFB-HfBOVhjrBW2sfPpI3aqiTJQ
+[2026-11-08T14:17:41.250Z] ready http://127.0.0.1:50969?token=hk19yRpKEa022OSCpFB-HfBOVhjrBW2sfPpI3aqiTJQ
+[2026-11-08T14:17:48.212Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:19:02.847Z] 清掉上一轮残留 pid=26676
+[2026-11-08T14:19:02.849Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:19:05.358Z] dsh web: http://127.0.0.1:64624/?token=sfiPbXUoSfjHmt7GDPoQjqSmYP7bvhML2WosnLv36jw
+[2026-11-08T14:19:05.701Z] ready http://127.0.0.1:64624?token=sfiPbXUoSfjHmt7GDPoQjqSmYP7bvhML2WosnLv36jw
+[2026-11-08T14:19:07.943Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:33:46.224Z] 清掉上一轮残留 pid=344192
+[2026-11-08T14:33:46.228Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:33:48.957Z] dsh web: http://127.0.0.1:60762/?token=HFlUXkCPN_6N6AyDYZ8vmKeMvewFDPCVvDGtDu3aqqw
+[2026-11-08T14:33:49.192Z] ready http://127.0.0.1:60762?token=HFlUXkCPN_6N6AyDYZ8vmKeMvewFDPCVvDGtDu3aqqw
+[2026-11-08T14:33:50.098Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:35:00.656Z] 清掉上一轮残留 pid=342592
+[2026-11-08T14:35:00.658Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:35:03.373Z] dsh web: http://127.0.0.1:62246/?token=M86BltQkGY68xW4HO-YyFtpXVMvYg4xr8b0xK_MrGVg
+[2026-11-08T14:35:03.627Z] ready http://127.0.0.1:62246?token=M86BltQkGY68xW4HO-YyFtpXVMvYg4xr8b0xK_MrGVg
+[2026-11-08T14:35:04.523Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:35:29.848Z] 清掉上一轮残留 pid=336820
+[2026-11-08T14:35:29.849Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:35:32.370Z] dsh web: http://127.0.0.1:57942/?token=Y8xuiIArsMtUKagnX9s0__d_mXtxc8IEtKejHshC5pY
+[2026-11-08T14:35:32.717Z] ready http://127.0.0.1:57942?token=Y8xuiIArsMtUKagnX9s0__d_mXtxc8IEtKejHshC5pY
+[2026-11-08T14:35:35.157Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:37:06.785Z] 清掉上一轮残留 pid=344164
+[2026-11-08T14:37:06.786Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:37:09.232Z] dsh web: http://127.0.0.1:52852/?token=kHNRw7incCIQBQkFbMC89rGiSQv4IpsUu3IEg95gvjY
+[2026-11-08T14:37:09.488Z] ready http://127.0.0.1:52852?token=kHNRw7incCIQBQkFbMC89rGiSQv4IpsUu3IEg95gvjY
+[2026-11-08T14:37:11.059Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:38:19.127Z] 清掉上一轮残留 pid=345416
+[2026-11-08T14:38:19.129Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:38:21.731Z] dsh web: http://127.0.0.1:61487/?token=x6RIkkJGTWQM5WgWelNNsCmFa70qKckTwmdS1n6W4jM
+[2026-11-08T14:38:21.986Z] ready http://127.0.0.1:61487?token=x6RIkkJGTWQM5WgWelNNsCmFa70qKckTwmdS1n6W4jM
+[2026-11-08T14:38:24.370Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:40:45.088Z] 清掉上一轮残留 pid=15160
+[2026-11-08T14:40:45.089Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:40:47.747Z] dsh web: http://127.0.0.1:57493/?token=SxYzaei60hCJQMbn84HgkJoVGdEGlOGyvnXuuPjc7p4
+[2026-11-08T14:40:47.993Z] ready http://127.0.0.1:57493?token=SxYzaei60hCJQMbn84HgkJoVGdEGlOGyvnXuuPjc7p4
+[2026-11-08T14:40:50.304Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:44:44.471Z] 清掉上一轮残留 pid=344388
+[2026-11-08T14:44:44.472Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:44:47.194Z] dsh web: http://127.0.0.1:61030/?token=37B55kM70eM9jBGGPK6AcpCfTLaKZEsXeRhXwHO9NEA
+[2026-11-08T14:44:47.427Z] ready http://127.0.0.1:61030?token=37B55kM70eM9jBGGPK6AcpCfTLaKZEsXeRhXwHO9NEA
+[2026-11-08T14:44:49.809Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)
+[2026-11-08T14:49:57.074Z] 清掉上一轮残留 pid=302156
+[2026-11-08T14:49:57.075Z] cwd = D:\deepseek\电脑
+[2026-11-08T14:49:59.777Z] dsh web: http://127.0.0.1:53425/?token=HOL2Pg5Mg5f1ugDFHjN7CWcrIA3WyykmG-ckxNUuYRQ
+[2026-11-08T14:50:00.036Z] ready http://127.0.0.1:53425?token=HOL2Pg5Mg5f1ugDFHjN7CWcrIA3WyykmG-ckxNUuYRQ
+[2026-11-08T14:50:02.006Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)

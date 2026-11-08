@@ -12,12 +12,13 @@ const opts = {
   platform: 'win32',
   arch: 'x64',
   electronVersion: '33.4.11',
-  out: path.join(ROOT, 'dist'),
+  out: path.join(ROOT, process.argv[2] || 'dist'),
   overwrite: true,
   asar: false,
   prune: true,
   // 不把构建产物、日志、运行期数据、npm 缓存塞进包里
-  ignore: [/^\/dist($|\/)/, /^\/logs($|\/)/, /^\/runtime($|\/)/, /^\/\.npm-cache($|\/)/],
+  ignore: [
+    /^\/dist\d*($|\/)/,/^\/dist($|\/)/, /^\/logs($|\/)/, /^\/runtime($|\/)/, /^\/\.npm-cache($|\/)/],
   win32metadata: {
     CompanyName: 'workbench',
     FileDescription: '我的工作站',

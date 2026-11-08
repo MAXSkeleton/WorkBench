@@ -1,0 +1,282 @@
+// ══════════ 窗口管理：删除 / 拖拽重排 / 任务栏列表 ══════════
+
+function gridCols() {
+  const ws = $('grid')
+  return ws ? [...ws.children].filter((el) => el.classList && el.classList.contains('col')) : []
+}
+
+function panelEl(id) {
+  return document.querySelector('.panel[data-panel-id="' + id + '"]')
+}
+
+function pxOf(el) {
+  const v = parseFloat((el.style.flex || '').split(' ')[2])
+  return isFinite(v) && v > 0 ? v : 1
+}
+
+function syncStateFromDom() {
+  state.cols = gridCols()
+  state.model = state.cols.map((col) => ({
+    ratio: 1,
+    ids: [...col.querySelectorAll(':scope > .panel')].map((p) => ({ id: p.dataset.panelId, ratio: 1 })),
+  }))
+  state.ratios = {
+    cols: state.cols.map((c) => pxOf(c)),
+    rows: state.cols.map((col) => [...col.querySelectorAll(':scope > .panel')].map((p) => pxOf(p))),
+  }
+}
+
+// 重建分隔条（列间竖条 + 列内横条），并同步 state
+function ensureStructure() {
+  const ws = $('grid')
+  if (!ws) return
+  gridCols().forEach((col) => {
+    if (!col.querySelector(':scope > .panel')) col.remove()
+  })
+  ;[...ws.querySelectorAll(':scope > .splitter')].forEach((el) => el.remove())
+  const cols = gridCols()
+  cols.forEach((col, ci) => {
+    const ps = [...col.querySelectorAll(':scope > .panel')]
+    ps.forEach((p, ri) => {
+      if (ri > 0) {
+        const sh = document.createElement('div')
+        sh.className = 'splitter splitter-h'
+        bindSplitter(sh, 'h', ri - 1, ci)
+        col.insertBefore(sh, p)
+      }
+    })
+    if (ci > 0) {
+      const sv = document.createElement('div')
+      sv.className = 'splitter splitter-v'
+      bindSplitter(sv, 'v', ci - 1, ci)
+      ws.insertBefore(sv, col)
+    }
+  })
+  syncStateFromDom()
+}
+
+function persistSpec() {
+  try {
+    const store = loadStore()
+    const rec = store[SCENARIO_ID] || {}
+    rec.spec = gridCols().map((col) => ({
+      w: pxOf(col),
+      ids: [...col.querySelectorAll(':scope > .panel')].map((p) => p.dataset.panelId),
+    }))
+    store[SCENARIO_ID] = rec
+    saveStore(store)
+  } catch (err) {}
+}
+
+function layoutChanged() {
+  ensureStructure()
+  applySizesSoon()
+  persistSpec()
+  buildWindowBar(state.scenario)
+}
+
+function closePanel(id) {
+  const el = panelEl(id)
+  if (el) el.remove()
+  delete state.panels[id]
+  layoutChanged()
+}
+
+function applyMove(id, targetId, side) {
+  const el = panelEl(id)
+  const tEl = panelEl(targetId)
+  if (!el || !tEl || el === tEl) return
+  const ws = $('grid')
+  const tCol = tEl.parentElement
+  const w = el.parentElement ? pxOf(el.parentElement) : 300
+  el.remove()
+  if (side === 'left' || side === 'right') {
+    const col = document.createElement('div')
+    col.className = 'col'
+    col.style.flex = '0 0 ' + Math.round(w || 320) + 'px'
+    col.appendChild(el)
+    if (side === 'left') ws.insertBefore(col, tCol)
+    else ws.insertBefore(col, tCol.nextSibling)
+  } else {
+    const ref = side === 'top' ? tEl : tEl.nextSibling
+    tCol.insertBefore(el, ref)
+  }
+  if (!tCol.querySelector(':scope > .panel')) tCol.remove()
+  layoutChanged()
+}
+
+// ── 拖拽：按住面板标题拖动，落在别的窗口上按方向切成列或行 ──
+let dragState = null
+let hintEl = null
+
+function dropHint(rect, side) {
+  if (!hintEl) {
+    hintEl = document.createElement('div')
+    hintEl.className = 'drag-hint'
+    document.body.appendChild(hintEl)
+  }
+  const half = side === 'left' || side === 'right'
+  hintEl.style.left = (side === 'right' ? rect.left + rect.width / 2 : rect.left) + 'px'
+  hintEl.style.top = (side === 'bottom' ? rect.top + rect.height / 2 : rect.top) + 'px'
+  hintEl.style.width = (half ? rect.width / 2 : rect.width) + 'px'
+  hintEl.style.height = (half ? rect.height : rect.height / 2) + 'px'
+  hintEl.hidden = false
+}
+
+function clearHint() {
+  if (hintEl) hintEl.hidden = true
+}
+
+function beginPanelDrag(ev, id) {
+  if (ev.button !== 0) return
+  if (ev.target.closest('button')) return
+  if (ev.target.closest('.panel-body')) return
+  const el = panelEl(id)
+  if (!el) return
+  dragState = { id, el, x0: ev.clientX, y0: ev.clientY, active: false, target: null, side: null }
+  window.addEventListener('pointermove', onPanelDragMove)
+  window.addEventListener('pointerup', onPanelDragUp, { once: true })
+}
+
+function onPanelDragMove(ev) {
+  if (!dragState) return
+  if (!dragState.active) {
+    if (Math.abs(ev.clientX - dragState.x0) < 6 && Math.abs(ev.clientY - dragState.y0) < 6) return
+    dragState.active = true
+    dragState.el.classList.add('dragging')
+  }
+  const under = document.elementFromPoint(ev.clientX, ev.clientY)
+  const target = under && under.closest ? under.closest('.panel') : null
+  if (!target || target === dragState.el) {
+    dragState.target = null
+    dragState.side = null
+    clearHint()
+    return
+  }
+  const r = target.getBoundingClientRect()
+  const dx = (ev.clientX - r.left) / r.width
+  const dy = (ev.clientY - r.top) / r.height
+  let side
+  if (dx < 0.25) side = 'left'
+  else if (dx > 0.75) side = 'right'
+  else side = dy < 0.5 ? 'top' : 'bottom'
+  dragState.target = target.dataset.panelId
+  dragState.side = side
+  dropHint(r, side)
+}
+
+function onPanelDragUp() {
+  window.removeEventListener('pointermove', onPanelDragMove)
+  if (!dragState) return
+  const d = dragState
+  dragState = null
+  clearHint()
+  d.el.classList.remove('dragging')
+  if (d.active && d.target && d.side) applyMove(d.id, d.target, d.side)
+}
+
+// ── 启动时按记住的结构还原 ──
+function applySavedSpec() {
+  let spec = null
+  try {
+    const rec = loadStore()[SCENARIO_ID] || {}
+    spec = rec.spec
+  } catch (err) {}
+  if (!Array.isArray(spec) || !spec.length) return
+  const have = new Map([...document.querySelectorAll('.panel')].map((p) => [p.dataset.panelId, p]))
+  const ws = $('grid')
+  const cols = []
+  for (const c of spec) {
+    const col = document.createElement('div')
+    col.className = 'col'
+    for (const id of c.ids || []) {
+      const p = have.get(id)
+      if (!p) continue
+      have.delete(id)
+      col.appendChild(p)
+    }
+    if (col.querySelector(':scope > .panel')) cols.push({ col, w: Number(c.w) || 1 })
+  }
+  if (have.size) {
+    const col = document.createElement('div')
+    col.className = 'col'
+    for (const [, p] of have) col.appendChild(p)
+    cols.push({ col, w: 1 })
+  }
+  if (!cols.length) return
+  ws.innerHTML = ''
+  cols.forEach(({ col, w }, i) => {
+    if (i > 0) {
+      const sv = document.createElement('div')
+      sv.className = 'splitter splitter-v'
+      bindSplitter(sv, 'v', i - 1, i)
+      ws.appendChild(sv)
+    }
+    col.style.flex = '0 0 ' + Math.round(w * 100) + 'px'
+    ws.appendChild(col)
+  })
+  ensureStructure()
+  state.ratios.cols = cols.map((c) => c.w)
+  state.ratios.rows = state.cols.map((col) => [...col.querySelectorAll(':scope > .panel')].map(() => 1))
+  applySizesSoon()
+  persistSpec()
+}
+
+// ── 第二行任务栏：列出所有窗口，可关闭 ──
+function buildWindowBar(sc) {
+  const bar = $('taskbar2')
+  if (!bar) return
+  bar.hidden = false
+  bar.innerHTML = ''
+
+  const left = document.createElement('div')
+  left.className = 'tb-left'
+  const brand = document.createElement('span')
+  brand.className = 'tb-brand'
+  brand.textContent = '窗口'
+  left.appendChild(brand)
+
+  const ids = [...document.querySelectorAll('.panel')].map((p) => p.dataset.panelId)
+  for (const id of ids) {
+    const rec = state.panels[id]
+    const title = (rec && rec.panel && rec.panel.title) || id
+    const chip = document.createElement('span')
+    chip.className = 'tb-win'
+    chip.title = '按住标题可拖到别的窗口上重新排列'
+    const text = document.createElement('b')
+    text.textContent = title
+    const x = document.createElement('button')
+    x.className = 'tb-x'
+    x.textContent = '×'
+    x.title = '关闭窗口'
+    x.addEventListener('click', (ev) => {
+      ev.stopPropagation()
+      closePanel(id)
+    })
+    chip.appendChild(text)
+    chip.appendChild(x)
+    left.appendChild(chip)
+  }
+
+  const sep = document.createElement('span')
+  sep.className = 'tb-sep'
+  left.appendChild(sep)
+
+  const add = (label, type, title) => {
+    const btn = document.createElement('button')
+    btn.className = 'tb-btn tb-add'
+    btn.textContent = label
+    btn.title = title || ''
+    btn.addEventListener('click', () => addPanelByType(type))
+    left.appendChild(btn)
+  }
+  add('＋ 笔记（仿 Obsidian）', 'note', '新增三栏笔记窗口')
+  add('＋ 文件浏览', 'file', '新增整机文件浏览窗口')
+  bar.appendChild(left)
+
+  const hint = document.createElement('div')
+  hint.className = 'tb-right'
+  hint.textContent = '拖窗口标题到另一个窗口的四边 → 组成新的列或行；× 关闭；分隔条可拖'
+  bar.appendChild(hint)
+}
+

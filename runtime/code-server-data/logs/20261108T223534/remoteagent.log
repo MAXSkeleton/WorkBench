@@ -1,0 +1,35 @@
+2026-11-08 22:35:34.165 [info] 
+
+
+
+
+2026-11-08 22:35:34.169 [info] StorageMainService: creating application shared storage
+2026-11-08 22:35:34.172 [info] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock)
+2026-11-08 22:35:34.178 [info] Extension host agent started.
+2026-11-08 22:35:34.183 [info] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+2026-11-08 22:35:34.183 [info] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+2026-11-08 22:35:34.193 [info] [shared storage] Fallback application storage initialized with 4 items
+2026-11-08 22:35:35.188 [info] [127.0.0.1][cee60f1e][ManagementConnection] New connection established.
+2026-11-08 22:35:35.511 [info] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+2026-11-08 22:35:35.728 [info] [127.0.0.1][fc5e77d2][ExtensionHostConnection] New connection established.
+2026-11-08 22:35:35.729 [info] [127.0.0.1][fc5e77d2][ExtensionHostConnection] Starting extension host process...
+2026-11-08 22:35:35.741 [info] [127.0.0.1][fc5e77d2][ExtensionHostConnection] <342392> Launched Extension Host Process.
+2026-11-08 22:35:36.196 [info] [127.0.0.1][fc5e77d2][ExtensionHostConnection] <342392> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+2026-11-08 22:35:36.522 [info] ServerAgentHostManager: agent host started
+2026-11-08 22:35:36.522 [info] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock
+2026-11-08 22:36:13.399 [info] [127.0.0.1][abb19fd0][ManagementConnection] New connection established.
+2026-11-08 22:36:13.986 [info] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+2026-11-08 22:36:13.991 [info] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-31901e5e-6427-4723-9e4b-5db6915993c2-sock
+2026-11-08 22:36:14.151 [info] [127.0.0.1][abbfdec6][ExtensionHostConnection] New connection established.
+2026-11-08 22:36:14.151 [info] [127.0.0.1][abbfdec6][ExtensionHostConnection] Starting extension host process...
+2026-11-08 22:36:14.160 [info] [127.0.0.1][abbfdec6][ExtensionHostConnection] <25832> Launched Extension Host Process.
+2026-11-08 22:36:14.493 [info] [127.0.0.1][abbfdec6][ExtensionHostConnection] <25832> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+2026-11-08 22:36:20.871 [info] [127.0.0.1][cee60f1e][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-08 22:36:39.130 [error] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20)
+2026-11-08 22:36:39.135 [info] [127.0.0.1][abb19fd0][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2026-11-08 22:37:11.165 [info] [127.0.0.1][cee60f1e][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-08 22:37:11.166 [info] [127.0.0.1][abb19fd0][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2026-11-08 22:37:11.166 [info] [127.0.0.1][b26d6f79][ManagementConnection] New connection established.

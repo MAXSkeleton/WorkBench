@@ -1,0 +1,17 @@
+2026-11-08 22:36:15.112 [info] [main] Log level: Info
+2026-11-08 22:36:15.112 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2026-11-08 22:36:15.112 [info] [main] Validating found git in: "C:\Program Files (x86)\Git\cmd\git.exe"
+2026-11-08 22:36:15.112 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2026-11-08 22:36:15.112 [info] [main] Validating found git in: "C:\Users\aa\AppData\Local\Programs\Git\cmd\git.exe"
+2026-11-08 22:36:15.151 [info] [main] Validating found git in: "E:\GIT\Git\cmd\git.exe"
+2026-11-08 22:36:15.206 [info] [main] Using git "2.54.0.windows.1" from "E:\GIT\Git\cmd\git.exe"
+2026-11-08 22:36:15.206 [info] [Model][doInitialScan] Initial repository scan started
+2026-11-08 22:36:15.230 [warning] [Model][traverseWorkspaceFolder] Unable to read workspace folder '\deepseek\电脑': Error: ENOENT: no such file or directory, scandir 'E:\deepseek\电脑'
+2026-11-08 22:36:15.230 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'
+2026-11-08 22:36:15.234 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-11-08 22:36:15.458 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'
+2026-11-08 22:36:15.463 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'
+2026-11-08 22:36:15.488 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'
+2026-11-08 22:36:15.654 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'
+2026-11-08 22:36:17.118 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'
+2026-11-08 22:36:17.169 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "\deepseek\电脑". Error:Error: ENOENT: no such file or directory, realpath 'E:\deepseek\电脑'

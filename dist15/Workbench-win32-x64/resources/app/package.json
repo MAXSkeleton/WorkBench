@@ -1,0 +1,6 @@
+{
+  "name": "my-workbench",
+  "version": "0.1.0",
+  "description": "个人工作站：一个窗口里同时有 DSH、编辑器、终端与本地工具",
+  "main": "main.js"
+}

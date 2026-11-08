@@ -1,0 +1,299 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792564621585,
+      "cwd": "C:\\Users\\aa\\Documents\\deepseek-harness\\default-workspace",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 409,
+        "val": "升级覆盖dsh旧版本的步骤"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 409,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "用新版本覆盖dsh需要做什么"
+          },
+          "count": 5,
+          "lastSeq": 301
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 409,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 409,
+        "val": "workspace-write"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 409,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 75236,
+            "outputTokens": 48011,
+            "cacheReadTokens": 3718784,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 5,
+            "step": 14,
+            "buckets": {
+              "uncachedInputTokens": 971,
+              "outputTokens": 1881,
+              "cacheReadTokens": 135424,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 409,
+        "val": {
+          "surfaceTokens": 103964,
+          "contextWindow": 1000000,
+          "pressureTokens": 136395,
+          "sampledSurfaceTokens": 102716
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 409,
+        "val": {
+          "systems": [
+            {
+              "seq": 7,
+              "tokens": 15259
+            },
+            {
+              "seq": 249,
+              "tokens": 1448
+            },
+            {
+              "seq": 300,
+              "tokens": 15215
+            }
+          ],
+          "surfaceTokens": 103964,
+          "breakdown": {
+            "systemTokens": 15215,
+            "toolsTokens": 9778,
+            "messageTokens": 88749
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 404,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 407
+          },
+          "lastTurn": 5
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 409,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 409,
+        "val": {
+          "turns": 5,
+          "steps": 49,
+          "llmMs": 278806,
+          "toolMs": 1076909,
+          "ttftMs": 69562,
+          "ttftSteps": 49,
+          "decodeMs": 208060,
+          "decodeTokens": 48011,
+          "lastTurn": 5,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "用新版本覆盖dsh需要做什么",
+              "response": "先说结论：覆盖程序目录**不会**碰到你的数据，数据全都放在 `%USERPROFILE%\\.dsh` 和 `%APPDATA%\\@deepseek-ai\\dsh-desktop`；真正要小心的是两件事——**不能一边运行一边覆盖**，以…"
+            },
+            {
+              "turn": 2,
+              "seq": 98,
+              "prompt": "将对话与插件封装进D:\\deepseek备份，目录下，以便在删除deepseek后可以再次恢复",
+              "response": "备份已完成，都在 `D:\\deepseek备份`（407.2 MB / 18906 个文件）。 ## 目录结构 ``` D:\\deepseek备份\\ ├─ 恢复.ps1 ← 一键还原（已做语法检查，0 错误） ├─ 备份.ps1 ← 以后…"
+            },
+            {
+              "turn": 3,
+              "seq": 246,
+              "prompt": "删除对话框信息，怎么删除",
+              "response": ""
+            },
+            {
+              "turn": 4,
+              "seq": 261,
+              "prompt": "删除工作区对话，怎么删除",
+              "response": "要回答“工作区对话怎么删”，我先确认代码里到底有没有删除入口（避免瞎编 UI）："
+            },
+            {
+              "turn": 5,
+              "seq": 297,
+              "prompt": "如何删除工作区的对话，例如“ai建筑等”",
+              "response": "对话（会话）在磁盘上就是一个个文件夹，删掉即可。我刚在你机器上确认了结构，并写了个按标题查/删的脚本 [delete-session.ps1](<dsh-backup/delete-session.ps1>)。 ## 会话存在哪 ```…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 409,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 409,
+        "val": "C:\\Users\\aa\\Documents\\deepseek-harness\\default-workspace"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 409,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 409,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 409,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "lastMessageTime": 1792568435226,
+          "lastInjectionTime": 1792568122190,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 409,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 409,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 409,
+        "val": null
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 409,
+        "val": {
+          "source": "The DeepSeek Harness implementation checkout is at D:\\DeepSeek\\resources\\app.asar\\dsh\\. The checkout location and current working directory are separate values and may differ; never infer the working directory from this path. Use pwd to determine the current working directory. Use this checkout only to inspect or extend DSH itself.",
+          "web": "You are interacting with the user through the DeepSeek Harness Web GUI at http://127.0.0.1:19387. When the user refers to \"this page\", \"this GUI\", or \"this app\" without naming another target, they mean this GUI. The browser provides no implicit DOM, route, or screenshot context. The client-plugin HMR receiver is active, but client-plugin changes reload without a refresh only while `pnpm run dev:web` is also running from this same checkout to rebuild their bundles; verify that watcher before promising automatic updates. Every other change — the apps/web shell and plain packages — requires rebuilding the affected Web artifacts and verifying this existing URL after a page refresh. Starting another server does not update this GUI. The apps/web Vite entry builds the shell but is not a standalone application because only dsh web injects window.__DSH_BOOT__. Do not start a replacement server unless the user asks; if one is needed, use a managed background job and verify its exact URL."
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 409,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 409,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1792568324608
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 409,
+        "val": null
+      }
+    }
+  }
+}

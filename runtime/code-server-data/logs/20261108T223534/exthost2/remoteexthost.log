@@ -1,0 +1,14 @@
+2026-11-08 22:36:14.741 [info] Extension host with pid 25832 started
+2026-11-08 22:36:14.741 [error] Error: EEXIST: file already exists, open 'e:\Work\workbench\runtime\code-server-data\User\workspaceStorage\-2d760a20\vscode.lock'
+2026-11-08 22:36:14.744 [info] Lock 'e:\Work\workbench\runtime\code-server-data\User\workspaceStorage\-2d760a20\vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-11-08 22:36:14.749 [info] Lock 'e:\Work\workbench\runtime\code-server-data\User\workspaceStorage\-2d760a20\vscode.lock': The lock does not look stale, elapsed: 45 ms, giving up.
+2026-11-08 22:36:14.776 [info] Lock 'e:\Work\workbench\runtime\code-server-data\User\workspaceStorage\-2d760a20-1\vscode.lock': Lock acquired.
+2026-11-08 22:36:14.794 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2026-11-08 22:36:14.795 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-11-08 22:36:14.923 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-11-08 22:36:14.948 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-11-08 22:36:14.948 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-11-08 22:36:15.209 [info] Eager extensions activated
+2026-11-08 22:36:15.209 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-11-08 22:36:39.129 [error] Error: read ECONNRESET
+	at TCP.onStreamRead (node:internal/stream_base_commons:221:20)

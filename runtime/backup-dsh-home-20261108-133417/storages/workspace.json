@@ -1,0 +1,151 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "defaultWorkspaceId": "52c3b037-ea15-4865-b21a-5fb448163f35",
+    "workspaceIds": [
+      "dece57e9-7aa5-4799-8b37-098098b86c88",
+      "d4596a6b-1d0a-4328-b74d-3328224e18c1",
+      "8c8f6b23-bcfb-452f-9b56-6c68cb9206c9",
+      "072dabb7-4066-4dee-9efe-eb23761b27b9",
+      "de2c1161-c0a5-4ee5-b52d-42083040cd9c",
+      "ca98faf4-30bc-4248-87cd-c7a789850c04",
+      "40f40042-ce78-40fb-982a-6a58972da9b4",
+      "52c3b037-ea15-4865-b21a-5fb448163f35",
+      "d68651b1-b2d5-4207-ac6f-c31b318a0b6e",
+      "d4fde500-8378-4d24-bd2e-533ff710c42c"
+    ],
+    "archivedSessionIds": [
+      "session-ac66ca20-2d22-4362-bde8-bb1e46db7c34",
+      "session-56d26008-2017-4c57-a7bf-72d12c6bdf56",
+      "session-2d64b3a5-46d7-40d5-bf68-d1cbc5c8abdb",
+      "session-a0f71a67-59f0-41d6-ba9e-b3b3cadc6cf8",
+      "session-4ba50522-f864-4233-ad90-6d61179c0fcf",
+      "session-dfb4be61-7c11-4e5d-b97e-33fcde7d3bb9",
+      "session-97d71436-51ab-4153-971f-212ca75921fb",
+      "session-26fc3dc6-8e53-4510-a21e-92a06ef6a60d"
+    ],
+    "pinnedSessionIds": []
+  },
+  "tables": {
+    "workspaces": {
+      "d68651b1-b2d5-4207-ac6f-c31b318a0b6e": {
+        "path": "D:\\deepseek\\主目录",
+        "title": "deepseek",
+        "sessionIds": [
+          "session-66db949d-22c6-4b54-8c96-7e60eb1996e5",
+          "session-1cebb2ce-63df-43f0-9b98-b8163b5093f3"
+        ],
+        "createdAt": "2026-10-21T07:44:53.438Z",
+        "updatedAt": "2026-10-21T12:57:24.929Z"
+      },
+      "52c3b037-ea15-4865-b21a-5fb448163f35": {
+        "path": "C:\\Users\\aa\\Documents\\deepseek-harness\\default-workspace",
+        "title": "硬件开发",
+        "sessionIds": [
+          "session-c1c2d5a4-68e2-4e99-9ca0-951716aa2927",
+          "session-1c6d9fcd-356f-45f2-946e-218e5b769fa0",
+          "session-2d64b3a5-46d7-40d5-bf68-d1cbc5c8abdb",
+          "session-a0f71a67-59f0-41d6-ba9e-b3b3cadc6cf8",
+          "session-5559ee8d-31b2-41f6-876a-c7eeb75a8e87",
+          "session-4ba50522-f864-4233-ad90-6d61179c0fcf"
+        ],
+        "createdAt": "2026-10-13T09:08:18.240Z",
+        "updatedAt": "2026-10-23T07:01:38.283Z"
+      },
+      "d4596a6b-1d0a-4328-b74d-3328224e18c1": {
+        "path": "D:\\DeepSeek\\任务\\Skill",
+        "title": "Skill",
+        "sessionIds": [
+          "session-cbc4caea-5c32-4ff3-b707-e7b0d17ae7cd"
+        ],
+        "createdAt": "2026-10-15T00:08:11.545Z",
+        "updatedAt": "2026-10-15T00:08:11.698Z"
+      },
+      "8c8f6b23-bcfb-452f-9b56-6c68cb9206c9": {
+        "path": "D:\\DeepSeek\\我的世界",
+        "title": "我的世界",
+        "sessionIds": [
+          "session-9861e50e-909d-48a6-a384-0dfea2386487",
+          "session-4cc00960-3edb-482d-8ab4-f581a1748093"
+        ],
+        "createdAt": "2026-10-16T14:47:04.107Z",
+        "updatedAt": "2026-10-17T02:35:41.716Z"
+      },
+      "dece57e9-7aa5-4799-8b37-098098b86c88": {
+        "path": "D:\\deepseek\\素材",
+        "title": "素材",
+        "sessionIds": [
+          "session-b04afb4b-e06b-42f4-b1fa-e16f78b98640",
+          "session-749912d7-e37e-4036-946e-164d2e7c4961",
+          "session-d3ffb1b3-bbc4-4825-98ca-4b6114265443"
+        ],
+        "createdAt": "2026-10-21T13:12:52.193Z",
+        "updatedAt": "2026-10-24T13:54:52.563Z"
+      },
+      "de2c1161-c0a5-4ee5-b52d-42083040cd9c": {
+        "path": "D:\\deepseek\\绘画",
+        "title": "绘画",
+        "sessionIds": [
+          "session-63ec1013-94a3-4273-bfc3-0542806204f9"
+        ],
+        "createdAt": "2026-10-21T14:09:04.673Z",
+        "updatedAt": "2026-10-21T14:09:04.729Z"
+      },
+      "40f40042-ce78-40fb-982a-6a58972da9b4": {
+        "path": "D:\\deepseek\\鸿蒙",
+        "title": "鸿蒙",
+        "sessionIds": [
+          "session-e071cf75-86ed-498b-a0c2-f453c668b779",
+          "session-860fb6c3-eed1-4eb6-97ed-c57cc4b69ae7",
+          "session-5671ceca-e018-475c-ac04-602d91f68992",
+          "session-26fc3dc6-8e53-4510-a21e-92a06ef6a60d",
+          "session-18d93228-600c-42e7-83bb-47872f2d6104",
+          "session-f3595763-6a17-45cc-8c2b-6a8c8335ac8e"
+        ],
+        "createdAt": "2026-10-24T13:47:41.421Z",
+        "updatedAt": "2026-11-03T07:15:46.911Z"
+      },
+      "072dabb7-4066-4dee-9efe-eb23761b27b9": {
+        "path": "D:\\deepseek\\小说",
+        "title": "小说",
+        "sessionIds": [
+          "session-e9180e12-557f-403c-96ba-2c60c2cb2398",
+          "session-54df009a-c163-42c5-8233-af67cafdf041",
+          "session-2ae7bd42-4d5f-41ee-a359-c6e01a5464ef",
+          "session-293c4395-d143-4152-b69a-33e8d95e6168"
+        ],
+        "createdAt": "2026-10-26T00:15:56.694Z",
+        "updatedAt": "2026-11-05T02:02:51.955Z"
+      },
+      "d4fde500-8378-4d24-bd2e-533ff710c42c": {
+        "path": "D:\\deepseek\\电脑",
+        "title": "设备",
+        "sessionIds": [
+          "session-8bcf802b-51d7-4baf-9d07-dfbbc4cfe4c7",
+          "session-13429d87-87ae-4da4-967d-3305854ee9f9",
+          "session-5c98e514-6eb3-4929-ba55-984580db199b",
+          "session-61c1ae18-cfb6-4eb0-9d09-1b02e7ee464e",
+          "session-7b56aea5-1dd0-4d67-aead-fb460341b762",
+          "session-b496a1d2-b28c-44ba-afc8-059db1d3db96"
+        ],
+        "createdAt": "2026-11-02T05:41:10.340Z",
+        "updatedAt": "2026-11-07T08:08:07.475Z"
+      },
+      "ca98faf4-30bc-4248-87cd-c7a789850c04": {
+        "path": "D:\\deepseek\\剪辑",
+        "title": "数媒",
+        "sessionIds": [
+          "session-a7619a7a-3e94-410d-b7ec-fe9b6ac5a9dd",
+          "session-5cabf530-6857-4c98-9f50-a7bcd97bebe9",
+          "session-59251189-3539-40da-a7de-7a652e2d4681"
+        ],
+        "createdAt": "2026-11-04T02:04:51.339Z",
+        "updatedAt": "2026-11-06T07:40:17.087Z"
+      }
+    }
+  }
+}

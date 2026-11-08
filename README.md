@@ -176,13 +176,72 @@ cmd /c "set ELECTRON_RUN_AS_NODE=&& ""<path>\electron.exe"" . --no-sandbox"
 - **C7 窗口摆位**：`launch` 面板拉起 PyCharm / DevEco / VMware 后，用 Win32 API 把原生窗口摆到指定区域
 - **C8 场景切换**：多份 scenario（写作 / 开发 / 查资料），启动前选
 
+## 文件面板：整台电脑
+
+左侧「文件」面板默认落在 **此电脑**，不是某个固定目录。
+
+- 驱动器：自动枚举所有存在的盘符（C:/D:/E:/F: …）
+- 常用位置：用户目录、桌面、下载、文档、`~/.dsh`（DSH 数据）、工作站目录
+- 单击文件夹进入；顶部路径条显示当前绝对路径；`..` 从盘符根再往上回到「此电脑」
+- 单击文件在右侧预览（文本直显，图片按 data URL 内联；单文件上限 4 MB）
+
+改回固定目录：`scenarios/dev.json` 里 files 面板的 `root` 写成绝对路径（如 `"D:/Python/pycharm"`），
+忽略这个字段或写 `"roots"` 就是整机浏览。
+
+## 顶部任务栏：把本地 exe 停进面板
+
+窗口最上方那条是任务栏，按钮来自 `scenarios/dev.json` 的 `taskbar` 数组（不写则退回 `launchers`）。
+
+用法：
+
+1. 点「PyCharm」→ 启动它，并把它的窗口停进 `dockTarget` 指定的面板（默认 `editor`，也就是原 VSCode 的位置）；面板本身显示「这块面板正被「PyCharm」接管」。
+2. 再点同一个按钮 → 结束接管，窗口归还桌面。
+3. 拖动分隔条、缩放窗口 → 停靠的窗口跟着重新贴合面板。
+4. 条目里写 `"dock": false` 的（比如 VMware、资源管理器）不接管，只做普通启动。
+
+实现要点：
+
+- 不用 `SetParent`（对 Chromium / JVM 应用会崩、输入丢失），而是把对方窗口设成工作台窗口的**属主窗口**（`GWL_HWNDPARENT`），再用 `SetWindowPos` 精确贴到面板矩形上。属主窗口天然压在属主之上、随属主最小化。
+- 定位前先 `SW_RESTORE`，所以最小化/停到屏幕外（`-25600,-25600`）的窗口也能拉回来。
+- 面板区域按 CSS 像素算，交给 Win32 前用 `scaleFactor` 换算成物理像素（本机 125% 缩放）。
+- 关闭工作台时会先把每个停靠窗口解绑，再退出——不会连带杀掉你的 IDE。
+- 工具是 `tools/WinDock.exe`（源码 `tools/WinDock.cs`，用 `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe` 编译）。
+- 自测入口：`electron . --no-sandbox --docktest pycharm`，结果写 `logs/dock-result.json`。
+
+已知限制：按 exe 名找窗口，如果某应用是「启动器进程 + 真正的窗口在子进程」，可能匹配到启动器；这类应用先用 `"dock": false`，或者把 `taskbar` 条目的 `path` 直接指向真正那个 exe。
+## 布局：默认三等分，可拖拽调整
+
+启动即最大化全屏，横向三等分：**文件 | VSCode | DSH**，右列再上下分成 **DSH / 本地应用**。
+
+| 操作 | 效果 |
+| --- | --- |
+| 拖动竖直分隔条 | 调左右列宽 |
+| 拖动水平分隔条 | 调同列内上下两块的高度 |
+| 双击分隔条 | 该方向恢复均分 |
+| 关掉再开 | 记住你拉过的比例（localStorage `workbench.layouts.v1`） |
+
+默认布局写在 `scenarios/dev.json` 的 `layout` 里：
+
+```json
+"layout": {
+  "columns": [
+    { "width": 1, "panels": ["files"] },
+    { "width": 1, "panels": ["editor"] },
+    { "width": 1, "panels": ["ai", "apps"] }
+  ]
+}
+```
+
+`width` 是列宽权重，`panels` 按顺序上下排列（高度权重取面板的 `height`，默认 1）。
+去掉 `apps` 就是纯三列；想加一层上下分割，把另一个面板 id 塞进同一条 `panels` 即可。
+
 ## 做成 exe（打包）
 
 ```powershell
 npm run build        # 等价于 node tools/build-exe.js
 ```
 
-产物：`dist\Workbench-win32-x64\Workbench.exe`（约 890MB）。
+产物：`dist2\Workbench-win32-x64\Workbench.exe`（约 890MB）。
 
 **必须整目录使用**：exe 依赖同目录的 `locales\`、`*.dll`、`resources\app\`（里面是我们自己的代码与 vendor 里的 code-server）。
 只把这个 exe 单独拷走是跑不起来的；要搬就整个 `Workbench-win32-x64` 文件夹一起搬。
@@ -190,3 +249,72 @@ npm run build        # 等价于 node tools/build-exe.js
 双击 `Workbench.exe` 即可，不需要命令行、也不需要 `--no-sandbox`（启动器里那句 `set ELECTRON_RUN_AS_NODE=` 只是给被污染的环境兜底）。
 
 体积构成：code-server 的 extensions 约 262MB + node_modules 约 210MB + Electron 运行时约 180MB + 其余。
+
+### 关于 dist 与 dist2
+
+当前可用产物在 **`dist2\Workbench-win32-x64\Workbench.exe`**，双击即用（必须整目录搬）。
+
+`dist` 是一次重打包被占用后留下的空壳（只剩 `Workbench-win32-x64\resources\app` 三层空目录，Windows 拒绝删除）。
+重启电脑后执行 `Remove-Item dist -Recurse -Force` 清掉，之后 `npm run build` 会照常输出到 `dist`。
+也可以 `node tools/build-exe.js 任意目录名` 换个输出位置。
+
+## 和工作台外的 DSH 共用对话
+
+工作台里的 DSH 面板跑的是**另一个引擎进程**（端口随机），但它读的是同一份数据：
+
+```json
+"engine": {
+  "home": "C:\\Users\\aa\\.dsh",
+  "cwd": "D:\\deepseek\\电脑"
+}
+```
+
+- `home` = `DSH_HOME`。指到你自己的 `.dsh`，会话、工作区列表、登录态、凭据全都和桌面版共用；
+  指到 `runtime/dsh-home` 就是一份干净的空数据（会显示"开始使用 / 添加 API Key"）。
+- `cwd` = 引擎的工作目录。DSH 按工作目录分目录存会话（`sessions/--D-deepseek-…--`），
+  不设就会落到 `E:\Work\workbench` 那个目录名下，看起来"历史会话不见了"。
+
+两条注意：
+
+1. 桌面版 DSH 和工作台可以同时开着，它们各写各自的会话文件；但同一个会话别两边同时聊。
+2. 从别处拷过去/换了机器，`.dsh` 不存在时程序会自动回退到 `runtime/dsh-home`，不会启动失败（日志里有一行 `共享 home 不存在，回退`）。
+
+## 界面结构（v2）
+
+启动时按场景里的 `layout` 重建界面，并因为 `resetOnStart: true` 清掉上一轮记下的布局，所以**每次打开都是标准布局**。
+
+默认（两行三列）：
+
+| | 第 1 列 | 第 2 列 | 第 3 列 |
+| --- | --- | --- | --- |
+| 第一行 | 电脑监控 | 文件预览器 | 文件浏览器 |
+| 第二行 | 空（占位） | DSH（跨两列） | |
+
+第二行任务栏从左到右：`工作站` / **设置** / **外观** / **窗口 ▾** / 已开窗口芯片（每个带 × 关闭）。
+
+- **设置 / 外观**：目前是占位按钮，点了只弹一条提示，接口留着以后接工程。
+- **窗口 ▾**：下拉列出可加的窗口——电脑监控、文件预览器、文件浏览器、笔记、DSH、VSCode；点一个就**在界面最右侧新开一列**放它。
+- 芯片上的 **×** 关掉窗口，关完自动收回空列/空行。
+
+### 新增的两个窗口
+
+- **电脑监控**：CPU（按时间片差值算百分比）、内存（已用/总量）、GPU（调 `nvidia-smi` 取利用率与显存；没有 NVIDIA 卡时显示「无 GPU 数据」），每 2 秒刷新。
+- **文件预览器**：「选择文件…」或直接把文件拖进面板，图片内联显示、视频/音频可播放、文本按等宽字体显示；>4 MB 的文本与未知类型只显示文件信息。
+
+配置文件：`scenarios/dev.json` 的 `layout: { mode: "grid", cells: [[...],[...]] }`，`cells` 里同一个 id 出现两次就是跨列/跨行。
+
+## 两行任务栏
+
+**第一行：启动器** —— PyCharm / DevEco Studio / VSCode（桌面版）/ Obsidian / VMware / 资源管理器，全部显示成各程序自己的 exe 图标（从 exe 提取的 32×32 PNG，放在 renderer/icons/），悬停看名字，点一下启动。
+
+**第二行：工作站 | 设置 | 外观 | 界面 ▾ | 预设按钮 | ＋**
+
+- **界面 ▾**：上面是「加窗口」列表（电脑监控 / 文件预览器 / 文件浏览器 / 笔记 / DSH / VSCode，点一下在右侧新开一列），分段线下面是 **重置当前预设** 与 **重置全部**。
+- **预设按钮**：「基础」「开发」点一下切换，高亮的那个是当前预设；＋ 把当前布局存成新预设。
+
+### 布局会记住
+
+退出软件不会重置界面：当前预设、每一格放了哪个窗口、列宽行高都存在 localStorage 的 workbench.ui.v2 里，下次打开照原样恢复。
+
+- **重置当前预设**：只把当前预设恢复成它定义时的样子（手动加的窗口会被移除）。
+- **重置全部**：清掉所有存档，回到「基础」预设。

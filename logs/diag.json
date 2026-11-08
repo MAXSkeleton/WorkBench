@@ -1,50 +1,70 @@
 {
   "viewport": {
-    "w": 1482,
-    "h": 719
+    "w": 2048,
+    "h": 1082
   },
-  "gridDisplay": "grid",
+  "workspaceDisplay": "grid",
   "bootHidden": true,
-  "status": "DSH 引擎：127.0.0.1:62109   ·   VSCode：ready   ·   面板：3",
+  "status": "DSH 引擎：127.0.0.1:53425   ·   VSCode：ready   ·   面板：4   ·   布局：拖分隔条可调 / 双击均分",
+  "splitterCount": {
+    "v": 0,
+    "h": 0
+  },
+  "drag": null,
+  "dragH": null,
+  "cols": [],
   "panels": [
     {
-      "id": "files",
-      "title": "文件",
+      "id": "monitor",
+      "title": "电脑监控",
       "rect": {
         "x": 6,
-        "y": 6,
-        "w": 240,
-        "h": 707
+        "y": 78,
+        "w": 675,
+        "h": 484
       },
       "dot": "dot",
       "hasWebview": false,
-      "body": "↑\n..\n📁\npython\n📁\npythonProject\n📁\nzidonghua"
+      "body": "34%\nCPU\n33%\nGPU\n内存\n20.3 / 23.7 GB\nNVIDIA GeForce RTX 4060 Laptop GPU · 显存 2199 / 8188 MB · 每 2 秒刷新"
     },
     {
-      "id": "editor",
-      "title": "VSCode",
+      "id": "preview",
+      "title": "文件预览器",
       "rect": {
-        "x": 252,
-        "y": 6,
-        "w": 732,
-        "h": 707
+        "x": 687,
+        "y": 78,
+        "w": 675,
+        "h": 484
       },
-      "dot": "dot ok",
-      "hasWebview": true,
-      "body": ""
+      "dot": "dot",
+      "hasWebview": false,
+      "body": "选择文件…\n打开\n还没有选择文件\n选一个图片 / 视频 / 文本，这里原地显示"
     },
     {
-      "id": "ai",
+      "id": "files",
+      "title": "文件浏览器",
+      "rect": {
+        "x": 1367,
+        "y": 78,
+        "w": 675,
+        "h": 484
+      },
+      "dot": "dot",
+      "hasWebview": false,
+      "body": "此电脑\n驱动器\n▸\n📁\nC:\n▸\n📁\nD:\n▸\n📁\nE:\n▸\n📁\nF:\n常用位置\n▸\n📁\n用户目录\n▸\n📁\n桌面\n▸\n📁\n下载\n▸\n📁\n文档\n▸\n📁\nDSH 数据\n▸\n📁\n工作站\n☰\n↑\n此电脑\n名称\n修改日期\n类型\n大"
+    },
+    {
+      "id": "dsh",
       "title": "DSH",
       "rect": {
-        "x": 990,
-        "y": 6,
-        "w": 486,
-        "h": 707
+        "x": 687,
+        "y": 568,
+        "w": 1355,
+        "h": 484
       },
       "dot": "dot ok",
       "hasWebview": true,
-      "body": ""
+      "body": "等待地址\n引擎就绪后会自动载入"
     }
   ]
 }

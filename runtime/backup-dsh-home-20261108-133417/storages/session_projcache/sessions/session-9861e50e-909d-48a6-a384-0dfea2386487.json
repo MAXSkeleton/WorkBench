@@ -1,0 +1,272 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792204541692,
+      "cwd": "D:\\DeepSeek\\我的世界",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 1578,
+        "val": "我的世界模组开发"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 1578,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "如果我希望基于Java我的世界，开发一个斗地主模组应该怎么做？"
+          },
+          "count": 6,
+          "lastSeq": 1523
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 1578,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 1578,
+        "val": "workspace-write"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 1578,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 112690,
+            "outputTokens": 147421,
+            "cacheReadTokens": 27827840,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 6,
+            "step": 8,
+            "buckets": {
+              "uncachedInputTokens": 195,
+              "outputTokens": 645,
+              "cacheReadTokens": 224896,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 1578,
+        "val": {
+          "surfaceTokens": 167002,
+          "contextWindow": 1000000,
+          "pressureTokens": 225091,
+          "sampledSurfaceTokens": 166698
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 1578,
+        "val": {
+          "systems": [
+            {
+              "seq": 7,
+              "tokens": 15249
+            }
+          ],
+          "surfaceTokens": 167002,
+          "breakdown": {
+            "systemTokens": 15249,
+            "toolsTokens": 6519,
+            "messageTokens": 151753
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 1570,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 1573
+          },
+          "lastTurn": 6
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 1578,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 1578,
+        "val": {
+          "turns": 6,
+          "steps": 226,
+          "llmMs": 647110,
+          "toolMs": 6058220,
+          "ttftMs": 185780,
+          "ttftSteps": 226,
+          "decodeMs": 461330,
+          "decodeTokens": 147421,
+          "lastTurn": 6,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "如果我希望基于Java我的世界，开发一个斗地主模组应该怎么做？",
+              "response": "# 开发斗地主模组的完整路线 这是一个纯技术方案讨论，我直接给你讲清楚思路和关键代码结构，不做成卡片。 ## 一、先确定技术栈 | 选择 | 适用版本 | 说明 | |---|---|---| | **Fabric** | 1.20.x…"
+            },
+            {
+              "turn": 2,
+              "seq": 22,
+              "prompt": "基于NeoForge开发，在D:\\JAVA\\use\\xiangmu\\DouDiZhu中编译",
+              "response": "我已经把斗地主模组工程建好，核心逻辑也通过实测验证了；目前只剩打包 jar 这一步，卡在需要代理上。 **核心成果**（实测输出，不是推断）： - 392 项测试全部通过（368 项引擎测试 + 24 项牌解析测试） - 300 局 AI…"
+            },
+            {
+              "turn": 3,
+              "seq": 765,
+              "prompt": "将这些文件全部写入idea中，同时表明注释，以便后期更改",
+              "response": "所有文件已写入 `D:\\JAVA\\use\\xiangmu\\DouDiZhu\\DouDiZhu`，并**在该目录原地编译和测试通过**（392 项全通过，300 局 AI 对局 0 非法出牌）。 ## 写入内容 **代码（17 个 Java…"
+            },
+            {
+              "turn": 4,
+              "seq": 1056,
+              "prompt": "该模组是否可以在服务器中与好友联机？",
+              "response": "简短回答：**不能**。当前版本只能单机打 AI，无法联机。 ## 为什么不能 现有代码里的牌局是**绑定到“每个玩家各自一个牌局”**的： ```java // DdzSession.java private static final…"
+            },
+            {
+              "turn": 5,
+              "seq": 1065,
+              "prompt": "房主邀请，idea上更改",
+              "response": "房主邀请制联机版已完成并写入 IDEA 工程。 ## 玩法 ``` 房主: /ddz create 建房（坐 0 号位） 房主: /ddz invite 张三 邀请 张三: /ddz accept 接受 房主: /ddz start 开局…"
+            },
+            {
+              "turn": 6,
+              "seq": 1520,
+              "prompt": "我要如何使用neoforge封装",
+              "response": "你要的其实是把工程打包成 jar 装进游戏，NeoForge 在这里主要扮演“让模组能在游戏里运行”的平台。 我已经写好两个文件： - `打包与安装指南.md`：完整操作流程 - `build.bat`：一键打包脚本 ## 但现在是卡住的…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 1578,
+        "val": "standard"
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 1578,
+        "val": "D:\\DeepSeek\\我的世界"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 1578,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 1578,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 1578,
+        "val": {
+          "lastMessageTime": 1792213331839,
+          "lastInjectionTime": null,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 1578,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 1578,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 1578,
+        "val": null
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 1578,
+        "val": {
+          "source": "The DeepSeek Harness implementation checkout is at D:\\DeepSeek\\resources\\app.asar\\dsh\\. The checkout location and current working directory are separate values and may differ; never infer the working directory from this path. Use pwd to determine the current working directory. Use this checkout only to inspect or extend DSH itself.",
+          "web": "You are interacting with the user through the DeepSeek Harness Web GUI at http://127.0.0.1:19387. When the user refers to \"this page\", \"this GUI\", or \"this app\" without naming another target, they mean this GUI. The browser provides no implicit DOM, route, or screenshot context. The client-plugin HMR receiver is active, but client-plugin changes reload without a refresh only while `pnpm run dev:web` is also running from this same checkout to rebuild their bundles; verify that watcher before promising automatic updates. Every other change — the apps/web shell and plain packages — requires rebuilding the affected Web artifacts and verifying this existing URL after a page refresh. Starting another server does not update this GUI. The apps/web Vite entry builds the shell but is not a standalone application because only dsh web injects window.__DSH_BOOT__. Do not start a replacement server unless the user asks; if one is needed, use a managed background job and verify its exact URL."
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 {
   "id": "dev",
   "name": "开发",
+  "resetOnStart": false,
   "grid": {
     "cols": 12,
     "rows": 10,
@@ -14,7 +15,8 @@
       "--port",
       "0"
     ],
-    "home": "runtime/dsh-home",
+    "home": "C:\\Users\\aa\\.dsh",
+    "cwd": "D:\\deepseek\\电脑",
     "timeoutMs": 60000
   },
   "vscode": {
@@ -36,38 +38,86 @@
     "timeoutMs": 90000,
     "folder": "D:/deepseek/电脑"
   },
+  "notes": {
+    "root": "E:/Obsidian/note"
+  },
+  "windows": [
+    {
+      "type": "monitor",
+      "title": "电脑监控"
+    },
+    {
+      "type": "preview",
+      "title": "文件预览器"
+    },
+    {
+      "type": "file",
+      "title": "文件浏览器"
+    },
+    {
+      "type": "note",
+      "title": "笔记"
+    },
+    {
+      "type": "web",
+      "title": "DSH"
+    },
+    {
+      "type": "vscode",
+      "title": "VSCode"
+    }
+  ],
   "panels": [
+    {
+      "id": "monitor",
+      "type": "monitor",
+      "title": "电脑监控"
+    },
+    {
+      "id": "preview",
+      "type": "preview",
+      "title": "文件预览器"
+    },
     {
       "id": "files",
       "type": "file",
-      "title": "文件",
-      "col": 0,
-      "row": 0,
-      "w": 2,
-      "h": 10,
-      "root": "D:/Python/pycharm"
+      "title": "文件浏览器",
+      "root": "roots"
+    },
+    {
+      "id": "dsh",
+      "type": "web",
+      "title": "DSH",
+      "embed": "engine"
     },
     {
       "id": "editor",
       "type": "vscode",
       "title": "VSCode",
-      "col": 2,
-      "row": 0,
-      "w": 6,
-      "h": 10,
       "fallbackUrl": "http://127.0.0.1:9123"
     },
     {
-      "id": "ai",
-      "type": "web",
-      "title": "DSH",
-      "col": 8,
-      "row": 0,
-      "w": 4,
-      "h": 10,
-      "embed": "engine"
+      "id": "notes",
+      "type": "note",
+      "title": "笔记",
+      "root": "E:/Obsidian/note"
     }
   ],
+  "layout": {
+    "mode": "grid",
+    "cells": [
+      [
+        "monitor",
+        "preview",
+        "files"
+      ],
+      [
+        "",
+        "dsh",
+        "dsh"
+      ]
+    ]
+  },
   "launchers": [
     {
       "key": "vscode-desktop",
@@ -107,6 +157,38 @@
       "args": [
         "D:\\Python\\pycharm"
       ]
+    }
+  ],
+  "taskbar": [
+    {
+      "key": "pycharm",
+      "label": "PyCharm",
+      "note": "单独窗口打开"
+    },
+    {
+      "key": "deveco",
+      "label": "DevEco Studio",
+      "note": "单独窗口打开"
+    },
+    {
+      "key": "vscode-desktop",
+      "label": "VSCode（桌面版）",
+      "note": "单独窗口打开"
+    },
+    {
+      "key": "obsidian",
+      "label": "Obsidian",
+      "note": "单独窗口打开"
+    },
+    {
+      "key": "vmware",
+      "label": "VMware",
+      "note": "虚拟机不进面板，单独窗口"
+    },
+    {
+      "key": "explorer-python",
+      "label": "资源管理器",
+      "note": "单独窗口"
     }
   ]
 }

@@ -1,0 +1,1056 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1794029290613,
+      "cwd": "D:\\deepseek\\电脑",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 60,
+        "val": "刷机"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 60,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "HUAWEI Kirin 985芯片对比市面主流的天玑和骁龙来说，性能差距有多少，画图表出来"
+          },
+          "count": 4,
+          "lastSeq": 46
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 60,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 60,
+        "val": "workspace-write"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 60,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 9513,
+            "outputTokens": 15187,
+            "cacheReadTokens": 201216,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 4,
+            "step": 2,
+            "buckets": {
+              "uncachedInputTokens": 1807,
+              "outputTokens": 1700,
+              "cacheReadTokens": 46720,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 60,
+        "val": {
+          "surfaceTokens": 28292,
+          "contextWindow": 1000000,
+          "pressureTokens": 48527,
+          "sampledSurfaceTokens": 27310
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 60,
+        "val": {
+          "systems": [
+            {
+              "seq": 7,
+              "tokens": 15215
+            }
+          ],
+          "surfaceTokens": 28292,
+          "breakdown": {
+            "systemTokens": 15215,
+            "toolsTokens": 9778,
+            "messageTokens": 13077
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 55,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 58
+          },
+          "lastTurn": 4
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 60,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 60,
+        "val": {
+          "turns": 4,
+          "steps": 5,
+          "llmMs": 93918,
+          "toolMs": 5769,
+          "ttftMs": 3679,
+          "ttftSteps": 5,
+          "decodeMs": 90239,
+          "decodeTokens": 15187,
+          "lastTurn": 4,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "HUAWEI Kirin 985芯片对比市面主流的天玑和骁龙来说，性能差距有多少，画图表出来",
+              "response": "```schemaJson { \"componentName\": \"Page\", \"state\": {}, \"methods\": {}, \"children\": [ { \"componentName\": \"TinyCard\", \"chil…"
+            },
+            {
+              "turn": 2,
+              "seq": 24,
+              "prompt": "华为6平板刷coloros16系统要怎么刷",
+              "response": "## 结论先说 **华为平板刷 ColorOS 16，目前没有任何可行路径**。这样做并不是“步骤麻烦”，而是在第一步（解锁 Bootloader）就无法通过。下面分开说明原因和替代方案。 --- ## 为什么刷不了 **1. Bootl…"
+            },
+            {
+              "turn": 3,
+              "seq": 33,
+              "prompt": "github上有刷机的东西吗？",
+              "response": "## 有，而且非常多——但分两类，差别很大 GitHub 上刷机生态确实很丰富，不过要把它分成「**开源工具链**」和「**针对某台机器的移植包**」来看。前者很繁荣，后者对你那台华为麒麟平板等于零。 --- ## 一、GitHub 上真…"
+            },
+            {
+              "turn": 4,
+              "seq": 43,
+              "prompt": "刷openharmonyos可以吗？",
+              "response": "## 先厘清一个概念：你说的“OpenHarmony”和华为平板上的“鸿蒙”不是一回事 | 名称 | 是什么 | 你的平板 | |---|---|---| | **HarmonyOS** | 华为商用的完整系统（含闭源组件、服务框架、应用…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 60,
+        "val": "standard"
+      },
+      "contextTimeline": {
+        "ver": 28,
+        "seq": 60,
+        "val": {
+          "surface": [
+            {
+              "seq": 8,
+              "time": 1794029377962,
+              "cat": "user",
+              "tokens": 20,
+              "text": "HUAWEI Kirin 985芯片对比市面主流的天玑和骁龙来说，性能差距有多少，画图表出来"
+            },
+            {
+              "seq": 9,
+              "time": 1794029377963,
+              "cat": "inject",
+              "tokens": 175,
+              "form": "snapshot",
+              "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapsh",
+              "name": "runtime-context"
+            },
+            {
+              "seq": 10,
+              "time": 1794029377963,
+              "cat": "skill",
+              "tokens": 1969,
+              "form": "catalog",
+              "text": "<system-reminder> A skill is a reusable set of task-specific instructions. The f",
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 11,
+              "time": 1794029377963,
+              "cat": "inject",
+              "tokens": 74,
+              "form": "snapshot",
+              "text": "Time sampled while preparing turn 1, step 1: 2026-11-07T13:29:37+08:00[Asia/Shan",
+              "name": "time-context"
+            },
+            {
+              "seq": 19,
+              "time": 1794029415643,
+              "cat": "assistant",
+              "tokens": 4683,
+              "text": "```schemaJson { \"componentName\": \"Page\", \"state\": {}, \"methods\": {}, \"children\":"
+            },
+            {
+              "seq": 27,
+              "time": 1794029688232,
+              "cat": "user",
+              "tokens": 14,
+              "text": "华为6平板刷coloros16系统要怎么刷"
+            },
+            {
+              "seq": 29,
+              "time": 1794029702632,
+              "cat": "assistant",
+              "tokens": 1277,
+              "text": "## 结论先说 **华为平板刷 ColorOS 16，目前没有任何可行路径**。这样做并不是“步骤麻烦”，而是在第一步（解锁 Bootloader）就无法通过。"
+            },
+            {
+              "seq": 36,
+              "time": 1794029795454,
+              "cat": "user",
+              "tokens": 12,
+              "text": "github上有刷机的东西吗？"
+            },
+            {
+              "seq": 38,
+              "time": 1794029816572,
+              "cat": "assistant",
+              "tokens": 1802,
+              "text": "## 有，而且非常多——但分两类，差别很大 GitHub 上刷机生态确实很丰富，不过要把它分成「**开源工具链**」和「**针对某台机器的移植包**」来看。前者"
+            },
+            {
+              "seq": 46,
+              "time": 1794059147837,
+              "cat": "user",
+              "tokens": 13,
+              "text": "刷openharmonyos可以吗？"
+            },
+            {
+              "seq": 47,
+              "time": 1794059147837,
+              "cat": "inject",
+              "tokens": 175,
+              "form": "snapshot",
+              "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapsh",
+              "name": "runtime-context"
+            },
+            {
+              "seq": 48,
+              "time": 1794059147837,
+              "cat": "inject",
+              "tokens": 73,
+              "form": "snapshot",
+              "text": "Time sampled while preparing turn 4, step 1: 2026-11-07T21:45:47+08:00[Asia/Shan",
+              "name": "time-context"
+            },
+            {
+              "seq": 51,
+              "time": 1794059156446,
+              "cat": "assistant",
+              "tokens": 834,
+              "calls": [
+                "web_search"
+              ]
+            },
+            {
+              "seq": 53,
+              "time": 1794059162217,
+              "cat": "tool",
+              "tokens": 974,
+              "tool": "web_search"
+            },
+            {
+              "seq": 57,
+              "time": 1794059174336,
+              "cat": "assistant",
+              "tokens": 982,
+              "text": "## 先厘清一个概念：你说的“OpenHarmony”和华为平板上的“鸿蒙”不是一回事 | 名称 | 是什么 | 你的平板 | |---|---|---| | "
+            }
+          ],
+          "sums": {
+            "user": 59,
+            "inject": 497,
+            "skill": 1969,
+            "assistant": 9578,
+            "tool": 974
+          },
+          "systemTokens": 15215,
+          "toolsTokens": 9778,
+          "requests": [
+            {
+              "time": 1794029415643,
+              "seq": 19,
+              "system": 15215,
+              "tools": 9778,
+              "user": 20,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 0,
+              "tool": 0,
+              "total": 27231,
+              "turn": 1,
+              "step": 1,
+              "prompt": 33066,
+              "cacheRead": 29568,
+              "output": 7700,
+              "activeMs": 37686
+            },
+            {
+              "time": 1794029702632,
+              "seq": 29,
+              "system": 15215,
+              "tools": 9778,
+              "user": 34,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 4683,
+              "tool": 0,
+              "total": 31928,
+              "turn": 2,
+              "step": 1,
+              "prompt": 40780,
+              "cacheRead": 38144,
+              "output": 1870,
+              "activeMs": 14403
+            },
+            {
+              "time": 1794029816572,
+              "seq": 38,
+              "system": 15215,
+              "tools": 9778,
+              "user": 46,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 5960,
+              "tool": 0,
+              "total": 33217,
+              "turn": 3,
+              "step": 1,
+              "prompt": 42660,
+              "cacheRead": 42112,
+              "output": 2794,
+              "activeMs": 21123
+            },
+            {
+              "time": 1794059156446,
+              "seq": 51,
+              "system": 15215,
+              "tools": 9778,
+              "user": 59,
+              "inject": 497,
+              "skill": 1969,
+              "assistant": 7762,
+              "tool": 0,
+              "total": 35280,
+              "turn": 4,
+              "step": 1,
+              "prompt": 45696,
+              "cacheRead": 44672,
+              "output": 1123,
+              "activeMs": 14381
+            },
+            {
+              "time": 1794059174336,
+              "seq": 57,
+              "system": 15215,
+              "tools": 9778,
+              "user": 59,
+              "inject": 497,
+              "skill": 1969,
+              "assistant": 8596,
+              "tool": 974,
+              "total": 37088,
+              "turn": 4,
+              "step": 2,
+              "prompt": 48527,
+              "cacheRead": 46720,
+              "output": 1700,
+              "activeMs": 12106
+            }
+          ],
+          "turnRuns": 4,
+          "events": [
+            {
+              "seq": 9,
+              "time": 1794029377963,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 175,
+              "name": "runtime-context"
+            },
+            {
+              "seq": 10,
+              "time": 1794029377963,
+              "kind": "inject",
+              "form": "catalog",
+              "tokens": 1969,
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 11,
+              "time": 1794029377963,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 74,
+              "name": "time-context"
+            },
+            {
+              "seq": 47,
+              "time": 1794059147837,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 175,
+              "name": "runtime-context"
+            },
+            {
+              "seq": 48,
+              "time": 1794059147837,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 73,
+              "name": "time-context"
+            }
+          ],
+          "archived": [],
+          "callNames": {},
+          "fileOps": [],
+          "spans": [
+            {
+              "kind": "ttft",
+              "start": 1794029377960,
+              "end": 1794029378267
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794029378267,
+              "end": 1794029407488
+            },
+            {
+              "kind": "text",
+              "start": 1794029407488,
+              "end": 1794029415643
+            },
+            {
+              "kind": "other",
+              "start": 1794029415643,
+              "end": 1794029415646
+            },
+            {
+              "kind": "ttft",
+              "start": 1794029688231,
+              "end": 1794029688456
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794029688456,
+              "end": 1794029698177
+            },
+            {
+              "kind": "text",
+              "start": 1794029698177,
+              "end": 1794029702632
+            },
+            {
+              "kind": "other",
+              "start": 1794029702632,
+              "end": 1794029702634
+            },
+            {
+              "kind": "ttft",
+              "start": 1794029795453,
+              "end": 1794029795655
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794029795655,
+              "end": 1794029809753
+            },
+            {
+              "kind": "text",
+              "start": 1794029809753,
+              "end": 1794029816572
+            },
+            {
+              "kind": "other",
+              "start": 1794029816572,
+              "end": 1794029816576
+            },
+            {
+              "kind": "ttft",
+              "start": 1794059147836,
+              "end": 1794059148083
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794059148083,
+              "end": 1794059156248
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794059156248,
+              "end": 1794059156446
+            },
+            {
+              "kind": "other",
+              "start": 1794059156446,
+              "end": 1794059156448
+            },
+            {
+              "kind": "tools",
+              "start": 1794059156448,
+              "end": 1794059162217
+            },
+            {
+              "kind": "ttft",
+              "start": 1794059162231,
+              "end": 1794059162607
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794059162607,
+              "end": 1794059168067
+            },
+            {
+              "kind": "text",
+              "start": 1794059168067,
+              "end": 1794059174336
+            },
+            {
+              "kind": "other",
+              "start": 1794059174336,
+              "end": 1794059174337
+            }
+          ],
+          "systems": [
+            {
+              "seq": 7,
+              "time": 1794029377962,
+              "tokens": 15215
+            }
+          ],
+          "detailRev": 20,
+          "humanInputs": 4,
+          "lastUser": "刷openharmonyos可以吗？",
+          "model": "deepseek-flash",
+          "provider": "deepseek-official",
+          "maxOutputTokens": 256000,
+          "lastModel": "deepseek-flash",
+          "contextWindow": 1000000,
+          "cost": {
+            "deepseek-official": {
+              "deepseek-flash": {
+                "off": {
+                  "uncached": 9513,
+                  "cacheRead": 201216,
+                  "cacheWrite": 0,
+                  "output": 15187
+                }
+              }
+            }
+          },
+          "timing": {
+            "wallMs": 99699,
+            "ttftMs": 1357,
+            "genMs": 92561,
+            "calls": 5,
+            "toolsMs": 5769,
+            "toolCalls": 1,
+            "tools": {
+              "web_search": {
+                "calls": 1,
+                "ms": 5769
+              }
+            },
+            "speedMs": 90239,
+            "speedTokens": 15187,
+            "reasoningMs": 66665,
+            "reasoningBlocks": 5,
+            "textMs": 25698,
+            "textBlocks": 4,
+            "toolArgMs": 198,
+            "toolArgBlocks": 1
+          },
+          "answers": 4
+        }
+      },
+      "contextHeaders": {
+        "ver": 1,
+        "seq": 60,
+        "val": {
+          "headers": [
+            {
+              "seq": 12,
+              "time": 1794029377964,
+              "tools": [
+                {
+                  "name": "ask_user_question",
+                  "tokens": 317
+                },
+                {
+                  "name": "create_goal",
+                  "tokens": 149
+                },
+                {
+                  "name": "diagram_apply",
+                  "tokens": 1366
+                },
+                {
+                  "name": "diagram_read",
+                  "tokens": 476
+                },
+                {
+                  "name": "edit",
+                  "tokens": 292
+                },
+                {
+                  "name": "exit_plan_mode",
+                  "tokens": 122
+                },
+                {
+                  "name": "get_goal",
+                  "tokens": 47
+                },
+                {
+                  "name": "glob",
+                  "tokens": 192
+                },
+                {
+                  "name": "grep",
+                  "tokens": 180
+                },
+                {
+                  "name": "interrupt_agent",
+                  "tokens": 133
+                },
+                {
+                  "name": "job_kill",
+                  "tokens": 97
+                },
+                {
+                  "name": "job_list",
+                  "tokens": 46
+                },
+                {
+                  "name": "job_output",
+                  "tokens": 158
+                },
+                {
+                  "name": "list_agents",
+                  "tokens": 170
+                },
+                {
+                  "name": "load_workspace_dependencies",
+                  "tokens": 162
+                },
+                {
+                  "name": "plugin_vet",
+                  "tokens": 206
+                },
+                {
+                  "name": "present",
+                  "tokens": 199
+                },
+                {
+                  "name": "pwsh",
+                  "tokens": 878
+                },
+                {
+                  "name": "read",
+                  "tokens": 114
+                },
+                {
+                  "name": "read_image",
+                  "tokens": 102
+                },
+                {
+                  "name": "read_page",
+                  "tokens": 192
+                },
+                {
+                  "name": "schedule_create",
+                  "tokens": 790
+                },
+                {
+                  "name": "schedule_delete",
+                  "tokens": 78
+                },
+                {
+                  "name": "schedule_list",
+                  "tokens": 39
+                },
+                {
+                  "name": "schedule_update",
+                  "tokens": 605
+                },
+                {
+                  "name": "send_message",
+                  "tokens": 136
+                },
+                {
+                  "name": "skill",
+                  "tokens": 87
+                },
+                {
+                  "name": "subagent",
+                  "tokens": 295
+                },
+                {
+                  "name": "subagent_fork",
+                  "tokens": 321
+                },
+                {
+                  "name": "todo_write",
+                  "tokens": 218
+                },
+                {
+                  "name": "update_goal",
+                  "tokens": 250
+                },
+                {
+                  "name": "web_fetch",
+                  "tokens": 65
+                },
+                {
+                  "name": "web_search",
+                  "tokens": 85
+                },
+                {
+                  "name": "workflow",
+                  "tokens": 852
+                },
+                {
+                  "name": "working_directory",
+                  "tokens": 94
+                },
+                {
+                  "name": "write",
+                  "tokens": 218
+                },
+                {
+                  "name": "x_search",
+                  "tokens": 195
+                }
+              ]
+            },
+            {
+              "seq": 49,
+              "time": 1794059147838,
+              "tools": [
+                {
+                  "name": "ask_user_question",
+                  "tokens": 317
+                },
+                {
+                  "name": "create_goal",
+                  "tokens": 149
+                },
+                {
+                  "name": "diagram_apply",
+                  "tokens": 1366
+                },
+                {
+                  "name": "diagram_read",
+                  "tokens": 476
+                },
+                {
+                  "name": "edit",
+                  "tokens": 292
+                },
+                {
+                  "name": "exit_plan_mode",
+                  "tokens": 122
+                },
+                {
+                  "name": "get_goal",
+                  "tokens": 47
+                },
+                {
+                  "name": "glob",
+                  "tokens": 192
+                },
+                {
+                  "name": "grep",
+                  "tokens": 180
+                },
+                {
+                  "name": "interrupt_agent",
+                  "tokens": 133
+                },
+                {
+                  "name": "job_kill",
+                  "tokens": 97
+                },
+                {
+                  "name": "job_list",
+                  "tokens": 46
+                },
+                {
+                  "name": "job_output",
+                  "tokens": 158
+                },
+                {
+                  "name": "list_agents",
+                  "tokens": 170
+                },
+                {
+                  "name": "load_workspace_dependencies",
+                  "tokens": 162
+                },
+                {
+                  "name": "plugin_vet",
+                  "tokens": 206
+                },
+                {
+                  "name": "present",
+                  "tokens": 199
+                },
+                {
+                  "name": "pwsh",
+                  "tokens": 878
+                },
+                {
+                  "name": "read",
+                  "tokens": 114
+                },
+                {
+                  "name": "read_image",
+                  "tokens": 102
+                },
+                {
+                  "name": "read_page",
+                  "tokens": 192
+                },
+                {
+                  "name": "schedule_create",
+                  "tokens": 790
+                },
+                {
+                  "name": "schedule_delete",
+                  "tokens": 78
+                },
+                {
+                  "name": "schedule_list",
+                  "tokens": 39
+                },
+                {
+                  "name": "schedule_update",
+                  "tokens": 605
+                },
+                {
+                  "name": "send_message",
+                  "tokens": 136
+                },
+                {
+                  "name": "skill",
+                  "tokens": 87
+                },
+                {
+                  "name": "subagent",
+                  "tokens": 295
+                },
+                {
+                  "name": "subagent_fork",
+                  "tokens": 321
+                },
+                {
+                  "name": "todo_write",
+                  "tokens": 218
+                },
+                {
+                  "name": "update_goal",
+                  "tokens": 250
+                },
+                {
+                  "name": "web_fetch",
+                  "tokens": 65
+                },
+                {
+                  "name": "web_search",
+                  "tokens": 85
+                },
+                {
+                  "name": "workflow",
+                  "tokens": 852
+                },
+                {
+                  "name": "working_directory",
+                  "tokens": 94
+                },
+                {
+                  "name": "write",
+                  "tokens": 218
+                },
+                {
+                  "name": "x_search",
+                  "tokens": 195
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "contextActivity": {
+        "ver": 4,
+        "seq": 60,
+        "val": {
+          "days": {
+            "2026-11-07": {
+              "tokens": 225916,
+              "requests": 5,
+              "cost": {
+                "deepseek-official": {
+                  "deepseek-flash": {
+                    "off": {
+                      "uncached": 9513,
+                      "cacheRead": 201216,
+                      "cacheWrite": 0,
+                      "output": 15187
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "model": "deepseek-flash",
+          "provider": "deepseek-official"
+        }
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 60,
+        "val": "D:\\deepseek\\电脑"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 60,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 60,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 60,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "lastMessageTime": 1794059174336,
+          "lastInjectionTime": 1794059147837,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 60,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 60,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 60,
+        "val": null
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 60,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 60,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 60,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1794059147837
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 60,
+        "val": null
+      }
+    }
+  }
+}

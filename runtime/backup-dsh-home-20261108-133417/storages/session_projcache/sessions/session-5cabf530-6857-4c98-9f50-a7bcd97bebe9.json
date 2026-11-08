@@ -1,0 +1,1118 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1793762482556,
+      "cwd": "D:\\deepseek\\剪辑",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 73,
+        "val": "学习AE脚本文件"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 73,
+        "val": {
+          "first": {
+            "seq": 9,
+            "text": "https://ae-scripting.docsforadobe.dev/print_page/\n学习这上面关于ae的脚本文件"
+          },
+          "count": 3,
+          "lastSeq": 38
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 73,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 73,
+        "val": "workspace-write"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 73,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 90737,
+            "outputTokens": 4488,
+            "cacheReadTokens": 324352,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 5,
+            "buckets": {
+              "uncachedInputTokens": 12923,
+              "outputTokens": 2264,
+              "cacheReadTokens": 73728,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 73,
+        "val": {
+          "surfaceTokens": 68752,
+          "contextWindow": 1000000,
+          "pressureTokens": 86651,
+          "sampledSurfaceTokens": 67316
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 73,
+        "val": {
+          "systems": [
+            {
+              "seq": 8,
+              "tokens": 15217
+            }
+          ],
+          "surfaceTokens": 68752,
+          "breakdown": {
+            "systemTokens": 15217,
+            "toolsTokens": 9778,
+            "messageTokens": 53535
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 70,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 72
+          },
+          "lastTurn": 3
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 73,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 73,
+        "val": {
+          "turns": 3,
+          "steps": 8,
+          "llmMs": 83659,
+          "toolMs": 87362,
+          "ttftMs": 21417,
+          "ttftSteps": 8,
+          "decodeMs": 62242,
+          "decodeTokens": 4488,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 5,
+              "prompt": "https://ae-scripting.docsforadobe.dev/print_page/…",
+              "response": "I've retrieved the After Effects Scripting Guide documentation. This is a valuable resource. Let me give you a comprehe…"
+            },
+            {
+              "turn": 2,
+              "seq": 27,
+              "prompt": "1",
+              "response": "看起来你想让我继续深入。不过我需要确认一下你选择的\"1\"具体指哪个方向。让我读取文档中**对象模型的详细 API**部分。 let me fetch the object model documentation."
+            },
+            {
+              "turn": 3,
+              "seq": 35,
+              "prompt": "是",
+              "response": "我已经系统地读取了这个文档的核心对象章节。现在我有了完整的学习材料：全局函数、应用对象、项目对象、合成对象、图层集合、图层对象、属性对象。让我把这些内容整理成一个系统化的学习卡片，方便你掌握。 由于这是学习/概述性的内容，我用文字结合卡片…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 73,
+        "val": "standard"
+      },
+      "contextTimeline": {
+        "ver": 28,
+        "seq": 73,
+        "val": {
+          "surface": [
+            {
+              "seq": 9,
+              "time": 1793762508401,
+              "cat": "user",
+              "tokens": 24,
+              "text": "https://ae-scripting.docsforadobe.dev/print_page/ 学习这上面关于ae的脚本文件"
+            },
+            {
+              "seq": 10,
+              "time": 1793762508402,
+              "cat": "inject",
+              "tokens": 175,
+              "form": "snapshot",
+              "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapsh",
+              "name": "runtime-context"
+            },
+            {
+              "seq": 11,
+              "time": 1793762508402,
+              "cat": "skill",
+              "tokens": 1969,
+              "form": "catalog",
+              "text": "<system-reminder> A skill is a reusable set of task-specific instructions. The f",
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 12,
+              "time": 1793762508402,
+              "cat": "inject",
+              "tokens": 74,
+              "form": "snapshot",
+              "text": "Time sampled while preparing turn 1, step 1: 2026-11-04T11:21:48+08:00[Asia/Shan",
+              "name": "time-context"
+            },
+            {
+              "seq": 17,
+              "time": 1793762511014,
+              "cat": "assistant",
+              "tokens": 76,
+              "text": "I'll help you learn about After Effects scripting from that documentation page. "
+            },
+            {
+              "seq": 20,
+              "time": 1793762556303,
+              "cat": "tool",
+              "tokens": 5844,
+              "tool": "read_page"
+            },
+            {
+              "seq": 23,
+              "time": 1793762579262,
+              "cat": "assistant",
+              "tokens": 821,
+              "text": "I've retrieved the After Effects Scripting Guide documentation. This is a valuab"
+            },
+            {
+              "seq": 30,
+              "time": 1793762598295,
+              "cat": "user",
+              "tokens": 9,
+              "text": "1"
+            },
+            {
+              "seq": 31,
+              "time": 1793762602433,
+              "cat": "assistant",
+              "tokens": 35,
+              "text": "看起来你想让我继续深入。不过我需要确认一下你选择的\"1\"具体指哪个方向。让我读取文档中**对象模型的详细 API**部分。 let me fetch the o"
+            },
+            {
+              "seq": 38,
+              "time": 1793762970352,
+              "cat": "user",
+              "tokens": 9,
+              "text": "是"
+            },
+            {
+              "seq": 39,
+              "time": 1793762976528,
+              "cat": "assistant",
+              "tokens": 112,
+              "text": "好的，我理解为你想让我继续深入学习对象模型的详细 API。让我从文档站点读取对象模型的核心章节。 让我先查看文档的对象模型主页和核心对象（项目/合成/图层）部分"
+            },
+            {
+              "seq": 42,
+              "time": 1793762981810,
+              "cat": "tool",
+              "tokens": 903,
+              "tool": "read_page"
+            },
+            {
+              "seq": 43,
+              "time": 1793762981811,
+              "cat": "tool",
+              "tokens": 905,
+              "tool": "read_page"
+            },
+            {
+              "seq": 46,
+              "time": 1793762987502,
+              "cat": "assistant",
+              "tokens": 126,
+              "text": "我找到了站点地图，列出了一份非常清晰的对象模型目录结构。让我逐个读取核心对象章节。我先并行读取 **General（全局/应用/项目）** 和 **对象模型介绍"
+            },
+            {
+              "seq": 51,
+              "time": 1793762990529,
+              "cat": "tool",
+              "tokens": 2745,
+              "tool": "read_page"
+            },
+            {
+              "seq": 52,
+              "time": 1793762992081,
+              "cat": "tool",
+              "tokens": 5821,
+              "tool": "read_page"
+            },
+            {
+              "seq": 53,
+              "time": 1793762992082,
+              "cat": "tool",
+              "tokens": 5807,
+              "tool": "read_page"
+            },
+            {
+              "seq": 54,
+              "time": 1793762992082,
+              "cat": "tool",
+              "tokens": 3474,
+              "tool": "read_page"
+            },
+            {
+              "seq": 57,
+              "time": 1793762996046,
+              "cat": "assistant",
+              "tokens": 100,
+              "text": "我已经深入读取了对象模型的核心章节。现在我已掌握了 **Globals（全局函数）、Application（应用对象）、Project（项目对象）** 的完整 "
+            },
+            {
+              "seq": 60,
+              "time": 1793762999121,
+              "cat": "tool",
+              "tokens": 5763,
+              "tool": "read_page"
+            },
+            {
+              "seq": 61,
+              "time": 1793762999122,
+              "cat": "tool",
+              "tokens": 5631,
+              "tool": "read_page"
+            },
+            {
+              "seq": 64,
+              "time": 1793763003053,
+              "cat": "assistant",
+              "tokens": 85,
+              "text": "我已经系统地读取了对象模型的多个核心章节。现在让我读取最后一块核心内容——**Layer（图层）对象本体** 和 **Property（属性）对象**，这是操作"
+            },
+            {
+              "seq": 67,
+              "time": 1793763007208,
+              "cat": "tool",
+              "tokens": 5725,
+              "tool": "read_page"
+            },
+            {
+              "seq": 68,
+              "time": 1793763007525,
+              "cat": "tool",
+              "tokens": 5866,
+              "tool": "read_page"
+            },
+            {
+              "seq": 71,
+              "time": 1793763041791,
+              "cat": "assistant",
+              "tokens": 1436,
+              "text": "我已经系统地读取了这个文档的核心对象章节。现在我有了完整的学习材料：全局函数、应用对象、项目对象、合成对象、图层集合、图层对象、属性对象。让我把这些内容整理成一"
+            }
+          ],
+          "sums": {
+            "user": 42,
+            "inject": 249,
+            "skill": 1969,
+            "assistant": 2791,
+            "tool": 48484
+          },
+          "systemTokens": 15217,
+          "toolsTokens": 9778,
+          "requests": [
+            {
+              "time": 1793762511014,
+              "seq": 17,
+              "system": 15217,
+              "tools": 9778,
+              "user": 24,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 0,
+              "tool": 0,
+              "total": 27237,
+              "turn": 1,
+              "step": 1,
+              "prompt": 33051,
+              "output": 102,
+              "activeMs": 47903
+            },
+            {
+              "time": 1793762579262,
+              "seq": 23,
+              "system": 15217,
+              "tools": 9778,
+              "user": 24,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 76,
+              "tool": 5844,
+              "total": 33157,
+              "turn": 1,
+              "step": 2,
+              "prompt": 38500,
+              "cacheRead": 32768,
+              "output": 1296,
+              "activeMs": 22937
+            },
+            {
+              "time": 1793762602433,
+              "seq": 31,
+              "system": 15217,
+              "tools": 9778,
+              "user": 33,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 897,
+              "tool": 5844,
+              "total": 33987,
+              "turn": 2,
+              "step": 1,
+              "prompt": 39801,
+              "cacheRead": 37888,
+              "output": 40,
+              "activeMs": 4142
+            },
+            {
+              "time": 1793762976528,
+              "seq": 39,
+              "system": 15217,
+              "tools": 9778,
+              "user": 42,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 932,
+              "tool": 5844,
+              "total": 34031,
+              "turn": 3,
+              "step": 1,
+              "prompt": 39846,
+              "cacheRead": 38912,
+              "output": 191,
+              "activeMs": 11461
+            },
+            {
+              "time": 1793762987502,
+              "seq": 46,
+              "system": 15217,
+              "tools": 9778,
+              "user": 42,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 1044,
+              "tool": 7652,
+              "total": 35951,
+              "turn": 3,
+              "step": 2,
+              "prompt": 41864,
+              "cacheRead": 39680,
+              "output": 243,
+              "activeMs": 10257
+            },
+            {
+              "time": 1793762996046,
+              "seq": 57,
+              "system": 15217,
+              "tools": 9778,
+              "user": 42,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 1170,
+              "tool": 25499,
+              "total": 53924,
+              "turn": 3,
+              "step": 3,
+              "prompt": 61385,
+              "cacheRead": 40960,
+              "output": 189,
+              "activeMs": 7023
+            },
+            {
+              "time": 1793763003053,
+              "seq": 64,
+              "system": 15217,
+              "tools": 9778,
+              "user": 42,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 1270,
+              "tool": 36893,
+              "total": 65418,
+              "turn": 3,
+              "step": 4,
+              "prompt": 73991,
+              "cacheRead": 60416,
+              "output": 163,
+              "activeMs": 8389
+            },
+            {
+              "time": 1793763041791,
+              "seq": 71,
+              "system": 15217,
+              "tools": 9778,
+              "user": 42,
+              "inject": 249,
+              "skill": 1969,
+              "assistant": 1355,
+              "tool": 48484,
+              "total": 77094,
+              "turn": 3,
+              "step": 5,
+              "prompt": 86651,
+              "cacheRead": 73728,
+              "output": 2264,
+              "activeMs": 34254
+            }
+          ],
+          "turnRuns": 3,
+          "events": [
+            {
+              "seq": 10,
+              "time": 1793762508402,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 175,
+              "name": "runtime-context"
+            },
+            {
+              "seq": 11,
+              "time": 1793762508402,
+              "kind": "inject",
+              "form": "catalog",
+              "tokens": 1969,
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 12,
+              "time": 1793762508402,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 74,
+              "name": "time-context"
+            }
+          ],
+          "archived": [],
+          "callNames": {},
+          "fileOps": [],
+          "spans": [
+            {
+              "kind": "ttft",
+              "start": 1793762508400,
+              "end": 1793762509690
+            },
+            {
+              "kind": "text",
+              "start": 1793762509690,
+              "end": 1793762510150
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762510150,
+              "end": 1793762511014
+            },
+            {
+              "kind": "other",
+              "start": 1793762511014,
+              "end": 1793762511017
+            },
+            {
+              "kind": "tools",
+              "start": 1793762511017,
+              "end": 1793762556303
+            },
+            {
+              "kind": "ttft",
+              "start": 1793762556327,
+              "end": 1793762560011
+            },
+            {
+              "kind": "text",
+              "start": 1793762560011,
+              "end": 1793762579262
+            },
+            {
+              "kind": "other",
+              "start": 1793762579262,
+              "end": 1793762579264
+            },
+            {
+              "kind": "ttft",
+              "start": 1793762598292,
+              "end": 1793762601744
+            },
+            {
+              "kind": "text",
+              "start": 1793762601744,
+              "end": 1793762602433
+            },
+            {
+              "kind": "other",
+              "start": 1793762602433,
+              "end": 1793762602434
+            },
+            {
+              "kind": "ttft",
+              "start": 1793762970350,
+              "end": 1793762973982
+            },
+            {
+              "kind": "text",
+              "start": 1793762973982,
+              "end": 1793762974899
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762974899,
+              "end": 1793762975728
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762975728,
+              "end": 1793762976528
+            },
+            {
+              "kind": "other",
+              "start": 1793762976528,
+              "end": 1793762976537
+            },
+            {
+              "kind": "tools",
+              "start": 1793762976537,
+              "end": 1793762981810
+            },
+            {
+              "kind": "tools",
+              "start": 1793762981810,
+              "end": 1793762981811
+            },
+            {
+              "kind": "ttft",
+              "start": 1793762981825,
+              "end": 1793762984718
+            },
+            {
+              "kind": "text",
+              "start": 1793762984718,
+              "end": 1793762985590
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762985590,
+              "end": 1793762986120
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762986120,
+              "end": 1793762986570
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762986570,
+              "end": 1793762987039
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762987039,
+              "end": 1793762987502
+            },
+            {
+              "kind": "other",
+              "start": 1793762987502,
+              "end": 1793762987503
+            },
+            {
+              "kind": "tools",
+              "start": 1793762987503,
+              "end": 1793762990529
+            },
+            {
+              "kind": "tools",
+              "start": 1793762990529,
+              "end": 1793762992081
+            },
+            {
+              "kind": "tools",
+              "start": 1793762992081,
+              "end": 1793762992082
+            },
+            {
+              "kind": "ttft",
+              "start": 1793762992099,
+              "end": 1793762993778
+            },
+            {
+              "kind": "text",
+              "start": 1793762993778,
+              "end": 1793762995091
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762995091,
+              "end": 1793762995557
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793762995557,
+              "end": 1793762996046
+            },
+            {
+              "kind": "other",
+              "start": 1793762996046,
+              "end": 1793762996047
+            },
+            {
+              "kind": "tools",
+              "start": 1793762996047,
+              "end": 1793762999121
+            },
+            {
+              "kind": "tools",
+              "start": 1793762999121,
+              "end": 1793762999122
+            },
+            {
+              "kind": "ttft",
+              "start": 1793762999137,
+              "end": 1793763001149
+            },
+            {
+              "kind": "text",
+              "start": 1793763001149,
+              "end": 1793763002182
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793763002182,
+              "end": 1793763002599
+            },
+            {
+              "kind": "toolarg",
+              "start": 1793763002599,
+              "end": 1793763003053
+            },
+            {
+              "kind": "other",
+              "start": 1793763003053,
+              "end": 1793763003054
+            },
+            {
+              "kind": "tools",
+              "start": 1793763003054,
+              "end": 1793763007208
+            },
+            {
+              "kind": "tools",
+              "start": 1793763007208,
+              "end": 1793763007525
+            },
+            {
+              "kind": "other",
+              "start": 1793763007525,
+              "end": 1793763007526
+            },
+            {
+              "kind": "ttft",
+              "start": 1793763007540,
+              "end": 1793763010310
+            },
+            {
+              "kind": "text",
+              "start": 1793763010310,
+              "end": 1793763041791
+            },
+            {
+              "kind": "other",
+              "start": 1793763041791,
+              "end": 1793763041794
+            }
+          ],
+          "systems": [
+            {
+              "seq": 8,
+              "time": 1793762508401,
+              "tokens": 15217
+            }
+          ],
+          "detailRev": 33,
+          "humanInputs": 3,
+          "lastUser": "是",
+          "model": "deepseek-v4-flash-0731",
+          "provider": "qwen-token-plan-individual",
+          "lastModel": "deepseek-v4-flash-0731",
+          "contextWindow": 1000000,
+          "cost": {
+            "qwen-token-plan-individual": {
+              "deepseek-v4-flash-0731": {
+                "peak": {
+                  "uncached": 90737,
+                  "cacheRead": 324352,
+                  "cacheWrite": 0,
+                  "output": 4488
+                }
+              }
+            }
+          },
+          "timing": {
+            "wallMs": 146366,
+            "ttftMs": 21412,
+            "genMs": 62247,
+            "calls": 8,
+            "toolsMs": 87362,
+            "toolCalls": 11,
+            "tools": {
+              "read_page": {
+                "calls": 11,
+                "ms": 87362
+              }
+            },
+            "speedMs": 62242,
+            "speedTokens": 4488,
+            "textMs": 56016,
+            "textBlocks": 8,
+            "toolArgMs": 6231,
+            "toolArgBlocks": 11
+          },
+          "answers": 8
+        }
+      },
+      "contextHeaders": {
+        "ver": 1,
+        "seq": 73,
+        "val": {
+          "headers": [
+            {
+              "seq": 13,
+              "time": 1793762508403,
+              "tools": [
+                {
+                  "name": "ask_user_question",
+                  "tokens": 317
+                },
+                {
+                  "name": "create_goal",
+                  "tokens": 149
+                },
+                {
+                  "name": "diagram_apply",
+                  "tokens": 1366
+                },
+                {
+                  "name": "diagram_read",
+                  "tokens": 476
+                },
+                {
+                  "name": "edit",
+                  "tokens": 292
+                },
+                {
+                  "name": "exit_plan_mode",
+                  "tokens": 122
+                },
+                {
+                  "name": "get_goal",
+                  "tokens": 47
+                },
+                {
+                  "name": "glob",
+                  "tokens": 192
+                },
+                {
+                  "name": "grep",
+                  "tokens": 180
+                },
+                {
+                  "name": "interrupt_agent",
+                  "tokens": 133
+                },
+                {
+                  "name": "job_kill",
+                  "tokens": 97
+                },
+                {
+                  "name": "job_list",
+                  "tokens": 46
+                },
+                {
+                  "name": "job_output",
+                  "tokens": 158
+                },
+                {
+                  "name": "list_agents",
+                  "tokens": 170
+                },
+                {
+                  "name": "load_workspace_dependencies",
+                  "tokens": 162
+                },
+                {
+                  "name": "plugin_vet",
+                  "tokens": 206
+                },
+                {
+                  "name": "present",
+                  "tokens": 199
+                },
+                {
+                  "name": "pwsh",
+                  "tokens": 878
+                },
+                {
+                  "name": "read",
+                  "tokens": 114
+                },
+                {
+                  "name": "read_image",
+                  "tokens": 102
+                },
+                {
+                  "name": "read_page",
+                  "tokens": 192
+                },
+                {
+                  "name": "schedule_create",
+                  "tokens": 790
+                },
+                {
+                  "name": "schedule_delete",
+                  "tokens": 78
+                },
+                {
+                  "name": "schedule_list",
+                  "tokens": 39
+                },
+                {
+                  "name": "schedule_update",
+                  "tokens": 605
+                },
+                {
+                  "name": "send_message",
+                  "tokens": 136
+                },
+                {
+                  "name": "skill",
+                  "tokens": 87
+                },
+                {
+                  "name": "subagent",
+                  "tokens": 295
+                },
+                {
+                  "name": "subagent_fork",
+                  "tokens": 321
+                },
+                {
+                  "name": "todo_write",
+                  "tokens": 218
+                },
+                {
+                  "name": "update_goal",
+                  "tokens": 250
+                },
+                {
+                  "name": "web_fetch",
+                  "tokens": 65
+                },
+                {
+                  "name": "web_search",
+                  "tokens": 85
+                },
+                {
+                  "name": "workflow",
+                  "tokens": 852
+                },
+                {
+                  "name": "working_directory",
+                  "tokens": 94
+                },
+                {
+                  "name": "write",
+                  "tokens": 218
+                },
+                {
+                  "name": "x_search",
+                  "tokens": 195
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "contextActivity": {
+        "ver": 4,
+        "seq": 73,
+        "val": {
+          "days": {
+            "2026-11-04": {
+              "tokens": 419577,
+              "requests": 8,
+              "cost": {
+                "qwen-token-plan-individual": {
+                  "deepseek-v4-flash-0731": {
+                    "peak": {
+                      "uncached": 90737,
+                      "cacheRead": 324352,
+                      "cacheWrite": 0,
+                      "output": 4488
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "model": "deepseek-v4-flash-0731",
+          "provider": "qwen-token-plan-individual"
+        }
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": false
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 73,
+        "val": "D:\\deepseek\\剪辑"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 73,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 73,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 73,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "lastMessageTime": 1793763041791,
+          "lastInjectionTime": 1793762508402,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 73,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 73,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 73,
+        "val": null
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 73,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 73,
+        "val": {
+          "lastUsed": {
+            "provider": "qwen-token-plan-individual",
+            "model": "deepseek-v4-flash-0731"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 73,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1793762970352
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 73,
+        "val": null
+      }
+    }
+  }
+}

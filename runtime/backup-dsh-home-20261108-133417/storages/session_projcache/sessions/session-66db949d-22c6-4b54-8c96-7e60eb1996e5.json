@@ -1,0 +1,3014 @@
+{
+  "version": 7,
+  "record": {
+    "identity": {
+      "formatVersion": 4,
+      "createdAt": 1792587444905,
+      "cwd": "D:\\deepseek\\主目录",
+      "isSeeded": false,
+      "inheritedEventCount": 0
+    },
+    "rows": {
+      "title": {
+        "ver": 1,
+        "seq": 272,
+        "val": "插件"
+      },
+      "titleInput": {
+        "ver": 3,
+        "seq": 272,
+        "val": {
+          "first": {
+            "seq": 8,
+            "text": "删除工作区对话的插件有什么"
+          },
+          "count": 2,
+          "lastSeq": 178
+        }
+      },
+      "llmRetry": {
+        "ver": 1,
+        "seq": 272,
+        "val": {}
+      },
+      "sandboxMode": {
+        "ver": 1,
+        "seq": 272,
+        "val": "workspace-write"
+      },
+      "goal": {
+        "ver": 6,
+        "seq": 272,
+        "val": {
+          "current": null,
+          "seenGoalIds": [],
+          "failure": null
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 121848,
+            "outputTokens": 20191,
+            "cacheReadTokens": 1801344,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 2,
+            "step": 11,
+            "buckets": {
+              "uncachedInputTokens": 669,
+              "outputTokens": 2787,
+              "cacheReadTokens": 109952,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 5,
+        "seq": 272,
+        "val": {
+          "surfaceTokens": 74913,
+          "contextWindow": 1000000,
+          "pressureTokens": 110621,
+          "sampledSurfaceTokens": 72893
+        }
+      },
+      "contextBreakdown": {
+        "ver": 6,
+        "seq": 272,
+        "val": {
+          "systems": [
+            {
+              "seq": 7,
+              "tokens": 15215
+            }
+          ],
+          "surfaceTokens": 74913,
+          "breakdown": {
+            "systemTokens": 15215,
+            "toolsTokens": 9778,
+            "messageTokens": 59698
+          }
+        }
+      },
+      "turnBoundary": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "openTurnStartSeq": null,
+          "lastStepStartSeq": 268,
+          "lastStepBoundary": {
+            "kind": "end",
+            "seq": 271
+          },
+          "lastTurn": 2
+        }
+      },
+      "inbox": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "next-turn": [],
+          "next-step": []
+        }
+      },
+      "sessionStats": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "turns": 2,
+          "steps": 27,
+          "llmMs": 137151,
+          "toolMs": 88771,
+          "ttftMs": 33252,
+          "ttftSteps": 27,
+          "decodeMs": 103899,
+          "decodeTokens": 20191,
+          "lastTurn": 2,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "turnOutline": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "turns": [
+            {
+              "turn": 1,
+              "seq": 4,
+              "prompt": "删除工作区对话的插件有什么",
+              "response": "查了一下你这台机器上 DSH（profile 为 `desktop`）实际安装和启用的插件，结论先说：**目前没有任何一个已启用插件具备“删除工作区对话（会话）”这个功能**。具体拆开来看： ## 当前真正启用的插件（`dsh.profi…"
+            },
+            {
+              "turn": 2,
+              "seq": 175,
+              "prompt": "@D:\\浏览器下载\\dsh-market-log.txt 为什么无法更新？",
+              "response": "## 结论：更新并没有真正执行，原因出在桌面端宿主的接口行为，并非网络或版本问题 这段日志的结论很明确：**市场的更新操作被宿主插件管理器以 `already-installed` 拒绝了**，且这次拒绝发生在 pnpm 运行之前： ``…"
+            }
+          ],
+          "draft": ""
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 272,
+        "val": "standard"
+      },
+      "contextTimeline": {
+        "ver": 28,
+        "seq": 272,
+        "val": {
+          "surface": [
+            {
+              "seq": 8,
+              "time": 1792587480250,
+              "cat": "user",
+              "tokens": 12,
+              "text": "删除工作区对话的插件有什么"
+            },
+            {
+              "seq": 9,
+              "time": 1792587480251,
+              "cat": "inject",
+              "tokens": 175,
+              "form": "snapshot",
+              "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapsh",
+              "name": "runtime-context"
+            },
+            {
+              "seq": 10,
+              "time": 1792587480252,
+              "cat": "skill",
+              "tokens": 463,
+              "form": "catalog",
+              "text": "<system-reminder> A skill is a reusable set of task-specific instructions. The f",
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 11,
+              "time": 1792587480252,
+              "cat": "inject",
+              "tokens": 74,
+              "form": "snapshot",
+              "text": "Time sampled while preparing turn 1, step 1: 2026-10-21T20:58:00+08:00[Asia/Shan",
+              "name": "time-context"
+            },
+            {
+              "seq": 19,
+              "time": 1792587483807,
+              "cat": "assistant",
+              "tokens": 404,
+              "calls": [
+                "pwsh",
+                "grep"
+              ]
+            },
+            {
+              "seq": 23,
+              "time": 1792587484618,
+              "cat": "tool",
+              "tokens": 255,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 25,
+              "time": 1792587484912,
+              "cat": "tool",
+              "tokens": 49,
+              "tool": "grep",
+              "err": true
+            },
+            {
+              "seq": 29,
+              "time": 1792587486812,
+              "cat": "assistant",
+              "tokens": 232,
+              "calls": [
+                "pwsh",
+                "plugin_vet"
+              ]
+            },
+            {
+              "seq": 33,
+              "time": 1792587487617,
+              "cat": "tool",
+              "tokens": 80,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 35,
+              "time": 1792587508502,
+              "cat": "tool",
+              "tokens": 1779,
+              "tool": "plugin_vet",
+              "err": true
+            },
+            {
+              "seq": 40,
+              "time": 1792587510826,
+              "cat": "assistant",
+              "tokens": 241,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 44,
+              "time": 1792587511645,
+              "cat": "tool",
+              "tokens": 84,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 48,
+              "time": 1792587513377,
+              "cat": "assistant",
+              "tokens": 194,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 52,
+              "time": 1792587514107,
+              "cat": "tool",
+              "tokens": 25,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 56,
+              "time": 1792587514867,
+              "cat": "tool",
+              "tokens": 4046,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 60,
+              "time": 1792587517372,
+              "cat": "assistant",
+              "tokens": 367,
+              "calls": [
+                "read",
+                "read"
+              ]
+            },
+            {
+              "seq": 63,
+              "time": 1792587517385,
+              "cat": "tool",
+              "tokens": 98,
+              "tool": "read"
+            },
+            {
+              "seq": 64,
+              "time": 1792587517387,
+              "cat": "tool",
+              "tokens": 526,
+              "tool": "read"
+            },
+            {
+              "seq": 68,
+              "time": 1792587520104,
+              "cat": "assistant",
+              "tokens": 390,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 72,
+              "time": 1792587520794,
+              "cat": "tool",
+              "tokens": 2748,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 76,
+              "time": 1792587521462,
+              "cat": "tool",
+              "tokens": 1017,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 80,
+              "time": 1792587526792,
+              "cat": "assistant",
+              "tokens": 796,
+              "calls": [
+                "read",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 82,
+              "time": 1792587526803,
+              "cat": "tool",
+              "tokens": 1364,
+              "tool": "read"
+            },
+            {
+              "seq": 86,
+              "time": 1792587527478,
+              "cat": "tool",
+              "tokens": 119,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 90,
+              "time": 1792587532077,
+              "cat": "assistant",
+              "tokens": 723,
+              "calls": [
+                "read",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 92,
+              "time": 1792587532092,
+              "cat": "tool",
+              "tokens": 227,
+              "tool": "read"
+            },
+            {
+              "seq": 96,
+              "time": 1792587532676,
+              "cat": "tool",
+              "tokens": 537,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 100,
+              "time": 1792587538013,
+              "cat": "assistant",
+              "tokens": 758,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 104,
+              "time": 1792587542408,
+              "cat": "tool",
+              "tokens": 637,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 108,
+              "time": 1792587543080,
+              "cat": "tool",
+              "tokens": 1603,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 112,
+              "time": 1792587549996,
+              "cat": "assistant",
+              "tokens": 1086,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 116,
+              "time": 1792587550662,
+              "cat": "tool",
+              "tokens": 31,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 120,
+              "time": 1792587551346,
+              "cat": "tool",
+              "tokens": 82,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 124,
+              "time": 1792587557599,
+              "cat": "assistant",
+              "tokens": 759,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 128,
+              "time": 1792587559012,
+              "cat": "tool",
+              "tokens": 11,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 132,
+              "time": 1792587564079,
+              "cat": "assistant",
+              "tokens": 815,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 136,
+              "time": 1792587564843,
+              "cat": "tool",
+              "tokens": 11,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 140,
+              "time": 1792587567840,
+              "cat": "assistant",
+              "tokens": 256,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 144,
+              "time": 1792587568543,
+              "cat": "tool",
+              "tokens": 1041,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 148,
+              "time": 1792587569199,
+              "cat": "tool",
+              "tokens": 681,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 152,
+              "time": 1792587573856,
+              "cat": "assistant",
+              "tokens": 652,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 156,
+              "time": 1792587606905,
+              "cat": "tool",
+              "tokens": 239,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 160,
+              "time": 1792587607837,
+              "cat": "tool",
+              "tokens": 278,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 164,
+              "time": 1792587610951,
+              "cat": "assistant",
+              "tokens": 188,
+              "calls": [
+                "grep"
+              ]
+            },
+            {
+              "seq": 166,
+              "time": 1792587611846,
+              "cat": "tool",
+              "tokens": 12,
+              "tool": "grep"
+            },
+            {
+              "seq": 170,
+              "time": 1792587620552,
+              "cat": "assistant",
+              "tokens": 1007,
+              "text": "查了一下你这台机器上 DSH（profile 为 `desktop`）实际安装和启用的插件，结论先说：**目前没有任何一个已启用插件具备“删除工作区对话（会话）"
+            },
+            {
+              "seq": 178,
+              "time": 1794031970341,
+              "cat": "user",
+              "tokens": 18,
+              "text": "@D:\\浏览器下载\\dsh-market-log.txt 为什么无法更新？"
+            },
+            {
+              "seq": 179,
+              "time": 1794031970341,
+              "cat": "inject",
+              "tokens": 175,
+              "form": "snapshot",
+              "text": "Current runtime context. This snapshot supersedes earlier runtime-context snapsh",
+              "name": "runtime-context"
+            },
+            {
+              "seq": 180,
+              "time": 1794031970342,
+              "cat": "skill",
+              "tokens": 1935,
+              "form": "catalog",
+              "text": "<system-reminder> The available skill catalog changed. This complete catalog rep",
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 181,
+              "time": 1794031970342,
+              "cat": "inject",
+              "tokens": 75,
+              "form": "snapshot",
+              "text": "Time sampled while preparing turn 2, step 1: 2026-11-07T14:12:50+08:00[Asia/Shan",
+              "name": "time-context"
+            },
+            {
+              "seq": 184,
+              "time": 1794031971672,
+              "cat": "assistant",
+              "tokens": 55,
+              "calls": [
+                "read"
+              ]
+            },
+            {
+              "seq": 186,
+              "time": 1794031971685,
+              "cat": "tool",
+              "tokens": 3435,
+              "tool": "read"
+            },
+            {
+              "seq": 190,
+              "time": 1794031975872,
+              "cat": "assistant",
+              "tokens": 552,
+              "calls": [
+                "grep",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 192,
+              "time": 1794031983754,
+              "cat": "tool",
+              "tokens": 262,
+              "tool": "grep"
+            },
+            {
+              "seq": 196,
+              "time": 1794031984999,
+              "cat": "tool",
+              "tokens": 1476,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 200,
+              "time": 1794031988798,
+              "cat": "assistant",
+              "tokens": 498,
+              "calls": [
+                "grep",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 202,
+              "time": 1794031989040,
+              "cat": "tool",
+              "tokens": 219,
+              "tool": "grep"
+            },
+            {
+              "seq": 206,
+              "time": 1794031989806,
+              "cat": "tool",
+              "tokens": 1738,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 210,
+              "time": 1794031991802,
+              "cat": "assistant",
+              "tokens": 177,
+              "calls": [
+                "pwsh",
+                "grep"
+              ]
+            },
+            {
+              "seq": 214,
+              "time": 1794031992516,
+              "cat": "tool",
+              "tokens": 3091,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 216,
+              "time": 1794031992749,
+              "cat": "tool",
+              "tokens": 7606,
+              "tool": "grep"
+            },
+            {
+              "seq": 220,
+              "time": 1794031998444,
+              "cat": "assistant",
+              "tokens": 691,
+              "calls": [
+                "pwsh",
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 224,
+              "time": 1794031999213,
+              "cat": "tool",
+              "tokens": 78,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 228,
+              "time": 1794031999976,
+              "cat": "tool",
+              "tokens": 41,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 232,
+              "time": 1794032002593,
+              "cat": "assistant",
+              "tokens": 287,
+              "calls": [
+                "read"
+              ]
+            },
+            {
+              "seq": 234,
+              "time": 1794032002621,
+              "cat": "tool",
+              "tokens": 2420,
+              "tool": "read"
+            },
+            {
+              "seq": 238,
+              "time": 1794032012424,
+              "cat": "assistant",
+              "tokens": 1322,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 242,
+              "time": 1794032013384,
+              "cat": "tool",
+              "tokens": 33,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 246,
+              "time": 1794032015680,
+              "cat": "assistant",
+              "tokens": 241,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 250,
+              "time": 1794032016494,
+              "cat": "tool",
+              "tokens": 526,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 254,
+              "time": 1794032025443,
+              "cat": "assistant",
+              "tokens": 1136,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 258,
+              "time": 1794032026360,
+              "cat": "tool",
+              "tokens": 728,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 262,
+              "time": 1794032035465,
+              "cat": "assistant",
+              "tokens": 1206,
+              "calls": [
+                "pwsh"
+              ]
+            },
+            {
+              "seq": 266,
+              "time": 1794032036335,
+              "cat": "tool",
+              "tokens": 485,
+              "tool": "pwsh"
+            },
+            {
+              "seq": 270,
+              "time": 1794032056502,
+              "cat": "assistant",
+              "tokens": 2020,
+              "text": "## 结论：更新并没有真正执行，原因出在桌面端宿主的接口行为，并非网络或版本问题 这段日志的结论很明确：**市场的更新操作被宿主插件管理器以 `already-"
+            }
+          ],
+          "sums": {
+            "user": 30,
+            "inject": 499,
+            "skill": 2398,
+            "assistant": 17053,
+            "tool": 39718
+          },
+          "systemTokens": 15215,
+          "toolsTokens": 9778,
+          "requests": [
+            {
+              "time": 1792587483807,
+              "seq": 19,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 0,
+              "tool": 0,
+              "total": 25717,
+              "turn": 1,
+              "step": 1,
+              "prompt": 30442,
+              "cacheRead": 17536,
+              "output": 435,
+              "activeMs": 4667
+            },
+            {
+              "time": 1792587486812,
+              "seq": 29,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 404,
+              "tool": 304,
+              "total": 26425,
+              "turn": 1,
+              "step": 2,
+              "prompt": 31296,
+              "cacheRead": 30848,
+              "output": 268,
+              "activeMs": 23571
+            },
+            {
+              "time": 1792587510826,
+              "seq": 40,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 636,
+              "tool": 2163,
+              "total": 28516,
+              "turn": 1,
+              "step": 3,
+              "prompt": 33565,
+              "cacheRead": 31488,
+              "output": 277,
+              "activeMs": 3053
+            },
+            {
+              "time": 1792587513377,
+              "seq": 48,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 877,
+              "tool": 2247,
+              "total": 28841,
+              "turn": 1,
+              "step": 4,
+              "prompt": 33958,
+              "cacheRead": 33792,
+              "output": 273,
+              "activeMs": 3204
+            },
+            {
+              "time": 1792587517372,
+              "seq": 60,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 1071,
+              "tool": 6318,
+              "total": 33106,
+              "turn": 1,
+              "step": 5,
+              "prompt": 39184,
+              "cacheRead": 34176,
+              "output": 407,
+              "activeMs": 2506
+            },
+            {
+              "time": 1792587520104,
+              "seq": 68,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 1438,
+              "tool": 6942,
+              "total": 34097,
+              "turn": 1,
+              "step": 6,
+              "prompt": 40202,
+              "cacheRead": 39552,
+              "output": 468,
+              "activeMs": 4052
+            },
+            {
+              "time": 1792587526792,
+              "seq": 80,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 1828,
+              "tool": 10707,
+              "total": 38252,
+              "turn": 1,
+              "step": 7,
+              "prompt": 52185,
+              "cacheRead": 40576,
+              "output": 831,
+              "activeMs": 6003
+            },
+            {
+              "time": 1792587532077,
+              "seq": 90,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 2624,
+              "tool": 12190,
+              "total": 40531,
+              "turn": 1,
+              "step": 8,
+              "prompt": 55132,
+              "cacheRead": 52992,
+              "output": 726,
+              "activeMs": 5182
+            },
+            {
+              "time": 1792587538013,
+              "seq": 100,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 3347,
+              "tool": 12954,
+              "total": 42018,
+              "turn": 1,
+              "step": 9,
+              "prompt": 56961,
+              "cacheRead": 55808,
+              "output": 903,
+              "activeMs": 10385
+            },
+            {
+              "time": 1792587549996,
+              "seq": 112,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 4105,
+              "tool": 15194,
+              "total": 45016,
+              "turn": 1,
+              "step": 10,
+              "prompt": 64493,
+              "cacheRead": 57856,
+              "output": 1200,
+              "activeMs": 8253
+            },
+            {
+              "time": 1792587557599,
+              "seq": 124,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 5191,
+              "tool": 15307,
+              "total": 46215,
+              "turn": 1,
+              "step": 11,
+              "prompt": 65842,
+              "cacheRead": 65664,
+              "output": 867,
+              "activeMs": 7655
+            },
+            {
+              "time": 1792587564079,
+              "seq": 132,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 5950,
+              "tool": 15318,
+              "total": 46985,
+              "turn": 1,
+              "step": 12,
+              "prompt": 66723,
+              "cacheRead": 66560,
+              "output": 909,
+              "activeMs": 5817
+            },
+            {
+              "time": 1792587567840,
+              "seq": 140,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 6765,
+              "tool": 15329,
+              "total": 47811,
+              "turn": 1,
+              "step": 13,
+              "prompt": 67646,
+              "cacheRead": 67456,
+              "output": 308,
+              "activeMs": 4337
+            },
+            {
+              "time": 1792587573856,
+              "seq": 152,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 7021,
+              "tool": 17051,
+              "total": 49789,
+              "turn": 1,
+              "step": 14,
+              "prompt": 70743,
+              "cacheRead": 67840,
+              "output": 815,
+              "activeMs": 38623
+            },
+            {
+              "time": 1792587610951,
+              "seq": 164,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 7673,
+              "tool": 17568,
+              "total": 50958,
+              "turn": 1,
+              "step": 15,
+              "prompt": 72216,
+              "cacheRead": 71552,
+              "output": 228,
+              "activeMs": 3991
+            },
+            {
+              "time": 1792587620552,
+              "seq": 170,
+              "system": 15215,
+              "tools": 9778,
+              "user": 12,
+              "inject": 249,
+              "skill": 463,
+              "assistant": 7861,
+              "tool": 17580,
+              "total": 51158,
+              "turn": 1,
+              "step": 16,
+              "prompt": 72459,
+              "cacheRead": 72320,
+              "output": 1657,
+              "activeMs": 8691
+            },
+            {
+              "time": 1794031971672,
+              "seq": 184,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 8868,
+              "tool": 17580,
+              "total": 54368,
+              "turn": 2,
+              "step": 1,
+              "prompt": 77373,
+              "cacheRead": 29568,
+              "output": 77,
+              "activeMs": 1346
+            },
+            {
+              "time": 1794031975872,
+              "seq": 190,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 8923,
+              "tool": 21015,
+              "total": 57858,
+              "turn": 2,
+              "step": 2,
+              "prompt": 82230,
+              "cacheRead": 77440,
+              "output": 647,
+              "activeMs": 13291
+            },
+            {
+              "time": 1794031988798,
+              "seq": 200,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 9475,
+              "tool": 22753,
+              "total": 60148,
+              "turn": 2,
+              "step": 3,
+              "prompt": 85480,
+              "cacheRead": 82816,
+              "output": 571,
+              "activeMs": 4792
+            },
+            {
+              "time": 1794031991802,
+              "seq": 210,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 9973,
+              "tool": 24710,
+              "total": 62603,
+              "turn": 2,
+              "step": 4,
+              "prompt": 87969,
+              "cacheRead": 86016,
+              "output": 272,
+              "activeMs": 2928
+            },
+            {
+              "time": 1794031998444,
+              "seq": 220,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 10150,
+              "tool": 35407,
+              "total": 73477,
+              "turn": 2,
+              "step": 5,
+              "prompt": 100391,
+              "cacheRead": 88192,
+              "output": 740,
+              "activeMs": 7190
+            },
+            {
+              "time": 1794032002593,
+              "seq": 232,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 10841,
+              "tool": 35526,
+              "total": 74287,
+              "turn": 2,
+              "step": 6,
+              "prompt": 101234,
+              "cacheRead": 100992,
+              "output": 307,
+              "activeMs": 2630
+            },
+            {
+              "time": 1794032012424,
+              "seq": 238,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 11128,
+              "tool": 37946,
+              "total": 76994,
+              "turn": 2,
+              "step": 7,
+              "prompt": 104069,
+              "cacheRead": 101504,
+              "output": 1404,
+              "activeMs": 10743
+            },
+            {
+              "time": 1794032015680,
+              "seq": 246,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 12450,
+              "tool": 37979,
+              "total": 78349,
+              "turn": 2,
+              "step": 8,
+              "prompt": 105525,
+              "cacheRead": 105344,
+              "output": 292,
+              "activeMs": 3096
+            },
+            {
+              "time": 1794032025443,
+              "seq": 254,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 12691,
+              "tool": 38505,
+              "total": 79116,
+              "turn": 2,
+              "step": 9,
+              "prompt": 106517,
+              "cacheRead": 105728,
+              "output": 1283,
+              "activeMs": 9853
+            },
+            {
+              "time": 1794032035465,
+              "seq": 262,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 13827,
+              "tool": 39233,
+              "total": 80980,
+              "turn": 2,
+              "step": 10,
+              "prompt": 108736,
+              "cacheRead": 107776,
+              "output": 1239,
+              "activeMs": 9961
+            },
+            {
+              "time": 1794032056502,
+              "seq": 270,
+              "system": 15215,
+              "tools": 9778,
+              "user": 30,
+              "inject": 499,
+              "skill": 2398,
+              "assistant": 15033,
+              "tool": 39718,
+              "total": 82671,
+              "turn": 2,
+              "step": 11,
+              "prompt": 110621,
+              "cacheRead": 109952,
+              "output": 2787,
+              "activeMs": 20155
+            }
+          ],
+          "turnRuns": 2,
+          "events": [
+            {
+              "seq": 9,
+              "time": 1792587480251,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 175,
+              "name": "runtime-context"
+            },
+            {
+              "seq": 10,
+              "time": 1792587480252,
+              "kind": "inject",
+              "form": "catalog",
+              "tokens": 463,
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 11,
+              "time": 1792587480252,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 74,
+              "name": "time-context"
+            },
+            {
+              "seq": 179,
+              "time": 1794031970341,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 175,
+              "name": "runtime-context"
+            },
+            {
+              "seq": 180,
+              "time": 1794031970342,
+              "kind": "inject",
+              "form": "catalog",
+              "tokens": 1935,
+              "name": "skill-catalog"
+            },
+            {
+              "seq": 181,
+              "time": 1794031970342,
+              "kind": "inject",
+              "form": "snapshot",
+              "tokens": 75,
+              "name": "time-context"
+            }
+          ],
+          "archived": [],
+          "callNames": {},
+          "fileOps": [
+            {
+              "seq": 25,
+              "kind": "search",
+              "tool": "grep",
+              "err": true,
+              "added": 0,
+              "removed": 0,
+              "path": "D:\\deepseek\\resources\\app.asar\\dsh",
+              "time": 1792587484912,
+              "detail": "plugin (*.md)"
+            },
+            {
+              "seq": 63,
+              "kind": "read",
+              "tool": "read",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\cordis.yml",
+              "time": 1792587517385,
+              "read": {
+                "start": 1,
+                "count": 4
+              }
+            },
+            {
+              "seq": 64,
+              "kind": "read",
+              "tool": "read",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\package.json",
+              "time": 1792587517387,
+              "read": {
+                "start": 1,
+                "count": 36
+              }
+            },
+            {
+              "seq": 82,
+              "kind": "read",
+              "tool": "read",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "D:\\deepseek\\主目录\\检查插件兼容性.ps1",
+              "time": 1792587526803,
+              "read": {
+                "start": 1,
+                "count": 110
+              }
+            },
+            {
+              "seq": 92,
+              "kind": "read",
+              "tool": "read",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\cordis.patch.yml",
+              "time": 1792587532092,
+              "read": {
+                "start": 1,
+                "count": 22
+              }
+            },
+            {
+              "seq": 166,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules",
+              "time": 1792587611846,
+              "detail": "deleteSession|removeSession|sessionDelete|delete-session (*.js)"
+            },
+            {
+              "seq": 186,
+              "kind": "read",
+              "tool": "read",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "D:\\浏览器下载\\dsh-market-log.txt",
+              "time": 1794031971685,
+              "read": {
+                "start": 1,
+                "count": 138
+              }
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules",
+              "time": 1794031983754,
+              "detail": "already-installed"
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\src\\profile.ts",
+              "time": 1794031983754,
+              "detail": "already-installed",
+              "hits": 1
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\src\\pnpm-compat.ts",
+              "time": 1794031983754,
+              "detail": "already-installed",
+              "hits": 1
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\lib\\types\\profile.d.ts",
+              "time": 1794031983754,
+              "detail": "already-installed",
+              "hits": 1
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\lib\\profile.js",
+              "time": 1794031983754,
+              "detail": "already-installed",
+              "hits": 1
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\lib\\pnpm-compat.js",
+              "time": 1794031983754,
+              "detail": "already-installed",
+              "hits": 1
+            },
+            {
+              "seq": 192,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dsh-vision-router\\lib\\profile-pnpm-diagnostics.js",
+              "time": 1794031983754,
+              "detail": "already-installed",
+              "hits": 1
+            },
+            {
+              "seq": 202,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket",
+              "time": 1794031989040,
+              "detail": "failed update command"
+            },
+            {
+              "seq": 202,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\lib\\routes.js",
+              "time": 1794031989040,
+              "detail": "failed update command",
+              "hits": 2
+            },
+            {
+              "seq": 202,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\src\\routes.ts",
+              "time": 1794031989040,
+              "detail": "failed update command",
+              "hits": 2
+            },
+            {
+              "seq": 216,
+              "kind": "search",
+              "tool": "grep",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\src",
+              "time": 1794031992749,
+              "detail": "already|rollback (*.ts)"
+            },
+            {
+              "seq": 234,
+              "kind": "read",
+              "tool": "read",
+              "err": false,
+              "added": 0,
+              "removed": 0,
+              "path": "C:\\Users\\aa\\.dsh\\profiles\\desktop\\node_modules\\dshmarket\\src\\official-desktop.ts",
+              "time": 1794032002621,
+              "read": {
+                "start": 1,
+                "count": 177
+              }
+            }
+          ],
+          "spans": [
+            {
+              "kind": "ttft",
+              "start": 1792587480246,
+              "end": 1792587481653
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587481653,
+              "end": 1792587483236
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587483236,
+              "end": 1792587483598
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587483598,
+              "end": 1792587483807
+            },
+            {
+              "kind": "other",
+              "start": 1792587483807,
+              "end": 1792587483810
+            },
+            {
+              "kind": "tools",
+              "start": 1792587483810,
+              "end": 1792587484618
+            },
+            {
+              "kind": "other",
+              "start": 1792587484618,
+              "end": 1792587484619
+            },
+            {
+              "kind": "tools",
+              "start": 1792587484619,
+              "end": 1792587484912
+            },
+            {
+              "kind": "other",
+              "start": 1792587484912,
+              "end": 1792587484913
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587484932,
+              "end": 1792587485302
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587485302,
+              "end": 1792587486419
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587486419,
+              "end": 1792587486797
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587486797,
+              "end": 1792587486812
+            },
+            {
+              "kind": "other",
+              "start": 1792587486812,
+              "end": 1792587486813
+            },
+            {
+              "kind": "tools",
+              "start": 1792587486813,
+              "end": 1792587487617
+            },
+            {
+              "kind": "other",
+              "start": 1792587487617,
+              "end": 1792587487618
+            },
+            {
+              "kind": "tools",
+              "start": 1792587487618,
+              "end": 1792587508502
+            },
+            {
+              "kind": "other",
+              "start": 1792587508502,
+              "end": 1792587508503
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587508593,
+              "end": 1792587509493
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587509493,
+              "end": 1792587510214
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587510214,
+              "end": 1792587510826
+            },
+            {
+              "kind": "other",
+              "start": 1792587510826,
+              "end": 1792587510830
+            },
+            {
+              "kind": "tools",
+              "start": 1792587510830,
+              "end": 1792587511645
+            },
+            {
+              "kind": "other",
+              "start": 1792587511645,
+              "end": 1792587511646
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587511664,
+              "end": 1792587512262
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587512262,
+              "end": 1792587512715
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587512715,
+              "end": 1792587513052
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587513052,
+              "end": 1792587513377
+            },
+            {
+              "kind": "other",
+              "start": 1792587513377,
+              "end": 1792587513378
+            },
+            {
+              "kind": "tools",
+              "start": 1792587513378,
+              "end": 1792587514107
+            },
+            {
+              "kind": "other",
+              "start": 1792587514107,
+              "end": 1792587514108
+            },
+            {
+              "kind": "tools",
+              "start": 1792587514108,
+              "end": 1792587514867
+            },
+            {
+              "kind": "other",
+              "start": 1792587514867,
+              "end": 1792587514868
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587514882,
+              "end": 1792587515358
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587515358,
+              "end": 1792587517166
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587517166,
+              "end": 1792587517264
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587517264,
+              "end": 1792587517372
+            },
+            {
+              "kind": "other",
+              "start": 1792587517372,
+              "end": 1792587517373
+            },
+            {
+              "kind": "tools",
+              "start": 1792587517373,
+              "end": 1792587517385
+            },
+            {
+              "kind": "tools",
+              "start": 1792587517385,
+              "end": 1792587517387
+            },
+            {
+              "kind": "other",
+              "start": 1792587517387,
+              "end": 1792587517388
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587517411,
+              "end": 1792587517869
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587517869,
+              "end": 1792587519282
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587519282,
+              "end": 1792587519623
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587519623,
+              "end": 1792587520104
+            },
+            {
+              "kind": "other",
+              "start": 1792587520104,
+              "end": 1792587520105
+            },
+            {
+              "kind": "tools",
+              "start": 1792587520105,
+              "end": 1792587520794
+            },
+            {
+              "kind": "tools",
+              "start": 1792587520794,
+              "end": 1792587521462
+            },
+            {
+              "kind": "other",
+              "start": 1792587521462,
+              "end": 1792587521463
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587521476,
+              "end": 1792587522421
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587522421,
+              "end": 1792587526334
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587526334,
+              "end": 1792587526480
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587526480,
+              "end": 1792587526792
+            },
+            {
+              "kind": "other",
+              "start": 1792587526792,
+              "end": 1792587526793
+            },
+            {
+              "kind": "tools",
+              "start": 1792587526793,
+              "end": 1792587526803
+            },
+            {
+              "kind": "other",
+              "start": 1792587526803,
+              "end": 1792587526804
+            },
+            {
+              "kind": "tools",
+              "start": 1792587526804,
+              "end": 1792587527478
+            },
+            {
+              "kind": "other",
+              "start": 1792587527478,
+              "end": 1792587527479
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587527494,
+              "end": 1792587528378
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587528378,
+              "end": 1792587531795
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587531795,
+              "end": 1792587531897
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587531897,
+              "end": 1792587532077
+            },
+            {
+              "kind": "other",
+              "start": 1792587532077,
+              "end": 1792587532079
+            },
+            {
+              "kind": "tools",
+              "start": 1792587532079,
+              "end": 1792587532092
+            },
+            {
+              "kind": "other",
+              "start": 1792587532092,
+              "end": 1792587532093
+            },
+            {
+              "kind": "tools",
+              "start": 1792587532093,
+              "end": 1792587532676
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587532695,
+              "end": 1792587534123
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587534123,
+              "end": 1792587536943
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587536943,
+              "end": 1792587537571
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587537571,
+              "end": 1792587538013
+            },
+            {
+              "kind": "other",
+              "start": 1792587538013,
+              "end": 1792587538014
+            },
+            {
+              "kind": "tools",
+              "start": 1792587538014,
+              "end": 1792587542408
+            },
+            {
+              "kind": "tools",
+              "start": 1792587542408,
+              "end": 1792587543080
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587543093,
+              "end": 1792587544259
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587544259,
+              "end": 1792587549054
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587549054,
+              "end": 1792587549498
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587549498,
+              "end": 1792587549996
+            },
+            {
+              "kind": "other",
+              "start": 1792587549996,
+              "end": 1792587549999
+            },
+            {
+              "kind": "tools",
+              "start": 1792587549999,
+              "end": 1792587550662
+            },
+            {
+              "kind": "other",
+              "start": 1792587550662,
+              "end": 1792587550663
+            },
+            {
+              "kind": "tools",
+              "start": 1792587550663,
+              "end": 1792587551346
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587551358,
+              "end": 1792587553831
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587553831,
+              "end": 1792587556624
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587556624,
+              "end": 1792587557599
+            },
+            {
+              "kind": "other",
+              "start": 1792587557599,
+              "end": 1792587557600
+            },
+            {
+              "kind": "tools",
+              "start": 1792587557600,
+              "end": 1792587559012
+            },
+            {
+              "kind": "other",
+              "start": 1792587559012,
+              "end": 1792587559013
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587559026,
+              "end": 1792587559701
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587559701,
+              "end": 1792587563571
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587563571,
+              "end": 1792587564079
+            },
+            {
+              "kind": "other",
+              "start": 1792587564079,
+              "end": 1792587564080
+            },
+            {
+              "kind": "tools",
+              "start": 1792587564080,
+              "end": 1792587564843
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587564862,
+              "end": 1792587565746
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587565746,
+              "end": 1792587567429
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587567429,
+              "end": 1792587567651
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587567651,
+              "end": 1792587567840
+            },
+            {
+              "kind": "other",
+              "start": 1792587567840,
+              "end": 1792587567841
+            },
+            {
+              "kind": "tools",
+              "start": 1792587567841,
+              "end": 1792587568543
+            },
+            {
+              "kind": "other",
+              "start": 1792587568543,
+              "end": 1792587568544
+            },
+            {
+              "kind": "tools",
+              "start": 1792587568544,
+              "end": 1792587569199
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587569215,
+              "end": 1792587570268
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587570268,
+              "end": 1792587572379
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587572379,
+              "end": 1792587573318
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587573318,
+              "end": 1792587573856
+            },
+            {
+              "kind": "other",
+              "start": 1792587573856,
+              "end": 1792587573857
+            },
+            {
+              "kind": "tools",
+              "start": 1792587573857,
+              "end": 1792587606905
+            },
+            {
+              "kind": "other",
+              "start": 1792587606905,
+              "end": 1792587606906
+            },
+            {
+              "kind": "tools",
+              "start": 1792587606906,
+              "end": 1792587607837
+            },
+            {
+              "kind": "other",
+              "start": 1792587607837,
+              "end": 1792587607838
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587607855,
+              "end": 1792587608853
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587608853,
+              "end": 1792587610758
+            },
+            {
+              "kind": "toolarg",
+              "start": 1792587610758,
+              "end": 1792587610951
+            },
+            {
+              "kind": "other",
+              "start": 1792587610951,
+              "end": 1792587610952
+            },
+            {
+              "kind": "tools",
+              "start": 1792587610952,
+              "end": 1792587611846
+            },
+            {
+              "kind": "ttft",
+              "start": 1792587611862,
+              "end": 1792587612453
+            },
+            {
+              "kind": "reasoning",
+              "start": 1792587612453,
+              "end": 1792587617137
+            },
+            {
+              "kind": "text",
+              "start": 1792587617137,
+              "end": 1792587620552
+            },
+            {
+              "kind": "other",
+              "start": 1792587620552,
+              "end": 1792587620553
+            },
+            {
+              "kind": "ttft",
+              "start": 1794031970339,
+              "end": 1794031970619
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794031970619,
+              "end": 1794031971561
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031971561,
+              "end": 1794031971672
+            },
+            {
+              "kind": "other",
+              "start": 1794031971672,
+              "end": 1794031971673
+            },
+            {
+              "kind": "tools",
+              "start": 1794031971673,
+              "end": 1794031971685
+            },
+            {
+              "kind": "ttft",
+              "start": 1794031971708,
+              "end": 1794031972028
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794031972028,
+              "end": 1794031975035
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031975035,
+              "end": 1794031975231
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031975231,
+              "end": 1794031975872
+            },
+            {
+              "kind": "other",
+              "start": 1794031975872,
+              "end": 1794031975874
+            },
+            {
+              "kind": "tools",
+              "start": 1794031975874,
+              "end": 1794031983754
+            },
+            {
+              "kind": "other",
+              "start": 1794031983754,
+              "end": 1794031983755
+            },
+            {
+              "kind": "tools",
+              "start": 1794031983755,
+              "end": 1794031984999
+            },
+            {
+              "kind": "ttft",
+              "start": 1794031985014,
+              "end": 1794031985265
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794031985265,
+              "end": 1794031988029
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031988029,
+              "end": 1794031988234
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031988234,
+              "end": 1794031988798
+            },
+            {
+              "kind": "other",
+              "start": 1794031988798,
+              "end": 1794031988800
+            },
+            {
+              "kind": "tools",
+              "start": 1794031988800,
+              "end": 1794031989040
+            },
+            {
+              "kind": "tools",
+              "start": 1794031989040,
+              "end": 1794031989806
+            },
+            {
+              "kind": "ttft",
+              "start": 1794031989822,
+              "end": 1794031989991
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794031989991,
+              "end": 1794031991202
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031991202,
+              "end": 1794031991542
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031991542,
+              "end": 1794031991802
+            },
+            {
+              "kind": "tools",
+              "start": 1794031991802,
+              "end": 1794031992516
+            },
+            {
+              "kind": "tools",
+              "start": 1794031992516,
+              "end": 1794031992749
+            },
+            {
+              "kind": "other",
+              "start": 1794031992749,
+              "end": 1794031992750
+            },
+            {
+              "kind": "ttft",
+              "start": 1794031992786,
+              "end": 1794031993055
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794031993055,
+              "end": 1794031997888
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031997888,
+              "end": 1794031998134
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794031998134,
+              "end": 1794031998444
+            },
+            {
+              "kind": "other",
+              "start": 1794031998444,
+              "end": 1794031998446
+            },
+            {
+              "kind": "tools",
+              "start": 1794031998446,
+              "end": 1794031999213
+            },
+            {
+              "kind": "tools",
+              "start": 1794031999213,
+              "end": 1794031999976
+            },
+            {
+              "kind": "ttft",
+              "start": 1794031999992,
+              "end": 1794032000609
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794032000609,
+              "end": 1794032002419
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794032002419,
+              "end": 1794032002593
+            },
+            {
+              "kind": "other",
+              "start": 1794032002593,
+              "end": 1794032002595
+            },
+            {
+              "kind": "tools",
+              "start": 1794032002595,
+              "end": 1794032002621
+            },
+            {
+              "kind": "other",
+              "start": 1794032002621,
+              "end": 1794032002622
+            },
+            {
+              "kind": "ttft",
+              "start": 1794032002642,
+              "end": 1794032002836
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794032002836,
+              "end": 1794032011761
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794032011761,
+              "end": 1794032012424
+            },
+            {
+              "kind": "other",
+              "start": 1794032012424,
+              "end": 1794032012426
+            },
+            {
+              "kind": "tools",
+              "start": 1794032012426,
+              "end": 1794032013384
+            },
+            {
+              "kind": "other",
+              "start": 1794032013384,
+              "end": 1794032013385
+            },
+            {
+              "kind": "ttft",
+              "start": 1794032013398,
+              "end": 1794032013588
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794032013588,
+              "end": 1794032015230
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794032015230,
+              "end": 1794032015680
+            },
+            {
+              "kind": "other",
+              "start": 1794032015680,
+              "end": 1794032015681
+            },
+            {
+              "kind": "tools",
+              "start": 1794032015681,
+              "end": 1794032016494
+            },
+            {
+              "kind": "ttft",
+              "start": 1794032016507,
+              "end": 1794032016890
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794032016890,
+              "end": 1794032024934
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794032024934,
+              "end": 1794032025443
+            },
+            {
+              "kind": "other",
+              "start": 1794032025443,
+              "end": 1794032025444
+            },
+            {
+              "kind": "tools",
+              "start": 1794032025444,
+              "end": 1794032026360
+            },
+            {
+              "kind": "ttft",
+              "start": 1794032026375,
+              "end": 1794032026767
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794032026767,
+              "end": 1794032035030
+            },
+            {
+              "kind": "toolarg",
+              "start": 1794032035030,
+              "end": 1794032035465
+            },
+            {
+              "kind": "other",
+              "start": 1794032035465,
+              "end": 1794032035467
+            },
+            {
+              "kind": "tools",
+              "start": 1794032035467,
+              "end": 1794032036335
+            },
+            {
+              "kind": "other",
+              "start": 1794032036335,
+              "end": 1794032036336
+            },
+            {
+              "kind": "ttft",
+              "start": 1794032036350,
+              "end": 1794032036915
+            },
+            {
+              "kind": "reasoning",
+              "start": 1794032036915,
+              "end": 1794032051268
+            },
+            {
+              "kind": "text",
+              "start": 1794032051268,
+              "end": 1794032056502
+            },
+            {
+              "kind": "other",
+              "start": 1794032056502,
+              "end": 1794032056505
+            }
+          ],
+          "systems": [
+            {
+              "seq": 7,
+              "time": 1792587480249,
+              "tokens": 15215
+            }
+          ],
+          "detailRev": 102,
+          "humanInputs": 2,
+          "lastUser": "@D:\\浏览器下载\\dsh-market-log.txt 为什么无法更新？",
+          "model": "deepseek-flash",
+          "provider": "deepseek-official",
+          "maxOutputTokens": 256000,
+          "lastModel": "deepseek-flash",
+          "contextWindow": 1000000,
+          "cost": {
+            "deepseek-official": {
+              "deepseek-flash": {
+                "off": {
+                  "uncached": 121848,
+                  "cacheRead": 1801344,
+                  "cacheWrite": 0,
+                  "output": 20191
+                }
+              }
+            }
+          },
+          "timing": {
+            "wallMs": 225975,
+            "ttftMs": 18936,
+            "genMs": 118215,
+            "calls": 27,
+            "toolsMs": 88771,
+            "toolCalls": 40,
+            "tools": {
+              "pwsh": {
+                "calls": 28,
+                "ms": 58261
+              },
+              "grep": {
+                "calls": 5,
+                "ms": 9540
+              },
+              "plugin_vet": {
+                "calls": 1,
+                "ms": 20884
+              },
+              "read": {
+                "calls": 6,
+                "ms": 86
+              }
+            },
+            "speedMs": 103899,
+            "speedTokens": 20191,
+            "reasoningMs": 94880,
+            "reasoningBlocks": 27,
+            "toolArgMs": 14686,
+            "toolArgBlocks": 40,
+            "textMs": 8649,
+            "textBlocks": 2
+          },
+          "answers": 2
+        }
+      },
+      "contextHeaders": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "headers": [
+            {
+              "seq": 12,
+              "time": 1792587480253,
+              "tools": [
+                {
+                  "name": "ask_user_question",
+                  "tokens": 317
+                },
+                {
+                  "name": "create_goal",
+                  "tokens": 149
+                },
+                {
+                  "name": "diagram_apply",
+                  "tokens": 1366
+                },
+                {
+                  "name": "diagram_read",
+                  "tokens": 476
+                },
+                {
+                  "name": "edit",
+                  "tokens": 292
+                },
+                {
+                  "name": "exit_plan_mode",
+                  "tokens": 122
+                },
+                {
+                  "name": "get_goal",
+                  "tokens": 47
+                },
+                {
+                  "name": "glob",
+                  "tokens": 192
+                },
+                {
+                  "name": "grep",
+                  "tokens": 180
+                },
+                {
+                  "name": "interrupt_agent",
+                  "tokens": 133
+                },
+                {
+                  "name": "job_kill",
+                  "tokens": 97
+                },
+                {
+                  "name": "job_list",
+                  "tokens": 46
+                },
+                {
+                  "name": "job_output",
+                  "tokens": 158
+                },
+                {
+                  "name": "list_agents",
+                  "tokens": 170
+                },
+                {
+                  "name": "load_workspace_dependencies",
+                  "tokens": 162
+                },
+                {
+                  "name": "plugin_vet",
+                  "tokens": 206
+                },
+                {
+                  "name": "present",
+                  "tokens": 199
+                },
+                {
+                  "name": "pwsh",
+                  "tokens": 878
+                },
+                {
+                  "name": "read",
+                  "tokens": 114
+                },
+                {
+                  "name": "read_image",
+                  "tokens": 102
+                },
+                {
+                  "name": "read_page",
+                  "tokens": 192
+                },
+                {
+                  "name": "schedule_create",
+                  "tokens": 790
+                },
+                {
+                  "name": "schedule_delete",
+                  "tokens": 78
+                },
+                {
+                  "name": "schedule_list",
+                  "tokens": 39
+                },
+                {
+                  "name": "schedule_update",
+                  "tokens": 605
+                },
+                {
+                  "name": "send_message",
+                  "tokens": 136
+                },
+                {
+                  "name": "skill",
+                  "tokens": 87
+                },
+                {
+                  "name": "subagent",
+                  "tokens": 295
+                },
+                {
+                  "name": "subagent_fork",
+                  "tokens": 321
+                },
+                {
+                  "name": "todo_write",
+                  "tokens": 218
+                },
+                {
+                  "name": "update_goal",
+                  "tokens": 250
+                },
+                {
+                  "name": "web_fetch",
+                  "tokens": 65
+                },
+                {
+                  "name": "web_search",
+                  "tokens": 85
+                },
+                {
+                  "name": "workflow",
+                  "tokens": 852
+                },
+                {
+                  "name": "working_directory",
+                  "tokens": 94
+                },
+                {
+                  "name": "write",
+                  "tokens": 218
+                },
+                {
+                  "name": "x_search",
+                  "tokens": 195
+                }
+              ]
+            },
+            {
+              "seq": 182,
+              "time": 1794031970343,
+              "tools": [
+                {
+                  "name": "ask_user_question",
+                  "tokens": 317
+                },
+                {
+                  "name": "create_goal",
+                  "tokens": 149
+                },
+                {
+                  "name": "diagram_apply",
+                  "tokens": 1366
+                },
+                {
+                  "name": "diagram_read",
+                  "tokens": 476
+                },
+                {
+                  "name": "edit",
+                  "tokens": 292
+                },
+                {
+                  "name": "exit_plan_mode",
+                  "tokens": 122
+                },
+                {
+                  "name": "get_goal",
+                  "tokens": 47
+                },
+                {
+                  "name": "glob",
+                  "tokens": 192
+                },
+                {
+                  "name": "grep",
+                  "tokens": 180
+                },
+                {
+                  "name": "interrupt_agent",
+                  "tokens": 133
+                },
+                {
+                  "name": "job_kill",
+                  "tokens": 97
+                },
+                {
+                  "name": "job_list",
+                  "tokens": 46
+                },
+                {
+                  "name": "job_output",
+                  "tokens": 158
+                },
+                {
+                  "name": "list_agents",
+                  "tokens": 170
+                },
+                {
+                  "name": "load_workspace_dependencies",
+                  "tokens": 162
+                },
+                {
+                  "name": "plugin_vet",
+                  "tokens": 206
+                },
+                {
+                  "name": "present",
+                  "tokens": 199
+                },
+                {
+                  "name": "pwsh",
+                  "tokens": 878
+                },
+                {
+                  "name": "read",
+                  "tokens": 114
+                },
+                {
+                  "name": "read_image",
+                  "tokens": 102
+                },
+                {
+                  "name": "read_page",
+                  "tokens": 192
+                },
+                {
+                  "name": "schedule_create",
+                  "tokens": 790
+                },
+                {
+                  "name": "schedule_delete",
+                  "tokens": 78
+                },
+                {
+                  "name": "schedule_list",
+                  "tokens": 39
+                },
+                {
+                  "name": "schedule_update",
+                  "tokens": 605
+                },
+                {
+                  "name": "send_message",
+                  "tokens": 136
+                },
+                {
+                  "name": "skill",
+                  "tokens": 87
+                },
+                {
+                  "name": "subagent",
+                  "tokens": 295
+                },
+                {
+                  "name": "subagent_fork",
+                  "tokens": 321
+                },
+                {
+                  "name": "todo_write",
+                  "tokens": 218
+                },
+                {
+                  "name": "update_goal",
+                  "tokens": 250
+                },
+                {
+                  "name": "web_fetch",
+                  "tokens": 65
+                },
+                {
+                  "name": "web_search",
+                  "tokens": 85
+                },
+                {
+                  "name": "workflow",
+                  "tokens": 852
+                },
+                {
+                  "name": "working_directory",
+                  "tokens": 94
+                },
+                {
+                  "name": "write",
+                  "tokens": 218
+                },
+                {
+                  "name": "x_search",
+                  "tokens": 195
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "contextActivity": {
+        "ver": 4,
+        "seq": 272,
+        "val": {
+          "days": {
+            "2026-10-21": {
+              "tokens": 863619,
+              "requests": 16,
+              "cost": {
+                "deepseek-official": {
+                  "deepseek-flash": {
+                    "off": {
+                      "uncached": 47031,
+                      "cacheRead": 806016,
+                      "cacheWrite": 0,
+                      "output": 10572
+                    }
+                  }
+                }
+              }
+            },
+            "2026-11-07": {
+              "tokens": 1079764,
+              "requests": 11,
+              "cost": {
+                "deepseek-official": {
+                  "deepseek-flash": {
+                    "off": {
+                      "uncached": 74817,
+                      "cacheRead": 995328,
+                      "cacheWrite": 0,
+                      "output": 9619
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "model": "deepseek-flash",
+          "provider": "deepseek-official"
+        }
+      },
+      "userQuestions": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "inheritedEventCount": 0,
+          "timed": false,
+          "questions": {
+            "active": [],
+            "settled": []
+          }
+        }
+      },
+      "permissions": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask",
+          "seeded": true
+        }
+      },
+      "workingDirectory": {
+        "ver": 1,
+        "seq": 272,
+        "val": "D:\\deepseek\\主目录"
+      },
+      "subagentCatalog": {
+        "ver": 6,
+        "seq": 272,
+        "val": {
+          "inheritedEventCount": 0
+        }
+      },
+      "subagentTiming": {
+        "ver": 3,
+        "seq": 272,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 272,
+        "val": {}
+      },
+      "timeContext": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "lastMessageTime": 1794032056502,
+          "lastInjectionTime": 1794031970342,
+          "lastTurnInjectionTime": null
+        }
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 272,
+        "val": null
+      },
+      "plan": {
+        "ver": 3,
+        "seq": 272,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null,
+          "activeAtLastHeader": false
+        }
+      },
+      "subagentModelSelectionPolicy": {
+        "ver": 1,
+        "seq": 272,
+        "val": null
+      },
+      "harnessDevLegacyPrompt": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "source": null,
+          "web": null
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1794031970341
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 272,
+        "val": null
+      }
+    }
+  }
+}

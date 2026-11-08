@@ -1,0 +1,1 @@
+(()=>{ const before = Object.keys(localStorage); localStorage.removeItem('workbench.layouts.v4'); localStorage.removeItem('workbench.layouts.v3'); return {cleared: before.length} })()
