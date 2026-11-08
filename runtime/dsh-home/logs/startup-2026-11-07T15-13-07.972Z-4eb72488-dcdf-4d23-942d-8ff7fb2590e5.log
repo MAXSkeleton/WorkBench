@@ -1,0 +1,300 @@
+WARNING: Raw diagnostics may contain configuration or credential values from plugin errors. Review before sharing.
+
+{
+  timestamp: '2026-11-07T15:13:07.972Z',
+  dshVersion: '0.2.1-rc.2',
+  nodeVersion: 'v24.21.0',
+  platform: 'win32',
+  arch: 'x64',
+  profile: 'web',
+  error: StartupError: dsh: startup failed: 2 required plugins did not activate
+  
+  Failed plugins (2):
+    spill-local
+      Package: @deepseek-ai/dsh-spill-local
+      Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
+          at mkdtempSync (node:fs:3134:18)
+          at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
+          at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
+          at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+          at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+          at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
+          at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include
+    webserver (required)
+      Package: @deepseek-ai/dsh-host-webserver
+      Error: listen EADDRINUSE: address already in use 127.0.0.1:3080
+          at Server.setupListenHandle [as _listen2] (node:net:2328:16)
+          at listenInCluster (node:net:2437:12)
+          at node:net:2666:7
+          at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+  
+  Plugins waiting for services (5):
+    Plugin                  Missing services
+    web-runtime (required)  webServer
+    open-in-app             webServer
+    directory-picker        webServer
+    harness-dev-context     webApp
+    client-hmr              webServer
+      at auditStartupEntries (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:4467:31)
+      ... 4 lines matching cause stack trace ...
+      at async file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-desktop-host/lib/cli.js:115:2 {
+    [stack]: [Getter/Setter],
+    [message]: 'dsh: startup failed: 2 required plugins did not activate\n' +
+      '\n' +
+      'Failed plugins (2):\n' +
+      '  spill-local\n' +
+      '    Package: @deepseek-ai/dsh-spill-local\n' +
+      "    Error: EPERM: operation not permitted, mkdtemp 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'\n" +
+      '        at mkdtempSync (node:fs:3134:18)\n' +
+      '        at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)\n' +
+      '        at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)\n' +
+      '        at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)\n' +
+      '        at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34\n' +
+      '        at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local\n' +
+      '        at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include\n' +
+      '  webserver (required)\n' +
+      '    Package: @deepseek-ai/dsh-host-webserver\n' +
+      '    Error: listen EADDRINUSE: address already in use 127.0.0.1:3080\n' +
+      '        at Server.setupListenHandle [as _listen2] (node:net:2328:16)\n' +
+      '        at listenInCluster (node:net:2437:12)\n' +
+      '        at node:net:2666:7\n' +
+      '        at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n' +
+      '\n' +
+      'Plugins waiting for services (5):\n' +
+      '  Plugin                  Missing services\n' +
+      '  web-runtime (required)  webServer\n' +
+      '  open-in-app             webServer\n' +
+      '  directory-picker        webServer\n' +
+      '  harness-dev-context     webApp\n' +
+      '  client-hmr              webServer',
+    [cause]: AggregateError: Plugin activation failures
+        at new StartupError (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:4309:49)
+        at auditStartupEntries (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:4467:31)
+        at async boot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-app-boot/lib/index.js:4541:3)
+        at async runProfile (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh/lib/profile-boot-C14i-8IN.js:302:15)
+        at async runCli (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh/lib/bin.js:215:5)
+        at async runDesktopCli (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-desktop-host/lib/cli.js:96:2)
+        at async file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-desktop-host/lib/cli.js:115:2 {
+      [stack]: [Getter/Setter],
+      [message]: 'Plugin activation failures',
+      [errors]: [
+        Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
+            at mkdtempSync (node:fs:3134:18)
+            at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
+            at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
+            at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+            at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+            at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
+            at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include {
+          [stack]: [Getter/Setter],
+          [message]: "EPERM: operation not permitted, mkdtemp 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'",
+          errno: -4048,
+          code: 'EPERM',
+          syscall: 'mkdtemp',
+          path: 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'
+        },
+        Error: listen EADDRINUSE: address already in use 127.0.0.1:3080
+            at Server.setupListenHandle [as _listen2] (node:net:2328:16)
+            at listenInCluster (node:net:2437:12)
+            at node:net:2666:7
+            at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+          [stack]: [Getter/Setter],
+          [message]: 'listen EADDRINUSE: address already in use 127.0.0.1:3080',
+          code: 'EADDRINUSE',
+          errno: -4091,
+          syscall: 'listen',
+          address: '127.0.0.1',
+          port: 3080
+        },
+        [length]: 2
+      ]
+    },
+    [entries]: [
+      {
+        id: 'spill-local',
+        module: '@deepseek-ai/dsh-spill-local',
+        required: false,
+        fiberState: 3,
+        outcome: {
+          kind: 'failed',
+          error: Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
+              at mkdtempSync (node:fs:3134:18)
+              at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
+              at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
+              at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+              at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+              at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
+              at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include {
+            [stack]: [Getter/Setter],
+            [message]: "EPERM: operation not permitted, mkdtemp 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'",
+            errno: -4048,
+            code: 'EPERM',
+            syscall: 'mkdtemp',
+            path: 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'
+          }
+        }
+      },
+      {
+        id: 'open-in-app',
+        module: '@deepseek-ai/dsh-host-open-in-app',
+        required: false,
+        fiberState: 0,
+        outcome: { kind: 'pending', missing: [ 'webServer', [length]: 1 ] }
+      },
+      {
+        id: 'directory-picker',
+        module: '@deepseek-ai/dsh-host-directory-picker-auto',
+        required: false,
+        fiberState: 0,
+        outcome: { kind: 'pending', missing: [ 'webServer', [length]: 1 ] }
+      },
+      {
+        id: 'webserver',
+        module: '@deepseek-ai/dsh-host-webserver',
+        required: true,
+        fiberState: 3,
+        outcome: {
+          kind: 'failed',
+          error: Error: listen EADDRINUSE: address already in use 127.0.0.1:3080
+              at Server.setupListenHandle [as _listen2] (node:net:2328:16)
+              at listenInCluster (node:net:2437:12)
+              at node:net:2666:7
+              at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+            [stack]: [Getter/Setter],
+            [message]: 'listen EADDRINUSE: address already in use 127.0.0.1:3080',
+            code: 'EADDRINUSE',
+            errno: -4091,
+            syscall: 'listen',
+            address: '127.0.0.1',
+            port: 3080
+          }
+        }
+      },
+      {
+        id: 'web-runtime',
+        module: '@deepseek-ai/dsh-web-app',
+        required: true,
+        fiberState: 0,
+        outcome: { kind: 'pending', missing: [ 'webServer', [length]: 1 ] }
+      },
+      {
+        id: 'harness-dev-context',
+        module: '@deepseek-ai/dsh-harness-dev-context',
+        required: false,
+        fiberState: 0,
+        outcome: { kind: 'pending', missing: [ 'webApp', [length]: 1 ] }
+      },
+      {
+        id: 'client-hmr',
+        module: '@deepseek-ai/dsh-client-hmr',
+        required: false,
+        fiberState: 0,
+        outcome: { kind: 'pending', missing: [ 'webServer', [length]: 1 ] }
+      },
+      [length]: 7
+    ],
+    [startup]: {
+      configurationPath: 'D:\\deepseek\\电脑\\workbench\\runtime\\dsh-home\\profiles\\web\\cordis.yml',
+      messages: [
+        {
+          ts: 1794064387562,
+          name: 'local-spill-store',
+          type: 'error',
+          args: [
+            Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
+                at mkdtempSync (node:fs:3134:18)
+                at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
+                at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
+                at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+                at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+                at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
+                at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include {
+              [stack]: [Getter/Setter],
+              [message]: "EPERM: operation not permitted, mkdtemp 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'",
+              errno: -4048,
+              code: 'EPERM',
+              syscall: 'mkdtemp',
+              path: 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-spill-XXXXXX'
+            },
+            [length]: 1
+          ]
+        },
+        {
+          ts: 1794064387629,
+          name: 'local-sandbox-provider',
+          type: 'error',
+          args: [
+            Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-acl-skill-XXXXXX'
+                at mkdtempSync (node:fs:3134:18)
+                at Fiber.<anonymous> (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-sandbox-windows-acl/lib/types-Cl_DXjhk.js:1093:21)
+                at registerAclDiagnosisSkill (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-sandbox-windows-acl/lib/types-Cl_DXjhk.js:1092:6)
+                at Object.callback (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-sandbox-local/lib/index.js:287:4)
+                at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1071:28)
+                at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+                at Proxy.inject (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1601:15)
+                at new LocalSandboxProvider (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-sandbox-local/lib/index.js:286:74)
+                at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+                at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+                at composeError (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:199:18)
+                at Fiber._execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1137:10)
+                at Fiber._reload (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1356:16)
+                at async Promise.allSettled (index 18) {
+              [stack]: [Getter/Setter],
+              [message]: "EPERM: operation not permitted, mkdtemp 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-acl-skill-XXXXXX'",
+              errno: -4048,
+              code: 'EPERM',
+              syscall: 'mkdtemp',
+              path: 'C:\\Users\\aa\\AppData\\Local\\Temp\\dsh-acl-skill-XXXXXX'
+            },
+            [length]: 1
+          ]
+        },
+        {
+          ts: 1794064387892,
+          name: 'web-server',
+          type: 'error',
+          args: [
+            Error: listen EADDRINUSE: address already in use 127.0.0.1:3080
+                at Server.setupListenHandle [as _listen2] (node:net:2328:16)
+                at listenInCluster (node:net:2437:12)
+                at node:net:2666:7
+                at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+              [stack]: [Getter/Setter],
+              [message]: 'listen EADDRINUSE: address already in use 127.0.0.1:3080',
+              code: 'EADDRINUSE',
+              errno: -4091,
+              syscall: 'listen',
+              address: '127.0.0.1',
+              port: 3080
+            },
+            [length]: 1
+          ]
+        },
+        {
+          ts: 1794064387971,
+          name: 'hmr',
+          type: 'warn',
+          args: [
+            'config reload at %C failed',
+            'D:\\deepseek\\电脑\\workbench\\runtime\\dsh-home\\profiles\\web\\package.json',
+            [length]: 2
+          ]
+        },
+        {
+          ts: 1794064387971,
+          name: 'hmr',
+          type: 'warn',
+          args: [
+            Error: HMR is disposed
+                at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-hmr/lib/index.js:751:29 {
+              [stack]: [Getter/Setter],
+              [message]: 'HMR is disposed'
+            },
+            [length]: 1
+          ]
+        },
+        [length]: 5
+      ]
+    }
+  }
+}

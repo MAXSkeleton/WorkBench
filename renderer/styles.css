@@ -1,0 +1,152 @@
+/* 个人工作站 · 渲染层样式（暗色优先，不依赖任何 UI 框架） */
+
+:root {
+  --bg: #0b0d12;
+  --panel: #12151c;
+  --panel-2: #171b24;
+  --border: rgba(255, 255, 255, .09);
+  --text: #e6e9ef;
+  --muted: rgba(230, 233, 239, .55);
+  --accent: #4f8ef7;
+  --ok: #3ecf8e;
+  --warn: #eeba18;
+  --err: #f43146;
+  --title-h: 30px;
+  --gap: 6px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.55 "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+/* ── 启动遮罩 ── */
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+}
+.boot[hidden] { display: none; }
+.boot-inner { width: 420px; }
+.boot-title { font-size: 20px; font-weight: 600; margin-bottom: 18px; letter-spacing: .5px; }
+.boot-bar { height: 4px; background: rgba(255,255,255,.09); border-radius: 3px; overflow: hidden; }
+.boot-bar > i { display: block; height: 100%; width: 0; background: var(--accent); border-radius: 3px; transition: width .25s ease; }
+.boot-text { margin-top: 12px; font-size: 13.5px; }
+.boot-detail { margin-top: 4px; font: 11.5px/1.5 ui-monospace, Consolas, monospace; color: var(--muted); word-break: break-all; min-height: 18px; }
+
+/* ── 网格 ── */
+.grid {
+  display: grid;
+  gap: var(--gap);
+  padding: var(--gap);
+  height: 100vh;
+}
+.grid[hidden] { display: none; }
+
+/* ── 面板 ── */
+.panel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.panel-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: var(--title-h);
+  padding: 0 10px;
+  flex: 0 0 auto;
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
+  user-select: none;
+}
+.panel-head .dot { width: 7px; height: 7px; border-radius: 50%; background: #3a4150; flex: 0 0 auto; }
+.panel-head .dot.ok { background: var(--ok); }
+.panel-head .dot.warn { background: var(--warn); }
+.panel-head .dot.err { background: var(--err); }
+.panel-head .title { flex: 1 1 auto; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+.panel-head .actions { display: flex; gap: 4px; }
+.panel-head button {
+  border: 0; background: transparent; color: var(--muted);
+  font-size: 12px; padding: 2px 6px; border-radius: 5px; cursor: pointer;
+}
+.panel-head button:hover { background: rgba(255,255,255,.08); color: var(--text); }
+
+.panel-body { flex: 1 1 auto; min-height: 0; position: relative; overflow: hidden; }
+.panel-body webview { display: flex; width: 100%; height: 100%; }
+
+/* ── 空态 / 错误态 ── */
+.empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+.empty strong { color: var(--text); font-size: 13.5px; font-weight: 600; }
+.empty code { font: 11.5px ui-monospace, Consolas, monospace; background: rgba(255,255,255,.06); padding: 1px 5px; border-radius: 4px; }
+.empty button {
+  margin-top: 6px; padding: 6px 14px; border-radius: 7px; cursor: pointer;
+  border: 1px solid var(--border); background: rgba(255,255,255,.05); color: var(--text); font-size: 12.5px;
+}
+.empty button:hover { background: rgba(255,255,255,.1); }
+
+/* ── 文件面板 ── */
+.file-split { display: flex; height: 100%; }
+.file-tree { flex: 0 0 46%; overflow: auto; border-right: 1px solid var(--border); padding: 6px; }
+.file-preview { flex: 1 1 auto; overflow: auto; padding: 10px; }
+.row {
+  display: flex; align-items: center; gap: 6px;
+  padding: 3px 6px; border-radius: 5px; cursor: pointer;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.row:hover { background: rgba(255,255,255,.06); }
+.row.dir { color: var(--text); }
+.row .ico { flex: 0 0 auto; width: 14px; text-align: center; opacity: .8; }
+.file-preview pre {
+  margin: 0; font: 12px/1.6 ui-monospace, Consolas, monospace;
+  white-space: pre-wrap; word-break: break-word;
+}
+.file-preview img { max-width: 100%; border-radius: 6px; }
+
+/* ── 启动器 ── */
+.launcher { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px; overflow: auto; }
+.launcher button {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 3px;
+  padding: 10px 12px; border-radius: 8px; cursor: pointer; text-align: left;
+  border: 1px solid var(--border); background: rgba(255,255,255,.04); color: var(--text);
+}
+.launcher button:hover { background: rgba(255,255,255,.09); }
+.launcher b { font-size: 13px; font-weight: 600; }
+.launcher span { font-size: 11.5px; color: var(--muted); }
+
+/* ── 状态栏 ── */
+.status {
+  position: fixed; left: 0; right: 0; bottom: 0; height: 22px;
+  display: flex; align-items: center; gap: 14px; padding: 0 10px;
+  background: var(--panel-2); border-top: 1px solid var(--border);
+  font-size: 11.5px; color: var(--muted);
+}
+.status[hidden] { display: none; }

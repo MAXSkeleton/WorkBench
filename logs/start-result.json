@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-07T15:49:18.795Z",
+  "scenario": "dev",
+  "engine": {
+    "ok": true,
+    "url": "http://127.0.0.1:60741?token=NFijI06vx6NWtQA0oallTh-GUg6XGGjVDorZz8cM8kY"
+  },
+  "vscode": {
+    "status": "ready",
+    "url": "http://127.0.0.1:9123/?folder=D%3A%2Fdeepseek%2F%E7%94%B5%E8%84%91",
+    "error": ""
+  },
+  "url": "http://127.0.0.1:60741?token=NFijI06vx6NWtQA0oallTh-GUg6XGGjVDorZz8cM8kY"
+}

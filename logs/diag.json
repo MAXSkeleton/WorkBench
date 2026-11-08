@@ -1,0 +1,50 @@
+{
+  "viewport": {
+    "w": 1482,
+    "h": 719
+  },
+  "gridDisplay": "grid",
+  "bootHidden": true,
+  "status": "DSH 引擎：127.0.0.1:62109   ·   VSCode：ready   ·   面板：3",
+  "panels": [
+    {
+      "id": "files",
+      "title": "文件",
+      "rect": {
+        "x": 6,
+        "y": 6,
+        "w": 240,
+        "h": 707
+      },
+      "dot": "dot",
+      "hasWebview": false,
+      "body": "↑\n..\n📁\npython\n📁\npythonProject\n📁\nzidonghua"
+    },
+    {
+      "id": "editor",
+      "title": "VSCode",
+      "rect": {
+        "x": 252,
+        "y": 6,
+        "w": 732,
+        "h": 707
+      },
+      "dot": "dot ok",
+      "hasWebview": true,
+      "body": ""
+    },
+    {
+      "id": "ai",
+      "title": "DSH",
+      "rect": {
+        "x": 990,
+        "y": 6,
+        "w": 486,
+        "h": 707
+      },
+      "dot": "dot ok",
+      "hasWebview": true,
+      "body": ""
+    }
+  ]
+}

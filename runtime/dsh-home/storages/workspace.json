@@ -1,0 +1,42 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "defaultWorkspaceId": "19a8d302-686d-42b0-9167-1d4cc34f6af8",
+    "workspaceIds": [
+      "1b0f0366-7178-4efb-a4f4-c0e52f0e098b",
+      "19a8d302-686d-42b0-9167-1d4cc34f6af8"
+    ],
+    "archivedSessionIds": [],
+    "pinnedSessionIds": []
+  },
+  "tables": {
+    "workspaces": {
+      "19a8d302-686d-42b0-9167-1d4cc34f6af8": {
+        "path": "C:\\Users\\aa\\Documents\\deepseek-harness\\default-workspace",
+        "title": "default-workspace",
+        "sessionIds": [
+          "session-2174ccd8-cfdd-4dc4-aa4d-d6ef2c1d9562",
+          "session-fb9e23af-5afb-4d0f-ad68-c6cd1888ed07",
+          "session-d6f3fe2e-b2a4-49b2-b53b-2fb797bffb6c",
+          "session-23f67197-d6c7-447b-a473-9afb94e386f0"
+        ],
+        "createdAt": "2026-11-07T15:09:40.069Z",
+        "updatedAt": "2026-11-07T15:26:34.976Z"
+      },
+      "1b0f0366-7178-4efb-a4f4-c0e52f0e098b": {
+        "path": "D:\\deepseek\\电脑",
+        "title": "电脑",
+        "sessionIds": [
+          "session-4d4e6215-a109-4cbf-8f86-f86c41d86783",
+          "session-dd74091a-639f-404a-9b8a-158146030d26"
+        ],
+        "createdAt": "2026-11-07T15:38:42.918Z",
+        "updatedAt": "2026-11-07T15:49:20.210Z"
+      }
+    }
+  }
+}

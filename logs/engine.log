@@ -1,0 +1,32 @@
+[2026-11-07T15:20:22.168Z] 清掉上一轮残留 pid=61680
+[2026-11-07T15:20:24.203Z] dsh: warning: 1 entry did not activate
+spill-local (@deepseek-ai/dsh-spill-local): Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
+    at mkdtempSync (node:fs:3134:18)
+    at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
+    at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
+    at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+    at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
+    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include
+[2026-11-07T15:20:24.377Z] dsh web: http://127.0.0.1:51952/?token=RYFS3ChhjKagesr1aWUbKI8vfDbxVa88GPuFvleNio0
+[2026-11-07T15:20:24.634Z] ready http://127.0.0.1:51952?token=RYFS3ChhjKagesr1aWUbKI8vfDbxVa88GPuFvleNio0
+[2026-11-07T15:26:30.042Z] 清掉上一轮残留 pid=333180
+[2026-11-07T15:26:32.145Z] dsh: warning: 1 entry did not activate
+spill-local (@deepseek-ai/dsh-spill-local): Error: EPERM: operation not permitted, mkdtemp 'C:\Users\aa\AppData\Local\Temp\dsh-spill-XXXXXX'
+    at mkdtempSync (node:fs:3134:18)
+    at privateRoot (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:35:18)
+    at new LocalSpillStore (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/dsh-spill-local/lib/index.js:498:63)
+    at Fiber.execute (file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1068:24)
+    at file:///D:/deepseek/resources/app.asar/dsh/node_modules/@deepseek-ai/cordis/lib/index.js:1142:34
+    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#spill-local
+    at file:///D:/deepseek/%E7%94%B5%E8%84%91/workbench/runtime/dsh-home/profiles/web/#include
+[2026-11-07T15:26:32.331Z] dsh web: http://127.0.0.1:51647/?token=e5svD9oJUFFgGYXe5o0xKO-ICtuuFXbr7vbM7khuUBQ
+[2026-11-07T15:26:32.494Z] ready http://127.0.0.1:51647?token=e5svD9oJUFFgGYXe5o0xKO-ICtuuFXbr7vbM7khuUBQ
+[2026-11-07T15:32:39.359Z] exit 1
+[2026-11-07T15:38:07.388Z] 清掉上一轮残留 pid=111184
+[2026-11-07T15:38:09.479Z] dsh web: http://127.0.0.1:62109/?token=R7CwpSItYyMy8Vu96Du9FmInZ0Gd1uVYT-2u3AnSa6c
+[2026-11-07T15:38:09.829Z] ready http://127.0.0.1:62109?token=R7CwpSItYyMy8Vu96Du9FmInZ0Gd1uVYT-2u3AnSa6c
+[2026-11-07T15:49:12.646Z] 清掉上一轮残留 pid=30472
+[2026-11-07T15:49:16.057Z] dsh web: http://127.0.0.1:60741/?token=NFijI06vx6NWtQA0oallTh-GUg6XGGjVDorZz8cM8kY
+[2026-11-07T15:49:16.484Z] ready http://127.0.0.1:60741?token=NFijI06vx6NWtQA0oallTh-GUg6XGGjVDorZz8cM8kY
+[2026-11-07T15:52:12.530Z] exit 1

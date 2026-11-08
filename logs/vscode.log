@@ -1,0 +1,161 @@
+[2026-11-07T15:20:24.635Z] spawn D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-07T15:20:25.634Z] [2026-11-07T15:20:25.631Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-07T15:20:25.636Z] [2026-11-07T15:20:25.634Z] error parent:36920 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
+[2026-11-07T15:20:25.637Z] [2026-11-07T15:20:25.636Z] error parent:36920 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
+    at async open (node:internal/fs/promises:1345:25)
+    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
+    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
+[2026-11-07T15:20:25.637Z] [2026-11-07T15:20:25.634Z] info  Using user-data-dir D:\deepseek\电脑\workbench\runtime\code-server-data
+[2026-11-07T15:20:25.659Z] [2026-11-07T15:20:25.659Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-07T15:20:25.659Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-07T15:20:25.659Z] info    - Authentication is disabled
+[2026-11-07T15:20:25.659Z] info    - Not serving HTTPS
+[2026-11-07T15:20:25.659Z] info  Session server listening on \\.\pipe\code-server-ipc-847e9dcf1560a4ba
+[2026-11-07T15:20:25.951Z] [2026-11-07T15:20:25.951Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:20:25.952Z] [2026-11-07T15:20:25.951Z] error parent:36920 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
+[2026-11-07T15:20:25.951Z] error parent:36920 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
+    at async open (node:internal/fs/promises:1345:25)
+    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
+    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
+[2026-11-07T15:20:26.015Z] [23:20:26]
+[2026-11-07T15:20:26.136Z] [23:20:26] StorageMainService: creating application shared storage
+[2026-11-07T15:20:26.138Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-07T15:20:26.140Z] [23:20:26] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-d0800d2a-03c7-4338-a711-9d223100d525-sock)
+[2026-11-07T15:20:26.145Z] [23:20:26] Extension host agent started.
+[2026-11-07T15:20:26.156Z] [23:20:26] [storage main] initialize(): Unable to init storage due to Error: EPERM: operation not permitted, mkdir 'c:\Users\aa\.vscode-oss-shared'
+[2026-11-07T15:20:27.067Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-07T15:20:27.069Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-07T15:20:27.090Z] [23:20:27] [127.0.0.1][0f88c84a][ManagementConnection] New connection established.
+[2026-11-07T15:20:27.622Z] [23:20:27] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-07T15:20:27.781Z] [23:20:27] [127.0.0.1][623b606b][ExtensionHostConnection] New connection established.
+[2026-11-07T15:20:27.782Z] [23:20:27] [127.0.0.1][623b606b][ExtensionHostConnection] Starting extension host process...
+[2026-11-07T15:20:27.829Z] [23:20:27] [127.0.0.1][623b606b][ExtensionHostConnection] <6756> Launched Extension Host Process.
+[2026-11-07T15:20:28.310Z] [23:20:28] [127.0.0.1][623b606b][ExtensionHostConnection] <6756> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-07T15:20:28.750Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-d0800d2a-03c7-4338-a711-9d223100d525-sock
+[2026-11-07T15:20:28.755Z] [23:20:28] ServerAgentHostManager: agent host started
+[2026-11-07T15:20:28.757Z] [23:20:28] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-d0800d2a-03c7-4338-a711-9d223100d525-sock
+[2026-11-07T15:20:28.899Z] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
+[2026-11-07T15:20:28.900Z] [IPC Library: Agent Host] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
+[2026-11-07T15:21:25.895Z] [2026-11-07T15:21:25.890Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:22:25.903Z] [2026-11-07T15:22:25.902Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:23:25.908Z] [2026-11-07T15:23:25.906Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:24:25.914Z] [2026-11-07T15:24:25.912Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:25:25.920Z] [2026-11-07T15:25:25.918Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:26:32.495Z] spawn D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-07T15:26:33.515Z] [2026-11-07T15:26:33.512Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-07T15:26:33.518Z] [2026-11-07T15:26:33.516Z] error parent:303640 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
+[2026-11-07T15:26:33.520Z] [2026-11-07T15:26:33.519Z] error parent:303640 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stdout.log'
+    at async open (node:internal/fs/promises:1345:25)
+    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
+    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
+[2026-11-07T15:26:33.521Z] [2026-11-07T15:26:33.514Z] info  Using user-data-dir D:\deepseek\电脑\workbench\runtime\code-server-data
+[2026-11-07T15:26:33.538Z] [2026-11-07T15:26:33.538Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-07T15:26:33.538Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-07T15:26:33.538Z] info    - Authentication is disabled
+[2026-11-07T15:26:33.538Z] info    - Not serving HTTPS
+[2026-11-07T15:26:33.538Z] info  Session server listening on \\.\pipe\code-server-ipc-847e9dcf1560a4ba
+[2026-11-07T15:26:33.801Z] [2026-11-07T15:26:33.801Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:26:33.802Z] [2026-11-07T15:26:33.802Z] error parent:303640 Uncaught exception: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
+[2026-11-07T15:26:33.802Z] error parent:303640 Error: EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\coder-logs\code-server-stderr.log'
+    at async open (node:internal/fs/promises:1345:25)
+    at async RotatingFileStream.reopen (D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:143:20)
+    at async D:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\node_modules\rotating-file-stream\dist\cjs\index.js:51:17
+[2026-11-07T15:26:33.871Z] [23:26:33]
+[2026-11-07T15:26:33.989Z] [23:26:33] StorageMainService: creating application shared storage
+[2026-11-07T15:26:33.991Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-07T15:26:33.994Z] [23:26:33] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-3def411c-f467-40ce-ab05-22a7801b134b-sock)
+[2026-11-07T15:26:34.000Z] [23:26:33] Extension host agent started.
+[2026-11-07T15:26:34.010Z] [23:26:34] [storage main] initialize(): Unable to init storage due to Error: EPERM: operation not permitted, mkdir 'c:\Users\aa\.vscode-oss-shared'
+[2026-11-07T15:26:34.959Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-07T15:26:34.960Z] File not found: d:\deepseek\电脑\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-07T15:26:34.984Z] [23:26:34] [127.0.0.1][ba8ccdf5][ManagementConnection] New connection established.
+[2026-11-07T15:26:35.318Z] [23:26:35] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-07T15:26:35.457Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] New connection established.
+[2026-11-07T15:26:35.458Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] Starting extension host process...
+[2026-11-07T15:26:35.483Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] <314664> Launched Extension Host Process.
+[2026-11-07T15:26:35.981Z] [23:26:35] [127.0.0.1][86811278][ExtensionHostConnection] <314664> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-07T15:26:36.431Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-3def411c-f467-40ce-ab05-22a7801b134b-sock
+[2026-11-07T15:26:36.434Z] [23:26:36] ServerAgentHostManager: agent host started
+[2026-11-07T15:26:36.435Z] [23:26:36] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-3def411c-f467-40ce-ab05-22a7801b134b-sock
+[2026-11-07T15:26:36.546Z] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
+[2026-11-07T15:26:36.552Z] [IPC Library: Agent Host] [CLI subprocess] Native runtime process file logging disabled: failed to write log batch: 拒绝访问。 (os error 5)
+[2026-11-07T15:27:33.744Z] [2026-11-07T15:27:33.743Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:28:33.745Z] [2026-11-07T15:28:33.745Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:29:22.442Z] [23:29:22] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2026-11-07T15:29:22.443Z] [23:29:22] [127.0.0.1][ba8ccdf5][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-07T15:29:22.554Z] [23:29:22] [127.0.0.1][ba8ccdf5][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2026-11-07T15:29:22.555Z] [23:29:22] [127.0.0.1][ba8ccdf5][ManagementConnection] The client has reconnected.
+[2026-11-07T15:29:22.569Z] [23:29:22] [127.0.0.1][86811278][ExtensionHostConnection] The client has reconnected.
+[2026-11-07T15:29:33.751Z] [2026-11-07T15:29:33.750Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:30:33.760Z] [2026-11-07T15:30:33.759Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:31:33.772Z] [2026-11-07T15:31:33.771Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:32:33.783Z] [2026-11-07T15:32:33.783Z] warn  EPERM: operation not permitted, open 'C:\Users\aa\AppData\Local\code-server\Data\heartbeat'
+[2026-11-07T15:38:09.830Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-07T15:38:14.372Z] [2026-11-07T15:38:14.369Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-07T15:38:14.374Z] [2026-11-07T15:38:14.371Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-07T15:38:14.393Z] [2026-11-07T15:38:14.393Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-07T15:38:14.393Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-07T15:38:14.393Z] info    - Authentication is disabled
+[2026-11-07T15:38:14.393Z] info    - Not serving HTTPS
+[2026-11-07T15:38:14.393Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-07T15:38:15.843Z] [23:38:15]
+[2026-11-07T15:38:16.652Z] [23:38:16] StorageMainService: creating application shared storage
+[2026-11-07T15:38:16.654Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-07T15:38:16.656Z] [23:38:16] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-75268fe8-0650-4f0b-8fba-e41ed67dee8d-sock)
+[2026-11-07T15:38:16.672Z] [23:38:16] Extension host agent started.
+[2026-11-07T15:38:16.734Z] [23:38:16] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: true)
+[2026-11-07T15:38:16.735Z] [23:38:16] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-07T15:38:16.737Z] [23:38:16] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-07T15:38:17.945Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-07T15:38:17.946Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-07T15:38:17.966Z] [23:38:17] [127.0.0.1][f4140a97][ManagementConnection] New connection established.
+[2026-11-07T15:38:18.349Z] [23:38:18] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-07T15:38:18.453Z] [23:38:18] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] New connection established.
+[2026-11-07T15:38:18.453Z] [23:38:18] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] Starting extension host process...
+[2026-11-07T15:38:18.467Z] [23:38:18] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] <1256> Launched Extension Host Process.
+[2026-11-07T15:38:20.853Z] [23:38:20] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] <1256> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-07T15:38:21.183Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-75268fe8-0650-4f0b-8fba-e41ed67dee8d-sock
+[2026-11-07T15:38:21.184Z] [23:38:21] ServerAgentHostManager: agent host started
+[2026-11-07T15:38:21.185Z] [23:38:21] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-75268fe8-0650-4f0b-8fba-e41ed67dee8d-sock
+[2026-11-07T15:40:43.540Z] [23:40:43] Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:221:20) {
+  errno: -4077,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+[2026-11-07T15:40:43.541Z] [23:40:43] [127.0.0.1][f4140a97][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-11-07T15:40:43.827Z] [23:40:43] [127.0.0.1][f4140a97][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[2026-11-07T15:40:43.828Z] [23:40:43] [127.0.0.1][5dcaf7e4][ExtensionHostConnection] The client has reconnected.
+[2026-11-07T15:40:43.844Z] [23:40:43] [127.0.0.1][f4140a97][ManagementConnection] The client has reconnected.
+[2026-11-07T15:49:16.485Z] spawn E:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\node.exe
+[2026-11-07T15:49:18.062Z] [2026-11-07T15:49:18.059Z] info  code-server 4.145.2 302bc77436721f5a474e06d1fe34cf8f86195d5e
+[2026-11-07T15:49:18.064Z] [2026-11-07T15:49:18.062Z] info  Using user-data-dir E:\Work\workbench\runtime\code-server-data
+[2026-11-07T15:49:18.092Z] [2026-11-07T15:49:18.092Z] info  Using config file C:\Users\aa\AppData\Roaming\code-server\Config\config.yaml
+[2026-11-07T15:49:18.092Z] info  HTTP server listening on http://127.0.0.1:9123/
+[2026-11-07T15:49:18.092Z] info    - Authentication is disabled
+[2026-11-07T15:49:18.092Z] info    - Not serving HTTPS
+[2026-11-07T15:49:18.092Z] info  Session server listening on \\.\pipe\code-server-ipc-c4f80cadfcf7578a
+[2026-11-07T15:49:18.555Z] [23:49:18]
+[2026-11-07T15:49:18.762Z] [23:49:18] StorageMainService: creating application shared storage
+[2026-11-07T15:49:18.765Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-11-07T15:49:18.767Z] [23:49:18] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-efa64074-8852-4594-8272-93d9fb5a89c0-sock)
+[2026-11-07T15:49:18.776Z] [23:49:18] Extension host agent started.
+[2026-11-07T15:49:18.784Z] [23:49:18] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+[2026-11-07T15:49:18.785Z] [23:49:18] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+[2026-11-07T15:49:18.801Z] [23:49:18] [shared storage] Fallback application storage initialized with 4 items
+[2026-11-07T15:49:20.123Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda_bg.wasm
+[2026-11-07T15:49:20.125Z] File not found: e:\Work\workbench\vendor\cs\code-server-4.145.2-windows-amd64\lib\vscode\node_modules\vsda\rust\web\vsda.js
+[2026-11-07T15:49:20.144Z] [23:49:20] [127.0.0.1][694d1007][ManagementConnection] New connection established.
+[2026-11-07T15:49:20.650Z] [23:49:20] [AgentHostChannel] Renderer ctx=[object Object] requested connect to upstream
+[2026-11-07T15:49:20.858Z] [23:49:20] [127.0.0.1][740233c3][ExtensionHostConnection] New connection established.
+[2026-11-07T15:49:20.860Z] [23:49:20] [127.0.0.1][740233c3][ExtensionHostConnection] Starting extension host process...
+[2026-11-07T15:49:20.896Z] [23:49:20] [127.0.0.1][740233c3][ExtensionHostConnection] <37380> Launched Extension Host Process.
+[2026-11-07T15:49:21.701Z] [23:49:21] [127.0.0.1][740233c3][ExtensionHostConnection] <37380> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+[2026-11-07T15:49:22.311Z] [IPC Library: Agent Host] Agent host server listening on \\.\pipe\vscode-ipc-efa64074-8852-4594-8272-93d9fb5a89c0-sock
+[2026-11-07T15:49:22.314Z] [23:49:22] ServerAgentHostManager: agent host started
+[2026-11-07T15:49:22.315Z] [23:49:22] [AgentHostChannel] Opening upstream to \\.\pipe\vscode-ipc-efa64074-8852-4594-8272-93d9fb5a89c0-sock

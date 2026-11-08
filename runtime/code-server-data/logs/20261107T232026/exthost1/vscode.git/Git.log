@@ -1,0 +1,23 @@
+2026-11-07 23:20:29.083 [info] [main] Log level: Info
+2026-11-07 23:20:29.083 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2026-11-07 23:20:29.083 [info] [main] Validating found git in: "C:\Program Files (x86)\Git\cmd\git.exe"
+2026-11-07 23:20:29.083 [info] [main] Validating found git in: "C:\Program Files\Git\cmd\git.exe"
+2026-11-07 23:20:29.083 [info] [main] Validating found git in: "C:\Users\aa\AppData\Local\Programs\Git\cmd\git.exe"
+2026-11-07 23:20:29.123 [info] [main] Validating found git in: "E:\GIT\Git\cmd\git.exe"
+2026-11-07 23:20:29.191 [info] [main] Using git "2.54.0.windows.1" from "E:\GIT\Git\cmd\git.exe"
+2026-11-07 23:20:29.192 [info] [Model][doInitialScan] Initial repository scan started
+2026-11-07 23:20:29.274 [info] > git rev-parse --show-toplevel [47ms]
+2026-11-07 23:20:29.274 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-11-07 23:20:29.326 [info] > git rev-parse --show-toplevel [45ms]
+2026-11-07 23:20:29.326 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-11-07 23:20:29.369 [info] > git rev-parse --show-toplevel [36ms]
+2026-11-07 23:20:29.369 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-11-07 23:20:29.434 [info] > git rev-parse --show-toplevel [59ms]
+2026-11-07 23:20:29.482 [info] > git rev-parse --path-format=relative --show-toplevel [40ms]
+2026-11-07 23:20:29.527 [info] > git rev-parse --show-toplevel [38ms]
+2026-11-07 23:20:29.527 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-11-07 23:20:29.530 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2026-11-07 23:20:30.153 [info] > git rev-parse --show-toplevel [51ms]
+2026-11-07 23:20:30.153 [info] fatal: not a git repository (or any of the parent directories): .git
+2026-11-07 23:20:30.249 [info] > git rev-parse --show-toplevel [49ms]
+2026-11-07 23:20:30.249 [info] fatal: not a git repository (or any of the parent directories): .git

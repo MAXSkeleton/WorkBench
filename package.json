@@ -1,0 +1,16 @@
+{
+  "name": "my-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "description": "个人工作站：一个窗口里同时有 DSH、编辑器、终端与本地工具",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --no-sandbox",
+    "dev": "electron . --dev",
+    "build": "node tools/build-exe.js"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^33.0.0"
+  }
+}

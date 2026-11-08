@@ -1,0 +1,112 @@
+{
+  "id": "dev",
+  "name": "开发",
+  "grid": {
+    "cols": 12,
+    "rows": 10,
+    "gap": 6
+  },
+  "engine": {
+    "cmd": "dsh",
+    "args": [
+      "web",
+      "--no-open",
+      "--port",
+      "0"
+    ],
+    "home": "runtime/dsh-home",
+    "timeoutMs": 60000
+  },
+  "vscode": {
+    "mode": "code-server",
+    "cmd": "vendor/cs/code-server-4.145.2-windows-amd64/lib/node.exe",
+    "args": [
+      "vendor/cs/code-server-4.145.2-windows-amd64",
+      "--bind-addr",
+      "127.0.0.1:{port}",
+      "--auth",
+      "none",
+      "--disable-telemetry",
+      "--disable-update-check",
+      "--disable-workspace-trust",
+      "--user-data-dir",
+      "runtime/code-server-data"
+    ],
+    "port": 9123,
+    "timeoutMs": 90000,
+    "folder": "D:/deepseek/电脑"
+  },
+  "panels": [
+    {
+      "id": "files",
+      "type": "file",
+      "title": "文件",
+      "col": 0,
+      "row": 0,
+      "w": 2,
+      "h": 10,
+      "root": "D:/Python/pycharm"
+    },
+    {
+      "id": "editor",
+      "type": "vscode",
+      "title": "VSCode",
+      "col": 2,
+      "row": 0,
+      "w": 6,
+      "h": 10,
+      "fallbackUrl": "http://127.0.0.1:9123"
+    },
+    {
+      "id": "ai",
+      "type": "web",
+      "title": "DSH",
+      "col": 8,
+      "row": 0,
+      "w": 4,
+      "h": 10,
+      "embed": "engine"
+    }
+  ],
+  "launchers": [
+    {
+      "key": "vscode-desktop",
+      "label": "VSCode（桌面版）",
+      "note": "重活、调试、扩展齐全时用这个",
+      "path": "D:\\VUE\\Code\\Microsoft VS Code\\Code.exe"
+    },
+    {
+      "key": "pycharm",
+      "label": "PyCharm",
+      "note": "PyCharm Community 2024.2.1",
+      "path": "D:\\Python\\pycharm\\python\\PyCharm Community Edition 2024.2.1\\bin\\pycharm64.exe"
+    },
+    {
+      "key": "deveco",
+      "label": "DevEco Studio",
+      "note": "HarmonyOS 开发",
+      "path": "D:\\Deveco studio\\zhu\\DevEco Studio\\bin\\devecostudio64.exe"
+    },
+    {
+      "key": "vmware",
+      "label": "VMware Workstation",
+      "note": "虚拟机（第二版改成 vmrun 起停）",
+      "path": "D:\\Linux\\vmware.exe"
+    },
+    {
+      "key": "obsidian",
+      "label": "Obsidian",
+      "note": "笔记库在 E:\\Obsidian",
+      "path": "E:\\Obsidian\\Obsidian.exe"
+    },
+    {
+      "key": "explorer-python",
+      "label": "打开 Python 目录",
+      "note": "D:\\Python\\pycharm",
+      "path": "C:\\Windows\\explorer.exe",
+      "args": [
+        "D:\\Python\\pycharm"
+      ]
+    }
+  ]
+}
