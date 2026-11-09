@@ -1,0 +1,5 @@
+2026/11/09-14:04:02.383 51b7c Creating DB E:\Work\workbench\runtime\ud-add\Local Storage\leveldb since it was missing.
+2026/11/09-14:04:02.403 51b7c Reusing MANIFEST E:\Work\workbench\runtime\ud-add\Local Storage\leveldb/MANIFEST-000001
+2026/11/09-14:05:02.661 4b7cc Level-0 table #5: started
+2026/11/09-14:05:02.668 4b7cc Level-0 table #5: 45888 bytes OK
+2026/11/09-14:05:02.674 4b7cc Delete type=0 #3

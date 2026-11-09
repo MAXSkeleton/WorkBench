@@ -1,44 +1,4 @@
 {
-  "ok": true,
-  "out": {
-    "preset": "开发",
-    "start": [
-      [
-        "notes",
-        "editor",
-        "files"
-      ],
-      [
-        "monitor",
-        "dsh",
-        "dsh"
-      ]
-    ],
-    "added": [
-      [
-        "notes",
-        "editor",
-        "files",
-        "note-mw7xrplr"
-      ],
-      [
-        "monitor",
-        "dsh",
-        "dsh",
-        "note-mw7xrplr"
-      ]
-    ],
-    "reset": [
-      [
-        "notes",
-        "editor",
-        "files"
-      ],
-      [
-        "monitor",
-        "dsh",
-        "dsh"
-      ]
-    ]
-  }
+  "ok": false,
+  "error": "TypeError: Cannot create property 'menuBox' on string '{\"id\":\"note-mw8uwb3f\",\"dt\":13,\"wvBefore\":0,\"wvAfter\":0,\"panelsBefore\":4,\"panelsAfter\":5}'"
 }

@@ -52,7 +52,7 @@ fs.mkdirSync(HOME_DIR, { recursive: true })
 // Chromium 会刷一屏 "Failed to create directory: ...\Code Cache" / "拒绝访问 (0x5)"。
 // 统一收到工作区 runtime/userdata，顺带让缓存与运行期状态可随工程一起删。
 try {
-  const userData = path.join(HOME_DIR, 'userdata')
+  const userData = process.env.WT_UD ? path.join(HOME_DIR, process.env.WT_UD) : path.join(HOME_DIR, 'userdata')
   fs.mkdirSync(userData, { recursive: true })
   app.setPath('userData', userData)
 } catch (e) {
@@ -101,6 +101,13 @@ function loadScenario(id) {
 // ───────────────────────────── 引擎 ─────────────────────────────
 
 let engineUrl = ''
+// 用户设置（渲染层保存）：覆盖场景里的 engine.cmd / engine.home，用于「换用户 / 换机器时手动指定 DSH」
+let engineOverrides = {}
+function setEngineOverrides(o) {
+  engineOverrides = (o && typeof o === 'object') ? o : {}
+  if (engineOverrides.dshCmd) log('engine', '用户指定 dsh 命令：' + engineOverrides.dshCmd)
+  if (engineOverrides.dshHome) log('engine', '用户指定 DSH_HOME：' + engineOverrides.dshHome)
+}
 
 /**
  * 拉起 DSH 引擎。
@@ -113,7 +120,7 @@ let engineUrl = ''
  */
 async function startEngine(cfg) {
   const ec = cfg.engine || {}
-  const dshCmd = ec.cmd || process.env.DSH_CMD || 'dsh'
+  const dshCmd = (engineOverrides && engineOverrides.dshCmd) || ec.cmd || process.env.DSH_CMD || 'dsh'
   const args = ec.args || ['web', '--no-open', '--port', '0']
   const port = ec.port || 0 // 0 = 让引擎自己挑
 
@@ -135,7 +142,8 @@ async function startEngine(cfg) {
   //   false      → 删掉，用引擎自己的默认值
   //   "绝对路径" → 用这个（数据隔离，推荐自用时装一份独立 home）
   //   其它       → 继承当前进程（沿用你已装的 DSH 数据）
-  if (ec.home === false) delete env.DSH_HOME
+  if ((engineOverrides && engineOverrides.dshHome)) { env.DSH_HOME = engineOverrides.dshHome; log('engine','DSH_HOME(用户)= '+env.DSH_HOME) }
+  else if (ec.home === false) delete env.DSH_HOME
   else if (typeof ec.home === 'string' && ec.home) {
     const shared = path.resolve(ROOT, ec.home)
     if (fs.existsSync(shared) || shared.startsWith(ROOT)) {
@@ -438,6 +446,9 @@ function createWindow() {
   win.loadFile(path.join(ROOT, 'renderer', 'index.html'))
   win.webContents.on('did-finish-load', () => win.webContents.send('app:boot', { ...boot }))
   if (process.argv.includes('--diag')) scheduleDiag()
+  if (process.argv.includes('--rctest')) scheduleRcTest(win, log)
+  if (process.argv.includes('--rctest2')) rcClickMenuTest(win, log).catch((e) => log('rctest', 'ERR ' + e.message))
+  if (process.argv.includes('--rcprobe')) rcProbe(win, log).catch((e) => log('rcprobe', 'ERR ' + e.message))
 
   // --docktest <key>：无人点击时自测「任务栏 → 停进 editor 面板」
   // --eval "<js>"：在渲染层执行一段脚本并把结果写到 logs/eval-result.json（无人值守自测用）
@@ -451,6 +462,10 @@ function createWindow() {
     setTimeout(async () => {
       try {
         const out = await win.webContents.executeJavaScript(expr)
+      const img = await win.webContents.capturePage()
+      fs.writeFileSync(path.join(LOG_DIR, "rctest.png"), img.toPNG())
+      const box = await win.webContents.executeJavaScript("(function(){var m=document.querySelector('.lbar-menu');if(!m)return null;var r=m.getBoundingClientRect();var cs=getComputedStyle(m);return {x:r.x,y:r.y,w:r.width,h:r.height,z:cs.zIndex,op:cs.opacity,disp:cs.display,vis:cs.visibility,top:(function(){var e=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);return e?(e.className||e.tagName):null})()}})()")
+      out.menuBox = box
         fs.writeFileSync(path.join(LOG_DIR, 'eval-result.json'), JSON.stringify({ ok: true, out }, null, 2), 'utf8')
         log('eval', 'ok ' + String(JSON.stringify(out)).slice(0, 400))
       } catch (err) {
@@ -509,6 +524,82 @@ async function runDockTest(key) {
     log('dock', 'docktest ' + key + ' ' + JSON.stringify(res))
   } catch (e) { log('dock', 'docktest error ' + String(e)) }
 }
+async function rcProbe(win, log) {
+  const out = await win.webContents.executeJavaScript("(function(){" +
+    "const bar=document.getElementById('taskbar');" +
+    "const els=[...document.querySelectorAll('#taskbar .lbar-item')];" +
+    "const rects=els.map(e=>{var r=e.getBoundingClientRect();return {t:(e.textContent||'').trim().slice(0,10),x:Math.round(r.left),y:Math.round(r.top),w:Math.round(r.width),h:Math.round(r.height)}});" +
+    "var m=document.querySelector('.lbar-menu');var mr=m?m.getBoundingClientRect():null;" +
+    "return {barVisible:bar?(bar.style.display||getComputedStyle(bar).display):'no', items:rects, menuOpen:!!m, menuRect:mr?{x:Math.round(mr.left),y:Math.round(mr.top),w:Math.round(mr.width),h:Math.round(mr.height)}:null," +
+    "bodyZ:getComputedStyle(document.body).zIndex, bodyBg:getComputedStyle(document.body).backgroundColor};" +
+    "})()")
+  log('rcprobe', JSON.stringify(out))
+}
+
+async function rcClickMenuTest(win, log) {
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+  for (let i = 0; i < 60; i += 1) {
+    const hidden = await win.webContents.executeJavaScript("!!document.getElementById('boot') && document.getElementById('boot').hidden")
+    if (hidden) break
+    await sleep(1000)
+  }
+  await sleep(800)
+  win.webContents.sendInputEvent({ type: 'mouseMove', x: 150, y: 18 })
+  win.webContents.sendInputEvent({ type: 'mouseDown', x: 150, y: 18, button: 'right', clickCount: 1 })
+  win.webContents.sendInputEvent({ type: 'mouseUp', x: 150, y: 18, button: 'right', clickCount: 1 })
+  await sleep(500)
+  const info = await win.webContents.executeJavaScript("(function(){var it=document.querySelector('.lbar-menu-item');var r=it?it.getBoundingClientRect():null;return {count:document.querySelectorAll('.lbar-menu-item').length,label:it?it.textContent:null,x:r?Math.round(r.left+r.width/2):0,y:r?Math.round(r.top+r.height/2):0}})()")
+  log('rctest', 'menu ' + JSON.stringify(info))
+  if (info.count > 0) {
+    win.webContents.sendInputEvent({ type: 'mouseMove', x: info.x, y: info.y })
+    await sleep(120)
+    win.webContents.sendInputEvent({ type: 'mouseDown', x: info.x, y: info.y, button: 'left', clickCount: 1 })
+    await sleep(60)
+    win.webContents.sendInputEvent({ type: 'mouseUp', x: info.x, y: info.y, button: 'left', clickCount: 1 })
+    await sleep(700)
+  }
+  const after = await win.webContents.executeJavaScript("(function(){return {pop:!!document.querySelector('.lbar-pop'), menu:document.querySelectorAll('.lbar-menu').length}})()")
+  log('rctest', 'after ' + JSON.stringify(after))
+  try { fs.writeFileSync(path.join(LOG_DIR, 'rc-menu.json'), JSON.stringify({ info, after }), 'utf8') } catch (err) {}
+}
+
+function scheduleRcTest(win, log) {
+  setTimeout(async () => {
+    try {
+      let waited = 0
+      while (waited < 120000) {
+        const hidden = await win.webContents.executeJavaScript("document.getElementById('boot').hidden")
+        if (hidden) break
+        await new Promise((r) => setTimeout(r, 1000))
+        waited += 1000
+      }
+      const y = 18
+      for (const x of [200, 320]) {
+        win.webContents.sendInputEvent({ type: "mouseMove", x, y })
+        win.webContents.sendInputEvent({ type: "mouseDown", button: "right", x, y, clickCount: 1 })
+        win.webContents.sendInputEvent({ type: "mouseUp", button: "right", x, y, clickCount: 1 })
+        await new Promise((r) => setTimeout(r, 500))
+      }
+      await new Promise((r) => setTimeout(r, 800))
+      const expr = [
+        "(function(){",
+        "  var m = document.querySelector('.lbar-menu');",
+        "  var hitEl = document.elementFromPoint(320, 18);",
+        "  var boot = document.getElementById('boot');",
+        "  return { menu: !!m, items: m ? [].slice.call(m.children).map(function(e){return e.textContent}) : [],",
+        "    ctx: window.__wtCtx || null, bootHidden: boot.hidden,",
+        "    hit: hitEl ? (hitEl.className || hitEl.tagName) : null };",
+        "})()"
+      ].join("\n")
+      const out = await win.webContents.executeJavaScript(expr)
+      out.bootWaitMs = waited
+      fs.writeFileSync(path.join(LOG_DIR, "rctest.json"), JSON.stringify(out, null, 2), "utf8")
+    } catch (e) {
+      log("rctest", "ERR " + e.message)
+    }
+  }, 6000)
+}
+
 function scheduleDiag() {
   const expr = `(() => {
     const r = (el) => { if (!el) return null; const b = el.getBoundingClientRect(); return { x: Math.round(b.x), y: Math.round(b.y), w: Math.round(b.width), h: Math.round(b.height) } }
@@ -591,6 +682,98 @@ function scheduleDiag() {
   })
 }
 
+/* ───────── 第一行任务栏：按路径启动 / 提图标 / 取网站图标 ───────── */
+ipcMain.handle('app:launch-path', async (_e, target) => {
+  try {
+    const p = path.resolve(String(target || ''))
+    if (!fs.existsSync(p)) return { ok: false, error: '文件不存在：' + p }
+    spawn(p, [], { detached: true, stdio: 'ignore', cwd: path.dirname(p) }).unref()
+    return { ok: true, path: p }
+  } catch (err) {
+    return { ok: false, error: err.message }
+  }
+})
+
+const iconCache = new Map()
+
+ipcMain.handle('app:exe-icon', async (_e, target) => {
+  try {
+    const p = path.resolve(String(target || ''))
+    if (!fs.existsSync(p)) return { ok: false, error: '文件不存在' }
+    if (iconCache.has(p)) return { ok: true, dataUrl: iconCache.get(p) }
+    const out = path.join(LOG_DIR, 'icon-' + Buffer.from(p).toString('hex').slice(0, 24) + '.png')
+    const script = [
+      'Add-Type -AssemblyName System.Drawing',
+      '$src = ' + "'" + p.replace(/'/g, "''") + "'",
+      '$dst = ' + "'" + out.replace(/'/g, "''") + "'",
+      '$ico = [System.Drawing.Icon]::ExtractAssociatedIcon($src)',
+      'if (-not $ico) { exit 2 }',
+      '$bmp = New-Object System.Drawing.Bitmap 48, 48',
+      '$g = [System.Drawing.Graphics]::FromImage($bmp)',
+      '$g.InterpolationMode = "HighQualityBicubic"',
+      '$g.Clear([System.Drawing.Color]::Transparent)',
+      '$g.DrawImage($ico.ToBitmap(), (New-Object System.Drawing.Rectangle 0,0,48,48))',
+      '$bmp.Save($dst, [System.Drawing.Imaging.ImageFormat]::Png)',
+      '$g.Dispose(); $bmp.Dispose(); $ico.Dispose()',
+    ].join('; ')
+    const r = spawnSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', script], { timeout: 15000, windowsHide: true })
+    if (r.status !== 0 || !fs.existsSync(out)) {
+      return { ok: false, error: '取图标失败' + (r.stderr ? '：' + String(r.stderr).slice(0, 120) : '') }
+    }
+    const dataUrl = 'data:image/png;base64,' + fs.readFileSync(out).toString('base64')
+    try { fs.unlinkSync(out) } catch (err) {}
+    iconCache.set(p, dataUrl)
+    return { ok: true, dataUrl }
+  } catch (err) {
+    return { ok: false, error: err.message }
+  }
+})
+
+ipcMain.handle('app:fetch-icon', async (_e, target) => {
+  const http = require('node:http')
+  const https = require('node:https')
+  const clean = (u) => String(u || '').trim().replace(/^["']|["']$/g, '')
+  let base = clean(target)
+  if (!/^https?:\/\//i.test(base)) base = 'https://' + base
+  let origin = ''
+  try { origin = new URL(base).origin } catch (err) { return { ok: false, error: '网址格式不对' } }
+  if (iconCache.has('W' + origin)) return { ok: true, dataUrl: iconCache.get('W' + origin) }
+
+  const tryGet = (url) => new Promise((resolve) => {
+    const mod = url.startsWith('https') ? https : http
+    const req = mod.get(url, { timeout: 6000, headers: { 'user-agent': 'Mozilla/5.0 workbench' } }, (res) => {
+      if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        res.resume()
+        resolve(tryGet(new URL(res.headers.location, url).toString()))
+        return
+      }
+      if (res.statusCode !== 200) { res.resume(); resolve(null); return }
+      const chunks = []
+      let size = 0
+      res.on('data', (c) => {
+        size += c.length
+        if (size > 400 * 1024) { req.destroy(); resolve(null); return }
+        chunks.push(c)
+      })
+      res.on('end', () => resolve(Buffer.concat(chunks)))
+      res.on('error', () => resolve(null))
+    })
+    req.on('timeout', () => { req.destroy(); resolve(null) })
+    req.on('error', () => resolve(null))
+  })
+
+  const candidates = [origin + '/favicon.ico', origin + '/favicon.png']
+  for (const u of candidates) {
+    const buf = await tryGet(u)
+    if (buf && buf.length > 100) {
+      const dataUrl = 'data:image/png;base64,' + buf.toString('base64')
+      iconCache.set('W' + origin, dataUrl)
+      return { ok: true, dataUrl }
+    }
+  }
+  return { ok: false, error: '该网站没有可用的 favicon' }
+})
+
 app.whenReady().then(() => createWindow())
 
 app.on('window-all-closed', () => {
@@ -612,7 +795,8 @@ app.on('before-quit', () => {
 
 ipcMain.handle('app:scenario', (_e, id) => loadScenario(id))
 
-ipcMain.handle('app:start', async (_e, scenarioId) => {
+ipcMain.handle('app:start', async (_e, scenarioId, overrides) => {
+  if (overrides) setEngineOverrides(overrides)
   const cfg = loadScenario(scenarioId)
   const results = { engine: null, vscode: null }
   results.engine = await startEngine(cfg)
@@ -631,6 +815,7 @@ ipcMain.handle('app:start', async (_e, scenarioId) => {
   return { ok: true, engine: results.engine, vscode, url: engineUrl }
 })
 
+ipcMain.handle('app:set-engine-opts', (_e, o) => { setEngineOverrides(o); return { ok: true } })
 ipcMain.handle('app:engine-url', () => engineUrl)
 ipcMain.handle('app:vscode-status', () => vscode)
 ipcMain.handle('app:boot', () => ({ ...boot }))

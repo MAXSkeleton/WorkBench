@@ -1,11 +1,11 @@
 {
   "viewport": {
-    "w": 2048,
-    "h": 1082
+    "w": 1536,
+    "h": 794
   },
   "workspaceDisplay": "grid",
   "bootHidden": true,
-  "status": "DSH 引擎：127.0.0.1:53425   ·   VSCode：ready   ·   面板：4   ·   布局：拖分隔条可调 / 双击均分",
+  "status": "DSH 引擎：127.0.0.1:57318   ·   VSCode：ready   ·   面板：4   ·   布局：拖分隔条可调 / 双击均分",
   "splitterCount": {
     "v": 0,
     "h": 0
@@ -20,21 +20,21 @@
       "rect": {
         "x": 6,
         "y": 78,
-        "w": 675,
-        "h": 484
+        "w": 504,
+        "h": 340
       },
       "dot": "dot",
       "hasWebview": false,
-      "body": "34%\nCPU\n33%\nGPU\n内存\n20.3 / 23.7 GB\nNVIDIA GeForce RTX 4060 Laptop GPU · 显存 2199 / 8188 MB · 每 2 秒刷新"
+      "body": "12%\nCPU\n0%\nGPU\n内存\n15.5 / 23.7 GB\nNVIDIA GeForce RTX 4060 Laptop GPU · 显存 10 / 8188 MB · 每 2 秒刷新"
     },
     {
       "id": "preview",
       "title": "文件预览器",
       "rect": {
-        "x": 687,
+        "x": 516,
         "y": 78,
-        "w": 675,
-        "h": 484
+        "w": 504,
+        "h": 340
       },
       "dot": "dot",
       "hasWebview": false,
@@ -44,23 +44,23 @@
       "id": "files",
       "title": "文件浏览器",
       "rect": {
-        "x": 1367,
+        "x": 1026,
         "y": 78,
-        "w": 675,
-        "h": 484
+        "w": 504,
+        "h": 340
       },
       "dot": "dot",
       "hasWebview": false,
-      "body": "此电脑\n驱动器\n▸\n📁\nC:\n▸\n📁\nD:\n▸\n📁\nE:\n▸\n📁\nF:\n常用位置\n▸\n📁\n用户目录\n▸\n📁\n桌面\n▸\n📁\n下载\n▸\n📁\n文档\n▸\n📁\nDSH 数据\n▸\n📁\n工作站\n☰\n↑\n此电脑\n名称\n修改日期\n类型\n大"
+      "body": "此电脑\n驱动器\n▸\n📁\nC:\n▸\n📁\nD:\n▸\n📁\nE:\n▸\n📁\nF:\n常用位置\n▸\n📁\n用户目录\n▸\n📁\n桌面\n▸\n📁\n下载\n▸\n📁\n文档\n▸\n📁\nDSH 数据\n▸\n📁\n工作站\n☰\n↑\n此电脑\n名称\n大小\n在左侧选择一"
     },
     {
       "id": "dsh",
       "title": "DSH",
       "rect": {
-        "x": 687,
-        "y": 568,
-        "w": 1355,
-        "h": 484
+        "x": 516,
+        "y": 424,
+        "w": 1014,
+        "h": 340
       },
       "dot": "dot ok",
       "hasWebview": true,

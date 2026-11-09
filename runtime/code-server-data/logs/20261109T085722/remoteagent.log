@@ -1,0 +1,11 @@
+2026-11-09 08:57:23.031 [info] 
+
+
+
+
+2026-11-09 08:57:23.032 [info] StorageMainService: creating application shared storage
+2026-11-09 08:57:23.036 [info] [AgentHostChannel] Registered lazy IPC channel 'agentHostProxy' (upstream: \\.\pipe\vscode-ipc-3ce56776-39f7-4839-b8fe-4dc80beb50ba-sock)
+2026-11-09 08:57:23.041 [info] Extension host agent started.
+2026-11-09 08:57:23.048 [info] [shared storage] Creating shared storage database at 'c:\Users\aa\.vscode-oss-shared\sharedStorage\state.vscdb' (wasCreated: false)
+2026-11-09 08:57:23.048 [info] [shared storage] Initializing fallback application storage (path: e:\Work\workbench\runtime\code-server-data\User\globalStorage\state.vscdb)
+2026-11-09 08:57:23.058 [info] [shared storage] Fallback application storage initialized with 4 items

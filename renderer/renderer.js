@@ -423,49 +423,26 @@ async function toggleDock(item) {
 }
 
 function buildTaskbar(sc) {
-  const bar = $('taskbar')
-  if (!bar) return
-  const items = (sc.taskbar && sc.taskbar.length) ? sc.taskbar : (sc.launchers || [])
-  if (!items.length) return
-  dockState.panelId = sc.dockTarget || 'editor'
-  state.taskbar = items
+  if (window.__wtBuildBar) return window.__wtBuildBar(sc)
+}
 
-  bar.innerHTML = ''
-  bar.hidden = false
-  const left = document.createElement('div')
-  left.className = 'tb-left'
-  const brand = document.createElement('span')
-  brand.className = 'tb-brand'
-  brand.textContent = '工作站'
-  left.appendChild(brand)
-
-  items.forEach((it) => {
-    const btn = document.createElement('button')
-    btn.className = 'tb-btn'
-    btn.dataset.key = it.key
-    btn.classList.add('tb-icon')
-    const ico = document.createElement('img')
-    ico.className = 'tb-ico'
-    ico.alt = ''
-    ico.src = 'icons/' + it.key + '.png'
-    ico.addEventListener('error', () => {
-      ico.remove()
-      const t = document.createElement('span')
-      t.textContent = (it.label || it.key).slice(0, 2)
-      btn.appendChild(t)
-    })
-    btn.appendChild(ico)
-    btn.title = [(it.note || ''), (it.path || '')].filter(Boolean).join(' · ')
-    btn.addEventListener('click', () => toggleDock(it))
-    left.appendChild(btn)
-  })
-  bar.appendChild(left)
-
-  const right = document.createElement('div')
-  right.className = 'tb-right'
-  right.id = 'tb-right'
-  bar.appendChild(right)
-  renderDockChip()
+window.__wtToast = toast
+window.__wtAddWeb = function (url, title) {
+  const sc = state.scenario || {}
+  const id = 'web-' + Date.now().toString(36)
+  sc.panels = sc.panels || []
+  sc.panels.push({ id: id, type: 'web', title: title || url, url: url })
+  if (state.gridMode) {
+    const cells = gridCells()
+    cells.forEach((row) => row.push(id))
+    gridRender()
+    rerenderPanels()
+    buildWindowBar(sc)
+    if (typeof saveUi === 'function') saveUi()
+  } else {
+    addPanelByType('web')
+  }
+  return id
 }
 
 // ───────────────────────────── 第二行任务栏：可添加的窗口 ─────────────────────────────
@@ -625,7 +602,11 @@ async function main() {
     if (t !== 'web' && t !== 'vscode') renderPanel(id)
   })
 
-  const res = await window.app.start(SCENARIO_ID)
+  // 启动遮罩立刻撤掉：外壳先露出来，引擎 / VSCode 在后台慢慢起
+  $('boot').hidden = true
+  renderStatus()
+
+  const res = await window.app.start(SCENARIO_ID, engineOverrides())
   state.engineUrl = res.url || ''
   state.vscode = res.vscode || null
 
@@ -634,8 +615,6 @@ async function main() {
     const t = state.panels[id].panel.type
     if (t === 'web' || t === 'vscode') renderPanel(id)
   })
-
-  $('boot').hidden = true
   renderStatus()
 }
 
@@ -740,7 +719,56 @@ function closePanel(id) {
   layoutChanged()
 }
 
+function gridApplyMove(id, targetId, side) {
+  // 网格模式：把 id 对应的面板移到 targetId 旁边（左/右/上/下），改变 cells 后按需扩列
+  const cells = gridCells()
+  const rows = Math.max(1, cells.length)
+  const cols = Math.max(1, ...cells.map((r) => r.length))
+  cells.forEach((r) => { while (r.length < cols) r.push('') })
+  let tr = -1, tc = -1
+  for (let ri = 0; ri < rows; ri += 1) {
+    const c = cells[ri].indexOf(targetId)
+    if (c >= 0) { tr = ri; tc = c; break }
+  }
+  if (tr < 0) return
+  // 先清掉 id 占的所有格子
+  cells.forEach((r) => { r.forEach((v, i) => { if (v === id) r[i] = '' }) })
+  // 目标位置
+  if (side === 'left' || side === 'right') {
+    const ci = side === 'left' ? tc : tc + 1
+    cells.forEach((r) => { while (r.length <= ci) r.push('') })
+    for (let ri = 0; ri < cells.length; ri += 1) if (cells[ri][ci] === '') { cells[ri][ci] = id }
+  } else {
+    const ri2 = side === 'top' ? tr : tr + 1
+    while (cells.length <= ri2) cells.push(new Array(Math.max(1, ...cells.map((r) => r.length))).fill(''))
+    const wid = Math.max(1, ...cells.map((r) => r.length))
+    cells.forEach((r) => { while (r.length < wid) r.push('') })
+    for (let ci = 0; ci < wid; ci += 1) if (cells[ri2] && cells[ri2][ci] === '') { cells[ri2][ci] = id }
+  }
+  // 清理尾部空列 / 空行（保留至少一行一列占位）
+  const prune = () => {
+    let removed
+    do {
+      removed = false
+      const wid = Math.max(1, ...cells.map((r) => r.length))
+      for (let c = wid - 1; c >= 0; c -= 1) {
+        if (cells.length > 1 && cells.every((r) => !r[c])) { cells.forEach((r) => r.splice(c, 1)); removed = true }
+      }
+      if (cells.length > 1 && cells[cells.length - 1].every((v) => !v)) { cells.pop(); removed = true }
+    } while (removed)
+  }
+  prune()
+  if (!cells.length) cells.push(['', '', ''])
+  state.grid.cells = cells
+  panelDefFor(id)
+  gridRender()
+  rerenderPanels()
+  buildWindowBar(state.scenario)
+  saveUi()
+}
+
 function applyMove(id, targetId, side) {
+  if (state.gridMode) { gridApplyMove(id, targetId, side); return }
   const el = panelEl(id)
   const tEl = panelEl(targetId)
   if (!el || !tEl || el === tEl) return
@@ -1012,6 +1040,86 @@ function currentPresetName() {
   return state.currentPreset || '基础'
 }
 
+
+const SETTINGS_KEY = 'workbench.settings.v1'
+
+function loadSettings() {
+  try {
+    const raw = localStorage.getItem(SETTINGS_KEY)
+    if (!raw) return null
+    const v = JSON.parse(raw)
+    return (v && typeof v === 'object') ? v : null
+  } catch (err) { return null }
+}
+
+function saveSettings(o) {
+  try { localStorage.setItem(SETTINGS_KEY, JSON.stringify(o || {})) } catch (err) {}
+}
+
+function engineOverrides() {
+  const s2 = loadSettings() || {}
+  const out = {}
+  if (s2.dshCmd) out.dshCmd = s2.dshCmd
+  if (s2.dshHome) out.dshHome = s2.dshHome
+  return out
+}
+
+function openSettings(sc) {
+  const ov = loadSettings() || {}
+  const pop = document.createElement('div')
+  pop.className = 'set-pop'
+  const box = document.createElement('div')
+  box.className = 'set-pop-box'
+  const H = (t) => { const x = document.createElement('b'); x.textContent = t; box.appendChild(x) }
+  const field = (label, key, ph, rows) => {
+    const lab = document.createElement('label'); lab.textContent = label
+    const inp = document.createElement('input')
+    inp.className = 'set-inp'
+    inp.value = ov[key] || ''
+    inp.placeholder = ph || ''
+    inp.dataset.key = key
+    lab.appendChild(inp)
+    box.appendChild(lab)
+    return inp
+  }
+  H('连接 DSH（换用户/换机器时改这里）')
+  const cmdInp = field('DSH 命令或可执行文件路径', 'dshCmd', '例如 dsh 或 D:\\DeepSeek\\resources\\runtime\\cli\\bin\\dsh.cmd')
+  const homeInp = field('DSH_HOME 目录（会话数据所在）', 'dshHome', '例如 C:\\Users\\你\\.dsh', 2)
+  const note = document.createElement('p')
+  note.className = 'set-note'
+  note.textContent = '路径留空则用场景默认。DSH_HOME 指到你已装的 .dsh 目录，就能看到你本来的对话。'
+  box.appendChild(note)
+  const btns = document.createElement('div')
+  btns.className = 'set-btns'
+  const ok = document.createElement('button'); ok.className = 'tb-btn'; ok.textContent = '保存并重启引擎'
+  const close = document.createElement('button'); close.className = 'tb-btn'; close.textContent = '取消'
+  btns.appendChild(ok); btns.appendChild(close); box.appendChild(btns)
+  const rm = () => { pop.remove(); document.removeEventListener('keydown', esc) }
+  const esc = (ev) => { if (ev.key === 'Escape') rm() }
+  close.addEventListener('pointerdown', (ev) => { ev.stopPropagation(); rm() })
+  ok.addEventListener('pointerdown', (ev) => {
+    ev.stopPropagation()
+    const dshCmd = String(cmdInp.value || '').trim()
+    const dshHome = String(homeInp.value || '').trim()
+    const next = {}
+    if (dshCmd) next.dshCmd = dshCmd
+    if (dshHome) next.dshHome = dshHome
+    saveSettings(next)
+    if (window.app.setEngineOpts) window.app.setEngineOpts(next).then(() => {
+      setBootOnly(null)
+    })
+    rm()
+    toast(dshCmd ? '已保存 DSH 位置：' + dshCmd : '已清空自定义 DSH，用场景默认')
+    // 保存后立刻重载，用新设置重启引擎/工作区
+    setTimeout(() => window.location.reload(), 600)
+  })
+  pop.addEventListener('pointerdown', (ev) => { if (ev.target === pop) rm() })
+  pop.appendChild(box)
+  document.body.appendChild(pop)
+}
+
+function setBootOnly() {}
+
 function buildWindowBar(sc) {
   const bar = $('taskbar2')
   if (!bar) return
@@ -1019,11 +1127,6 @@ function buildWindowBar(sc) {
   bar.innerHTML = ''
   const left = document.createElement('div')
   left.className = 'tb-left'
-
-  const brand = document.createElement('span')
-  brand.className = 'tb-brand'
-  brand.textContent = '工作站'
-  left.appendChild(brand)
 
   const plain = (label, fn, title) => {
     const b = document.createElement('button')
@@ -1034,8 +1137,8 @@ function buildWindowBar(sc) {
     left.appendChild(b)
     return b
   }
-  plain('设置', () => toast('设置面板还空着，接口已留好，后面接工程'), '占位：设置')
-  plain('外观', () => toast('外观面板还空着，接口已留好，后面接工程'), '占位：外观')
+  plain('设置', () => openSettings(sc), 'DSH 位置 / 工作区等设置')
+  plain('外观', () => toast('外观面板还空着，接口已留好，后面接工程。颜色字体在 renderer/theme.css'), '占位：外观')
 
   // 窗口下拉：往界面右侧加一个窗口
   const ww = document.createElement('div')
@@ -1168,10 +1271,6 @@ function buildWindowBar(sc) {
   left.appendChild(box)
 
   bar.appendChild(left)
-  const hint = document.createElement('div')
-  hint.className = 'tb-right'
-  hint.textContent = '拖动分格边界可改大小；双击边界恢复均分'
-  bar.appendChild(hint)
 }
 
 
@@ -1181,6 +1280,33 @@ function buildWindowBar(sc) {
 function gridCells() {
   if (!state.grid) state.grid = { cells: [] }
   return state.grid.cells
+}
+
+function gridAddColumn(panel, id) {
+  const ws = document.getElementById('grid')
+  if (!ws) return
+  const cells = gridCells()
+  cells.forEach((row) => row.push(id))
+  const cols = Math.max(1, ...cells.map((r2) => r2.length))
+  const rows = Math.max(1, cells.length)
+  cells.forEach((row) => { while (row.length < cols) row.push('') })
+
+  // 区域名：新面板统一一个新的 w 字母
+  const used = new Set()
+  ws.style.gridTemplateAreas.split(/[ "]+/).forEach((tk) => { if (tk && /^w|^z/.test(tk)) used.add(tk) })
+  let n = 1
+  while (used.has('w' + n)) n += 1
+  const name = 'w' + n
+  const areas = cells.map((row) => row.map((cid) => (cid === id ? name : (cid || 'z' + cells.indexOf(row) + 'x' + row.indexOf(cid)))).join(' '))
+  ws.style.gridTemplateColumns = 'repeat(' + cols + ', minmax(0, 1fr))'
+  ws.style.gridTemplateRows = 'repeat(' + rows + ', minmax(0, 1fr))'
+  ws.style.gridTemplateAreas = areas.map((l) => '"' + l + '"').join(' ')
+
+  const box = makePanel({ id: id, type: panel.type, title: panel.title || panel.type,
+    root: panel.root, embed: panel.embed, fallbackUrl: panel.fallbackUrl })
+  box.style.gridArea = name
+  ws.appendChild(box)
+  gridHandles(rows, cols)
 }
 
 function gridRender() {
@@ -1408,10 +1534,9 @@ function addWindow(type) {
   sc.panels.push(panel)
 
   if (state.gridMode) {
-    const cells = gridCells()
-    cells.forEach((row) => row.push(id))
-    gridRender()
-    rerenderPanels()
+    // 注意：gridAddColumn 内部会 push 一次新列，这里不要再 push，否则每个格子塞两份 id 导致布局错乱
+    saveUi()
+    gridAddColumn(panel, id)
     buildWindowBar(sc)
   } else {
     addPanelByType(type)

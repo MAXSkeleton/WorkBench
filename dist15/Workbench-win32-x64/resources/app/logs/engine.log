@@ -1,4 +1,0 @@
-[2026-11-08T14:53:09.756Z] cwd = D:\deepseek\电脑
-[2026-11-08T14:53:12.954Z] dsh web: http://127.0.0.1:55846/?token=IBJEgx4J_Lhwy4LgmdjtqzkZFWJacLxHt40KlmSmz7k
-[2026-11-08T14:53:13.267Z] ready http://127.0.0.1:55846?token=IBJEgx4J_Lhwy4LgmdjtqzkZFWJacLxHt40KlmSmz7k
-[2026-11-08T14:53:21.944Z] [llm-deepseek-account] model listing from https://api.deepseek.com/models loaded 2 model(s), skipped 0 row(s)

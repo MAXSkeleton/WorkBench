@@ -1,0 +1,11 @@
+{
+  "menu": true,
+  "items": [
+    "新增本地",
+    "新增网站"
+  ],
+  "ctx": null,
+  "bootHidden": true,
+  "hit": "lbar-cap",
+  "bootWaitMs": 3000
+}

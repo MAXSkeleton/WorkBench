@@ -9,7 +9,8 @@ contextBridge.exposeInMainWorld('app', {
   // 场景
   scenario: (id) => ipcRenderer.invoke('app:scenario', id),
   // 启动流程
-  start: (id) => ipcRenderer.invoke('app:start', id),
+  start: (id, overrides) => ipcRenderer.invoke('app:start', id, overrides || undefined),
+  setEngineOpts: (o) => ipcRenderer.invoke('app:set-engine-opts', o),
   engineUrl: () => ipcRenderer.invoke('app:engine-url'),
   vscodeStatus: () => ipcRenderer.invoke('app:vscode-status'),
   boot: () => ipcRenderer.invoke('app:boot'),
@@ -41,4 +42,7 @@ contextBridge.exposeInMainWorld('app', {
     return () => ipcRenderer.removeListener('app:reflow', h)
   },
   openExternal: (url) => ipcRenderer.invoke('app:open-external', url),
+  launchPath: (p) => ipcRenderer.invoke('app:launch-path', p),
+  exeIcon: (p) => ipcRenderer.invoke('app:exe-icon', p),
+  fetchIcon: (u) => ipcRenderer.invoke('app:fetch-icon', u),
 })
